@@ -30,7 +30,7 @@ import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.VarInsnNode;
 import org.parboiled.BaseParser;
-import org.parboiled.ContextAware;
+import org.parboiled.wilburA.ContextAware;
 import org.parboiled.support.Var;
 
 import java.io.IOException;

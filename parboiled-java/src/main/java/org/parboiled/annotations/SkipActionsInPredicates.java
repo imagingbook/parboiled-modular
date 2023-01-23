@@ -16,19 +16,22 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Action;
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser rule methods (i.e. methods returning a {@link org.parboiled.Rule} or the
+ * Annotation that can be used on parser rule methods (i.e. methods returning a {@link Rule} or the
  * parser class itself.
  * Instructs parboiled to skip the evaluation of action expressions in the rule method (or all methods if the
  * annotation is used on the parser class itself) if the rule is currently being run inside a Test/TestNot rule
  * (no matter what the nesting depth is).
  * Note that this annotation only affects action expressions (explicit or implicit)! Custom action objects, be them
- * anonymous actions or instances of some other class implementing the {@link org.parboiled.Action} interface still
+ * anonymous actions or instances of some other class implementing the {@link Action} interface still
  * need to take care of their predicate sensitivities themselves.
  * If you use this annotation on the parser class itself you can override it on specific rule methods with the
  * {@link DontSkipActionsInPredicates} annotation.

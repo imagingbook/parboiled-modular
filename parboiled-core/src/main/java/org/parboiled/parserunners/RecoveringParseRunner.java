@@ -16,9 +16,9 @@
 
 package org.parboiled.parserunners;
 
-import org.parboiled.MatchHandler;
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.MatchHandler;
+import org.parboiled.wilburA.MatcherContext;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.buffers.MutableInputBuffer;
 import org.parboiled.common.ImmutableLinkedList;
@@ -27,7 +27,6 @@ import org.parboiled.common.Preconditions;
 import org.parboiled.errors.InvalidInputError;
 import org.parboiled.matchers.*;
 import org.parboiled.matchervisitors.*;
-import org.parboiled.support.Checks;
 import org.parboiled.support.MatcherPath;
 import org.parboiled.support.ParsingResult;
 
@@ -36,7 +35,6 @@ import java.util.List;
 
 import static org.parboiled.common.Preconditions.checkArgNotNull;
 import static org.parboiled.common.Preconditions.checkState;
-import static org.parboiled.matchers.MatcherUtils.unwrap;
 import static org.parboiled.support.Chars.*;
 
 /**
@@ -294,7 +292,7 @@ public class RecoveringParseRunner<V> extends AbstractParseRunner<V> {
     }
 
     /**
-     * A {@link org.parboiled.MatchHandler} implementation that recognizes the special
+     * A {@link MatchHandler} implementation that recognizes the special
      * {@link org.parboiled.support.Chars#RESYNC} character to overcome {@link InvalidInputError}s at the respective
      * error indices.
      */

@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.calculators;
 
-import org.parboiled.Rule;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.annotations.BuildParseTree;
 
 /**

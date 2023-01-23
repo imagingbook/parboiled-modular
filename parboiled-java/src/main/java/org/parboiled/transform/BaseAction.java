@@ -23,7 +23,7 @@
 package org.parboiled.transform;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.SkippableAction;
+import org.parboiled.wilburA.SkippableAction;
 
 /**
  * Base class of generated classes wrapping action expressions.

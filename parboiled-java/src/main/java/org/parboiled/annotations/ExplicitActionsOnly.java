@@ -16,13 +16,15 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser rule methods (i.e. methods returning a {@link org.parboiled.Rule} or the
+ * Annotation that can be used on parser rule methods (i.e. methods returning a {@link Rule} or the
  * parser class itself.
  * Instructs parboiled to not perform implicit action expression wrapping, i.e. not treat expressions that form
  * parameters to Boolean.valueOf(boolean) calls as action expressions.

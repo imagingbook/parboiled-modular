@@ -17,10 +17,15 @@
 package org.parboiled.matchers;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.*;
+
 import org.parboiled.errors.ActionError;
 import org.parboiled.errors.ActionException;
 import org.parboiled.matchervisitors.MatcherVisitor;
+import org.parboiled.wilburA.Action;
+import org.parboiled.wilburA.ContextAware;
+import org.parboiled.wilburA.MatcherContext;
+import org.parboiled.wilburA.Rule;
+import org.parboiled.wilburA.SkippableAction;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

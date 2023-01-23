@@ -16,13 +16,15 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser methods returning {@link org.parboiled.Rule} objects or the
+ * Annotation that can be used on parser methods returning {@link Rule} objects or the
  * parser class itself. Instructs parboiled to not automatically label the created rules.
  */
 @Retention(RetentionPolicy.RUNTIME)

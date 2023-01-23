@@ -16,7 +16,7 @@
 
 package org.parboiled.matchers;
 
-import org.parboiled.MatcherContext;
+import org.parboiled.wilburA.MatcherContext;
 import org.parboiled.matchervisitors.MatcherVisitor;
 import org.parboiled.support.Chars;
 

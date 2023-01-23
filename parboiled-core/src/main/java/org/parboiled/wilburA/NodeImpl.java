@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.wilburA;
 
 import static org.parboiled.common.Preconditions.*;
 
@@ -22,8 +22,6 @@ import org.parboiled.common.ImmutableLinkedList;
 import org.parboiled.common.StringUtils;
 import org.parboiled.matchers.Matcher;
 import org.parboiled.trees.ImmutableTreeNode;
-
-import java.util.List;
 
 /**
  * An immutable implementation of the Node interface.

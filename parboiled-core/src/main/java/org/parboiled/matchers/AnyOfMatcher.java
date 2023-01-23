@@ -17,7 +17,7 @@
 package org.parboiled.matchers;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.MatcherContext;
+import org.parboiled.wilburA.MatcherContext;
 import org.parboiled.support.Characters;
 import org.parboiled.matchervisitors.MatcherVisitor;
 

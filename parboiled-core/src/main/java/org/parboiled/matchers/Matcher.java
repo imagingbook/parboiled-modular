@@ -16,8 +16,8 @@
 
 package org.parboiled.matchers;
 
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.MatcherContext;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.matchervisitors.MatcherVisitor;
 import org.parboiled.trees.GraphNode;
 

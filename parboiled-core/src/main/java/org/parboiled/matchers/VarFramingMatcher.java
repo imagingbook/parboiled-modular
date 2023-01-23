@@ -17,8 +17,8 @@
 package org.parboiled.matchers;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.MatcherContext;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.matchervisitors.MatcherVisitor;
 import org.parboiled.support.Var;
 

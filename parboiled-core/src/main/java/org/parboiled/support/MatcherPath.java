@@ -18,6 +18,7 @@ package org.parboiled.support;
 
 import static org.parboiled.common.Preconditions.*;
 import org.parboiled.matchers.Matcher;
+import org.parboiled.wilburA.Context;
 
 /**
  * Holds a snapshot of the current {@link Matcher} stack at a certain point during the parsing process.
@@ -43,7 +44,7 @@ public class MatcherPath {
 
     /**
      * Constructs a new MatcherPath wrapping the given elements.
-     * Normally you don't construct a MatcherPath directly but rather call {@link org.parboiled.Context#getPath()} to
+     * Normally you don't construct a MatcherPath directly but rather call {@link Context#getPath()} to
      * get one.
      *
      * @param element the last element of this path

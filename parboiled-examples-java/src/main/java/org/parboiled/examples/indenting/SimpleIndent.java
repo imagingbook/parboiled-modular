@@ -1,7 +1,7 @@
 package org.parboiled.examples.indenting;
 
 import org.parboiled.BaseParser;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.annotations.BuildParseTree;
 
 @BuildParseTree
