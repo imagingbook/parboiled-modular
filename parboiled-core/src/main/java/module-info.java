@@ -1,4 +1,4 @@
-module parboiled.core {
+module imagingbook.parboiled.core {
     exports org.parboiled.buffers;
     exports org.parboiled.common;
     exports org.parboiled.errors;

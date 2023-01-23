@@ -1,4 +1,4 @@
-module parboiled.examples.java {
-    requires parboiled.core;
-    requires parboiled.java;
+module imagingbook.parboiled.examples.java {
+    requires imagingbook.parboiled.core;
+    requires imagingbook.parboiled.java;
 }
