@@ -16,6 +16,7 @@
         <module>parboiled-core</module>
         <module>parboiled-java</module>
         <module>parboiled-examples-java</module>
+        <module>parboiled-scala</module>
 
         <!--<module>parboiled-scala</module>
         <module>examples-java</module>
