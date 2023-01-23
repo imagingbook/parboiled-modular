@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.other;
+package org.parboiled;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
