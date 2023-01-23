@@ -16,7 +16,7 @@
 
 package org.parboiled.matchervisitors;
 
-import org.parboiled.wilburA.MatcherContext;
+import org.parboiled.MatcherContext;
 import org.parboiled.matchers.*;
 
 import java.util.ArrayList;

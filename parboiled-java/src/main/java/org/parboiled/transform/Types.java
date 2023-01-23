@@ -19,15 +19,15 @@ package org.parboiled.transform;
 import org.objectweb.asm.Type;
 import org.parboiled.annotations.*;
 import org.parboiled.common.Factory;
-import org.parboiled.wilburA.Action;
-import org.parboiled.wilburB.BaseParser;
+import org.parboiled.Action;
+import org.parboiled.BaseParser;
 import org.parboiled.matchers.Matcher;
 import org.parboiled.matchers.ProxyMatcher;
 import org.parboiled.matchers.VarFramingMatcher;
 import org.parboiled.support.Var;
-import org.parboiled.wilburA.Context;
-import org.parboiled.wilburA.ContextAware;
-import org.parboiled.wilburA.Rule;
+import org.parboiled.Context;
+import org.parboiled.ContextAware;
+import org.parboiled.Rule;
 
 interface Types {
     static final Type BASE_ACTION = Type.getType(BaseAction.class);

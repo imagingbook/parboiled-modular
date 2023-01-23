@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.wilburB;
+package org.parboiled;
 
 import static org.parboiled.common.Preconditions.*;
 import org.parboiled.transform.ParserTransformer;

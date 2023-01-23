@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.wilburA;
+package org.parboiled;
 
 /**
  * Describes the return values of parser rule production methods.

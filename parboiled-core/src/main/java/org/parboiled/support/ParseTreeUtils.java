@@ -16,7 +16,7 @@
 
 package org.parboiled.support;
 
-import org.parboiled.wilburA.Node;
+import org.parboiled.Node;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.common.Predicate;
 import org.parboiled.common.Predicates;

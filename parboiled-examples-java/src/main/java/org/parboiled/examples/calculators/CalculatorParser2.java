@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.calculators;
 
-import org.parboiled.wilburA.Rule;
+import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressSubnodes;
 import org.parboiled.examples.calculators.CalculatorParser2.CalcNode;
