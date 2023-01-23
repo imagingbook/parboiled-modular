@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0bc6639-70e6-41a3-8092-a761c219e397" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/parboiled-scala/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/org/parboiled/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/org/parboiled/Context.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/org/parboiled/ContextAware.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/org/parboiled/MatchHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/org/parboiled/MatcherContext.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

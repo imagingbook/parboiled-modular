@@ -12,5 +12,8 @@
         <module name="parboiled-scala" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="parboiled-examples-scala" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
