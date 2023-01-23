@@ -14,16 +14,19 @@
  * limitations under the License.
  */
 
-package org.parboiled.matchers;
+package org.parboiled.matching;
 
+import org.junit.Test;
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
-import org.parboiled.parse.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.errors.GrammarException;
-import org.parboiled.test.TestNgParboiledTest;
-import org.junit.Test;
+import org.parboiled.parse.Rule;
+import org.parboiled.testing.TestNgParboiledTest;
 
+/**
+ * wilbur: partly moved to parboiled-core:org.parboiled.matchers.CreateRecordTests
+ */
 public class FirstOfStringsMatcherTest extends TestNgParboiledTest<Object> {
 
     @BuildParseTree
@@ -40,33 +43,6 @@ public class FirstOfStringsMatcherTest extends TestNgParboiledTest<Object> {
         public Rule Test3() {
             return FirstOf("Ab", "Abc", "Bcd");
         }
-    }
-
-    @Test
-    public void testCreateRecords() {
-        StringBuilder sb = new StringBuilder();
-        printRecord(FirstOfStringsMatcher.createRecord(0, toArrayOfCharArray("" +
-                "Alpha",
-                "Beta",
-                "Bertram",
-                "Claudia",
-                "ClaudiaVon",
-                "Charlie",
-                "Delta",
-                "Delto",
-                "x")), "", sb);
-        assertEquals(sb.toString(), "\n" +
-                "Alpha\n" +
-                "Be\n" +
-                "  rtram\n" +
-                "  ta\n" +
-                "C\n" +
-                " harlie\n" +
-                " laudia|Von\n" +
-                "Delt\n" +
-                "    a\n" +
-                "    o\n" +
-                "x\n");
     }
 
     @Test
@@ -93,25 +69,6 @@ public class FirstOfStringsMatcherTest extends TestNgParboiledTest<Object> {
             chars[i] = strings[i].toCharArray();
         }
         return chars;
-    }
-
-    private void printRecord(FirstOfStringsMatcher.Record rec, String indent, StringBuilder sb) {
-        if (rec == null) {
-            sb.append('\n');
-            return;
-        }
-        if (rec.complete) sb.append('|');
-        if (rec.chars.length == 1) {
-            sb.append(rec.chars[0]);
-            printRecord(rec.subs[0], indent + " ", sb);
-        } else {
-            sb.append('\n');
-            for (int i = 0; i < rec.chars.length; i++) {
-                sb.append(indent);
-                sb.append(rec.chars[i]);
-                printRecord(rec.subs[i], indent + " ", sb);
-            }
-        }
     }
 
 }

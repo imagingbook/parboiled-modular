@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package org.parboiled.parserunners;
+package org.parboiled.parserunners_tests;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
 import org.parboiled.annotations.BuildParseTree;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.parserunners.RecoveringParseRunner;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
 public class SimpleErrorRecoveryTest extends TestNgParboiledTest<Object> {

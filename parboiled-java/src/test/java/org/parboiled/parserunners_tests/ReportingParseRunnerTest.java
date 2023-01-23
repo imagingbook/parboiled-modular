@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package org.parboiled.parserunners;
+package org.parboiled.parserunners_tests;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
+import org.parboiled.parserunners.ReportingParseRunner;
 import org.parboiled.support.ParsingResult;
 import org.junit.Test;
 

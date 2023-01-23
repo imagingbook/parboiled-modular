@@ -139,7 +139,7 @@ public class VarInitClassGeneratorTest extends TransformationTest {
                 "    MAXLOCALS = 2\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
-                "  public run(Lorg/parboiled/Context;)Z\n" +
+                "  public run(Lorg/parboiled/parse/Context;)Z\n" +
                 "    ALOAD 0\n" +
                 "    GETFIELD org/parboiled/transform/Action$wahXW5a63chqvc1g.field$0 : Lorg/parboiled/support/Var;\n" +
                 "    INVOKEVIRTUAL org/parboiled/support/Var.get ()Ljava/lang/Object;\n" +
@@ -148,7 +148,7 @@ public class VarInitClassGeneratorTest extends TransformationTest {
                 "    GETFIELD org/parboiled/transform/Action$wahXW5a63chqvc1g.field$1 : Lorg/parboiled/transform/VarInitClassGeneratorTest$Parser;\n" +
                 "    DUP\n" +
                 "    ALOAD 1\n" +
-                "    INVOKEINTERFACE org/parboiled/ContextAware.setContext (Lorg/parboiled/Context;)V (itf)\n" +
+                "    INVOKEINTERFACE org/parboiled/parse/ContextAware.setContext (Lorg/parboiled/parse/Context;)V (itf)\n" +
                 "    INVOKEVIRTUAL org/parboiled/transform/VarInitClassGeneratorTest$Parser.match ()Ljava/lang/String;\n" +
                 "    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z (itf)\n" +
                 "    IRETURN\n" +

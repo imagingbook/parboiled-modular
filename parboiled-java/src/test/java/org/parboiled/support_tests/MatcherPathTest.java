@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package org.parboiled.support;
+package org.parboiled.support_tests;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
 import org.parboiled.matchers.Matcher;
 import org.junit.Test;
+import org.parboiled.support.MatcherPath;
 
 import static org.junit.Assert.*;
 

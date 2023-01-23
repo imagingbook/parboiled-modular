@@ -26,6 +26,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.parboiled.transform.AsmTestUtils.getClassDump;
 
+// wilbur: adapted package name
 public class ActionClassGeneratorTest extends TransformationTest {
 
     private final List<RuleMethodProcessor> processors = ImmutableList.of(
@@ -101,7 +102,7 @@ public class ActionClassGeneratorTest extends TransformationTest {
                 "    MAXLOCALS = 2\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
-                "  public run(Lorg/parboiled/Context;)Z\n" +
+                "  public run(Lorg/parboiled/parse/Context;)Z\n" +
                 "    ALOAD 0\n" +
                 "    GETFIELD org/parboiled/transform/Action$LmzJHalG7AngCUsX.field$0 : I\n" +
                 "    ALOAD 0\n" +
@@ -154,7 +155,7 @@ public class ActionClassGeneratorTest extends TransformationTest {
                 "    MAXLOCALS = 2\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
-                "  public run(Lorg/parboiled/Context;)Z\n" +
+                "  public run(Lorg/parboiled/parse/Context;)Z\n" +
                 "    ALOAD 0\n" +
                 "    GETFIELD org/parboiled/transform/Action$xPqljUb88dWGGhyd.field$0 : Lorg/parboiled/transform/TestParser;\n" +
                 "    GETFIELD org/parboiled/transform/TestParser.integer : I\n" +
