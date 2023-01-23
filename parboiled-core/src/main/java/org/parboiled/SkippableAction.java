@@ -14,21 +14,18 @@
  * limitations under the License.
  */
 
-package org.parboiled.wilburA;
+package org.parboiled;
 
 /**
- * Interface that can be implemented by classes containing action methods.
- * If the class containing action methods implements this interface parboiled will use it to inform the
- * instance of the current context, immediately before an action call.
+ * An action that can optionally be skipped when run underneath a predicate matcher.
  */
-public interface ContextAware<V> {
+public interface SkippableAction<V> extends Action<V> {
 
     /**
-     * Called immediately before any parser action method invocation. Informs the object containing the
-     * action about the context to be used for the coming action call.
+     * Determines whether the execution of this action is to be skipped inside of predicate matchers.
      *
-     * @param context the context
+     * @return true if this action is not to be run inside predicates
      */
-    void setContext(Context<V> context);
+    boolean skipInPredicates();
 
 }

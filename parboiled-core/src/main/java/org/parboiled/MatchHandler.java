@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
-package org.parboiled.wilburA;
+package org.parboiled;
 
 /**
- * An action that can optionally be skipped when run underneath a predicate matcher.
+ * A MatchHandler is responsible for actually running the match of a given {@link MatcherContext}.
+ * Many times it wraps the actual call to the matcher with some custom logic, e.g. for error handling.
  */
-public interface SkippableAction<V> extends Action<V> {
+public interface MatchHandler {
 
     /**
-     * Determines whether the execution of this action is to be skipped inside of predicate matchers.
+     * Runs the given MatcherContext.
      *
-     * @return true if this action is not to be run inside predicates
+     * @param context the MatcherContext
+     * @return true if matched
      */
-    boolean skipInPredicates();
-
+    boolean match(MatcherContext<?> context);
 }

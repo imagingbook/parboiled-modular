@@ -16,7 +16,7 @@
 
 package org.parboiled.parserunners;
 
-import org.parboiled.wilburA.Rule;
+import org.parboiled.Rule;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.common.Preconditions;
 import org.parboiled.errors.InvalidInputError;

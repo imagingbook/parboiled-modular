@@ -16,8 +16,8 @@
 
 package org.parboiled.annotations;
 
-import org.parboiled.wilburA.Action;
-import org.parboiled.wilburA.Rule;
+import org.parboiled.Action;
+import org.parboiled.Rule;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

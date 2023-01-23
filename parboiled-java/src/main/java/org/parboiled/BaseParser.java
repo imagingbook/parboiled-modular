@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.wilburB;
+package org.parboiled;
 
 import org.parboiled.annotations.*;
 import org.parboiled.common.Utils;
@@ -23,8 +23,6 @@ import org.parboiled.matchers.*;
 import org.parboiled.support.Characters;
 import org.parboiled.support.Chars;
 import org.parboiled.support.Checks;
-import org.parboiled.wilburA.Action;
-import org.parboiled.wilburA.Rule;
 
 import java.util.Arrays;
 

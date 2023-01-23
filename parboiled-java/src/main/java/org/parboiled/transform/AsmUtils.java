@@ -29,8 +29,8 @@ import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.VarInsnNode;
-import org.parboiled.wilburB.BaseParser;
-import org.parboiled.wilburA.ContextAware;
+import org.parboiled.BaseParser;
+import org.parboiled.ContextAware;
 import org.parboiled.support.Var;
 
 import java.io.IOException;
