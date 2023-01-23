@@ -14,8 +14,11 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseActions;
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;

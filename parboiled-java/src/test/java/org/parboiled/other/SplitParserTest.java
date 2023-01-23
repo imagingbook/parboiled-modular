@@ -14,24 +14,36 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 
-public class SimpleTest extends TestNgParboiledTest<Object> {
+public class SplitParserTest extends TestNgParboiledTest<Object> {
 
     @BuildParseTree
-    static class Parser extends BaseParser<Object> {
+    public static class Parser extends BaseParser<Object> {
+        final Primitives primitives = Parboiled.createParser(Primitives.class);
 
         public Rule Clause() {
-            return Sequence(Digit(), Operator(), Digit(), AnyOf("abcd"), OneOrMore(NoneOf("abcd")), EOI);
+            return Sequence(
+                    primitives.Digit(),
+                    primitives.Operator(),
+                    primitives.Digit(),
+                    EOI
+            );
         }
+    }
+
+    @BuildParseTree
+    public static class Primitives extends BaseParser<Object> {
 
         public Rule Operator() {
-            return FirstOf(Ch('+'), '-');
+            return FirstOf('+', '-');
         }
 
         public Rule Digit() {
@@ -41,20 +53,16 @@ public class SimpleTest extends TestNgParboiledTest<Object> {
     }
 
     @Test
-    public void testSimple() {
+    public void testSplitParser() {
         Parser parser = Parboiled.createParser(Parser.class);
-        Rule rule = parser.Clause();
-        test(rule, "1+5bx")
+        test(parser.Clause(), "1+5")
                 .hasNoErrors()
                 .hasParseTree("" +
-                        "[Clause] '1+5bx'\n" +
+                        "[Clause] '1+5'\n" +
                         "  [Digit] '1'\n" +
                         "  [Operator] '+'\n" +
                         "    ['+'] '+'\n" +
                         "  [Digit] '5'\n" +
-                        "  [[abcd]] 'b'\n" +
-                        "  [OneOrMore] 'x'\n" +
-                        "    [![abcdEOI]] 'x'\n" +
                         "  [EOI]\n");
     }
 

@@ -14,31 +14,31 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 
-public class BugIn0990Test extends TestNgParboiledTest<Integer> {
+public class BugIn0100Test extends TestNgParboiledTest<Integer> {
+    
+    public interface A {
+        public String get();
+    }
+    
+    public interface B extends A {}
 
-    public static class Parser extends BaseParser<Integer> {
+    public static class Parser extends BaseParser<B> {
         Rule ID() {
-            return Sequence('a', WhiteSpaceChar(), 'b');
-        }
-
-        Rule WhiteSpaceChar() {
-            return AnyOf(" \n\r\t\f");
+            return Sequence('a', match().equals(peek().get()));
         }
     }
 
     @Test
-    public void testBugIn0990() {
-        Parser parser = Parboiled.createParser(Parser.class);
-        test(parser.ID(), "ab")
-                .hasErrors("" +
-                        "Invalid input 'b', expected WhiteSpaceChar (line 1, pos 2):\n" +
-                        "ab\n" +
-                        " ^\n");
+    public void testBugIn0100() {
+        // throws NPE in 0.10.0
+        Parboiled.createParser(Parser.class);
     }
 }

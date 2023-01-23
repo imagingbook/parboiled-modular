@@ -14,59 +14,50 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 
-public class NTimesTest extends TestNgParboiledTest<Object> {
+public class SimpleTest extends TestNgParboiledTest<Object> {
 
     @BuildParseTree
     static class Parser extends BaseParser<Object> {
 
         public Rule Clause() {
-            return NTimes(3, FourDigits(), Operator());
+            return Sequence(Digit(), Operator(), Digit(), AnyOf("abcd"), OneOrMore(NoneOf("abcd")), EOI);
         }
 
         public Rule Operator() {
-            return FirstOf('+', '-');
+            return FirstOf(Ch('+'), '-');
         }
 
-        public Rule FourDigits() {
-            return NTimes(4, CharRange('0', '9'));
+        public Rule Digit() {
+            return CharRange('0', '9');
         }
 
     }
 
     @Test
-    public void testNTimes() {
+    public void testSimple() {
         Parser parser = Parboiled.createParser(Parser.class);
         Rule rule = parser.Clause();
-        test(rule, "1234+2345-3456")
+        test(rule, "1+5bx")
                 .hasNoErrors()
                 .hasParseTree("" +
-                        "[Clause] '1234+2345-3456'\n" +
-                        "  [FourDigits] '1234'\n" +
-                        "    [0..9] '1'\n" +
-                        "    [0..9] '2'\n" +
-                        "    [0..9] '3'\n" +
-                        "    [0..9] '4'\n" +
+                        "[Clause] '1+5bx'\n" +
+                        "  [Digit] '1'\n" +
                         "  [Operator] '+'\n" +
                         "    ['+'] '+'\n" +
-                        "  [FourDigits] '2345'\n" +
-                        "    [0..9] '2'\n" +
-                        "    [0..9] '3'\n" +
-                        "    [0..9] '4'\n" +
-                        "    [0..9] '5'\n" +
-                        "  [Operator] '-'\n" +
-                        "    ['-'] '-'\n" +
-                        "  [FourDigits] '3456'\n" +
-                        "    [0..9] '3'\n" +
-                        "    [0..9] '4'\n" +
-                        "    [0..9] '5'\n" +
-                        "    [0..9] '6'\n");
+                        "  [Digit] '5'\n" +
+                        "  [[abcd]] 'b'\n" +
+                        "  [OneOrMore] 'x'\n" +
+                        "    [![abcdEOI]] 'x'\n" +
+                        "  [EOI]\n");
     }
 
 }
