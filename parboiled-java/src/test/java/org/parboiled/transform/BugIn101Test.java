@@ -18,15 +18,10 @@ package org.parboiled.transform;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
-import org.parboiled.Rule;
-import org.parboiled.annotations.BuildParseTree;
-import org.parboiled.annotations.Cached;
-import org.parboiled.annotations.MemoMismatches;
+import org.parboiled.parse.Rule;
 import org.parboiled.parserunners.ReportingParseRunner;
 import org.junit.Test;
 
-import static org.parboiled.transform.AsmTestUtils.getMethodInstructionList;
-import static org.parboiled.transform.AsmTestUtils.verifyIntegrity;
 import static org.junit.Assert.assertEquals;
 
 public class BugIn101Test {

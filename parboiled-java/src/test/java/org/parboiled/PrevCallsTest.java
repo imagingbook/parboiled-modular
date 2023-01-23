@@ -19,10 +19,9 @@ package org.parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressSubnodes;
 import org.parboiled.common.Reference;
+import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
-
-import java.lang.invoke.MethodHandles;
 
 public class PrevCallsTest extends TestNgParboiledTest<Integer> {
 

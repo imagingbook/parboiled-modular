@@ -22,7 +22,7 @@
 package org.parboiled.examples.sparql;
 
 import org.parboiled.BaseParser;
-import org.parboiled.Rule;
+import org.parboiled.parse.Rule;
 
 /**
  * SPARQL Parser

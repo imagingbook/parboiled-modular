@@ -20,6 +20,8 @@ import org.parboiled.annotations.*;
 import org.parboiled.common.Utils;
 import org.parboiled.errors.GrammarException;
 import org.parboiled.matchers.*;
+import org.parboiled.parse.Action;
+import org.parboiled.parse.Rule;
 import org.parboiled.support.Characters;
 import org.parboiled.support.Chars;
 import org.parboiled.support.Checks;

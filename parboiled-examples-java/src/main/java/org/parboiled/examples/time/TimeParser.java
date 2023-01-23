@@ -17,7 +17,7 @@
 package org.parboiled.examples.time;
 
 import org.parboiled.BaseParser;
-import org.parboiled.Rule;
+import org.parboiled.parse.Rule;
 import org.parboiled.annotations.BuildParseTree;
 
 /**

@@ -18,7 +18,7 @@ package org.parboiled.support;
 
 import static org.parboiled.common.Preconditions.*;
 import org.parboiled.matchers.Matcher;
-import org.parboiled.Context;
+import org.parboiled.parse.Context;
 
 /**
  * Holds a snapshot of the current {@link Matcher} stack at a certain point during the parsing process.

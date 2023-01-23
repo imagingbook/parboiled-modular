@@ -16,10 +16,10 @@
 
 package org.parboiled.parserunners;
 
-import org.parboiled.Context;
-import org.parboiled.MatchHandler;
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
+import org.parboiled.parse.Context;
+import org.parboiled.parse.MatchHandler;
+import org.parboiled.parse.MatcherContext;
+import org.parboiled.parse.Rule;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.common.*;
 import org.parboiled.matchers.Matcher;

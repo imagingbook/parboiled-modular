@@ -17,7 +17,7 @@
 package org.parboiled.common;
 
 import org.junit.Test;
-import org.parboiled.Node;
+import org.parboiled.parse.Node;
 import org.parboiled.support.NodeFormatter;
 
 import java.util.ArrayList;

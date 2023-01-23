@@ -16,8 +16,8 @@
 
 package org.parboiled.test;
 
-import org.parboiled.Node;
-import org.parboiled.Rule;
+import org.parboiled.parse.Node;
+import org.parboiled.parse.Rule;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.common.Predicate;
 import org.parboiled.parserunners.RecoveringParseRunner;

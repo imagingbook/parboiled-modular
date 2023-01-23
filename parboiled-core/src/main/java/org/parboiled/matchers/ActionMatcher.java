@@ -21,11 +21,11 @@ import static org.parboiled.common.Preconditions.*;
 import org.parboiled.errors.ActionError;
 import org.parboiled.errors.ActionException;
 import org.parboiled.matchervisitors.MatcherVisitor;
-import org.parboiled.Action;
-import org.parboiled.ContextAware;
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
-import org.parboiled.SkippableAction;
+import org.parboiled.parse.Action;
+import org.parboiled.parse.ContextAware;
+import org.parboiled.parse.MatcherContext;
+import org.parboiled.parse.Rule;
+import org.parboiled.parse.SkippableAction;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

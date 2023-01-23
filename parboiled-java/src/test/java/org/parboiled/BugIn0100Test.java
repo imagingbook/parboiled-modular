@@ -16,6 +16,7 @@
 
 package org.parboiled;
 
+import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 

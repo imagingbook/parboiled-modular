@@ -19,7 +19,7 @@ package org.parboiled.examples.java;
 import static org.parboiled.common.Preconditions.*;
 import org.parboiled.Parboiled;
 import org.parboiled.parserunners.ReportingParseRunner;
-import org.parboiled.Rule;
+import org.parboiled.parse.Rule;
 import org.parboiled.support.ParsingResult;
 
 import java.io.*;
