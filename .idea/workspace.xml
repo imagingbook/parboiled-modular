@@ -55,6 +55,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/_GITHUB/parboiled-2",
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
@@ -66,11 +67,26 @@
       <recent name="org.parboiled.matchers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.org.parboiled.parserunners_tests in parboiled-java">
+  <component name="RunManager" selected="JUnit.IndentDedentInputBufferTest">
     <configuration name="All in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parboiled-java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndentDedentInputBufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.buffers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.buffers" />
+      <option name="MAIN_CLASS_NAME" value="org.parboiled.buffers.IndentDedentInputBufferTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,22 +102,6 @@
       <option name="PACKAGE_NAME" value="org.parboiled.support_tests" />
       <option name="MAIN_CLASS_NAME" value="org.parboiled.support_tests.MatcherPathTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VarInitClassGeneratorTest.testVarInitClassGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
-      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.VarInitClassGeneratorTest" />
-      <option name="METHOD_NAME" value="testVarInitClassGeneration" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IndentDedentInputBufferTest" />
         <item itemvalue="JUnit.org.parboiled.parserunners_tests in parboiled-java" />
         <item itemvalue="JUnit.MatcherPathTest" />
         <item itemvalue="JUnit.All in parboiled-java" />
         <item itemvalue="JUnit.org.parboiled.transform in parboiled-java" />
-        <item itemvalue="JUnit.VarInitClassGeneratorTest.testVarInitClassGeneration" />
       </list>
     </recent_temporary>
   </component>
