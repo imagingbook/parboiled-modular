@@ -43,7 +43,7 @@
 package org.parboiled.examples.java;
 
 import org.parboiled.BaseParser;
-import org.parboiled.Rule;
+import org.parboiled.parse.Rule;
 import org.parboiled.annotations.*;
 
 @SuppressWarnings({"InfiniteRecursion"})

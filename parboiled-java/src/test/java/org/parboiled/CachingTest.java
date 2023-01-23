@@ -20,6 +20,8 @@ import org.parboiled.annotations.Label;
 import org.parboiled.matchers.FirstOfMatcher;
 import org.parboiled.matchers.Matcher;
 import org.junit.Test;
+import org.parboiled.parse.ParserStatistics;
+import org.parboiled.parse.Rule;
 
 import static org.parboiled.trees.GraphUtils.countAllDistinct;
 import static org.junit.Assert.assertEquals;

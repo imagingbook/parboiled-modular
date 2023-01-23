@@ -17,8 +17,8 @@
 package org.parboiled.matchers;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.MatcherContext;
-import org.parboiled.Rule;
+import org.parboiled.parse.MatcherContext;
+import org.parboiled.parse.Rule;
 
 /**
  * A {@link SequenceMatcher} specialization for sequences of CharMatchers. Performs fast string matching if the

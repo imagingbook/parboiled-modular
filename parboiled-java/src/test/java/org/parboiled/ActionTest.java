@@ -18,6 +18,10 @@ package org.parboiled;
 
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.Label;
+import org.parboiled.parse.Action;
+import org.parboiled.parse.Context;
+import org.parboiled.parse.ParserStatistics;
+import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 

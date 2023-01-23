@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.java;
 
-import org.parboiled.MatcherContext;
+import org.parboiled.parse.MatcherContext;
 import org.parboiled.matchers.CustomMatcher;
 
 public abstract class AbstractJavaCharacterMatcher extends CustomMatcher {

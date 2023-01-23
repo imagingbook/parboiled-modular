@@ -18,7 +18,7 @@ package org.parboiled.support;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
-import org.parboiled.Rule;
+import org.parboiled.parse.Rule;
 import org.parboiled.matchers.Matcher;
 import org.junit.Test;
 

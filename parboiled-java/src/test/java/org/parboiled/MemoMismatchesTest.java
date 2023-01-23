@@ -17,6 +17,8 @@
 package org.parboiled;
 
 import org.parboiled.annotations.MemoMismatches;
+import org.parboiled.parse.ParserStatistics;
+import org.parboiled.parse.Rule;
 import org.parboiled.parserunners.ProfilingParseRunner;
 import org.junit.Test;
 

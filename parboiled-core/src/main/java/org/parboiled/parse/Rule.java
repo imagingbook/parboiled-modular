@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parse;
 
 /**
  * Describes the return values of parser rule production methods.

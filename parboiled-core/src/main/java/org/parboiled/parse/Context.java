@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parse;
 
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.errors.ParseError;

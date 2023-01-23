@@ -18,6 +18,7 @@ package org.parboiled;
 
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SkipNode;
+import org.parboiled.parse.Rule;
 import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 

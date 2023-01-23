@@ -20,7 +20,7 @@ package testing
 import util.DynamicVariable
 import org.parboiled.support.ParseTreeUtils
 import org.parboiled.errors.{ParseError, ErrorUtils}
-import org.parboiled.Node
+import org.parboiled.parse.Node
 import org.scalatest.Suite
 
 /**
