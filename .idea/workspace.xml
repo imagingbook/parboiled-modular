@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-java/src/test/java/org/parboiled/transform/RuleMethodRewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-java/src/test/java/org/parboiled/transform/RuleMethodRewriterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +59,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.parboiled" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.parboiled.matchers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in parboiled-java">
+  <component name="RunManager" selected="JUnit.org.parboiled.parserunners_tests in parboiled-java">
     <configuration name="All in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parboiled-java" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,34 +75,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnInstructionUnifierTest.testReturnInstructionUnification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatcherPathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parboiled-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.parboiled.transform.*" />
+          <option name="PATTERN" value="org.parboiled.support_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
-      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.ReturnInstructionUnifierTest" />
-      <option name="METHOD_NAME" value="testReturnInstructionUnification" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RuleMethodRewriterTest.testRuleMethodRewriting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
-      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.RuleMethodRewriterTest" />
-      <option name="METHOD_NAME" value="testRuleMethodRewriting" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.parboiled.support_tests" />
+      <option name="MAIN_CLASS_NAME" value="org.parboiled.support_tests.MatcherPathTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +106,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.parboiled.parserunners_tests in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.parserunners_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.parserunners_tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.parboiled.transform in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parboiled-java" />
       <extension name="coverage">
@@ -140,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.org.parboiled.parserunners_tests in parboiled-java" />
+        <item itemvalue="JUnit.MatcherPathTest" />
         <item itemvalue="JUnit.All in parboiled-java" />
         <item itemvalue="JUnit.org.parboiled.transform in parboiled-java" />
         <item itemvalue="JUnit.VarInitClassGeneratorTest.testVarInitClassGeneration" />
-        <item itemvalue="JUnit.RuleMethodRewriterTest.testRuleMethodRewriting" />
-        <item itemvalue="JUnit.ReturnInstructionUnifierTest.testReturnInstructionUnification" />
       </list>
     </recent_temporary>
   </component>
