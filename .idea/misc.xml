@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/parboiled-parent-pom/parboiled-scala/pom.xml" />
+        <option value="$PROJECT_DIR$/scala-module/pom.xml" />
       </set>
     </option>
   </component>

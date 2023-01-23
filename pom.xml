@@ -17,10 +17,7 @@
         <module>parboiled-java</module>
         <module>parboiled-examples-java</module>
         <module>parboiled-scala</module>
-
-        <!--<module>parboiled-scala</module>
-        <module>examples-java</module>
-        <module>examples-scala</module>-->
+        <module>parboiled-examples-scala</module>
     </modules>
 
     <build>
