@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="parboiled-examples-scala,parboiled-scala" />
+    <profile name="Maven 2" modules="scala-module">
+      <parameters>
+        <parameter value="-make:transitive" />
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\GITHUB\LATEX-LINTER\parboiled-2\scala-module\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+  </component>
+</project>

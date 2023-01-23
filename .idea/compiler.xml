@@ -8,12 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="parboiled-examples-java" />
         <module name="parboiled-java" />
+        <module name="parboiled-examples-scala" />
         <module name="parboiled-core" />
         <module name="parboiled-scala" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="parboiled-examples-scala" target="17" />
+      <module name="scala-module" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
