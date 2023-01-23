@@ -46,6 +46,7 @@
             <plugin>  <!-- add more properties to MANIFEST file -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
                     <!-- <useDefaultManifestFile>true</useDefaultManifestFile> --> <!-- not available since version 3.0.0 -->
                     <archive>
