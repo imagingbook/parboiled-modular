@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.other;
+package org.parboiled;
 
 import org.junit.Test;
 import org.parboiled.BaseParser;

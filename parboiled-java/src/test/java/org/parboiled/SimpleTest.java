@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.other;
+package org.parboiled;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
@@ -23,33 +23,41 @@ import org.parboiled.parse.Rule;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
-public class RecursionTest extends TestNgParboiledTest<Object> {
+public class SimpleTest extends TestNgParboiledTest<Object> {
 
     @BuildParseTree
-    public static class Parser extends BaseParser<Object> {
+    static class Parser extends BaseParser<Object> {
 
-        @SuppressWarnings( {"InfiniteRecursion"})
-        public Rule LotsOfAs() {
-            return Sequence(IgnoreCase('a'), Optional(LotsOfAs()));
+        public Rule Clause() {
+            return Sequence(Digit(), Operator(), Digit(), AnyOf("abcd"), OneOrMore(NoneOf("abcd")), EOI);
+        }
+
+        public Rule Operator() {
+            return FirstOf(Ch('+'), '-');
+        }
+
+        public Rule Digit() {
+            return CharRange('0', '9');
         }
 
     }
 
     @Test
-    public void testRecursion() {
+    public void testSimple() {
         Parser parser = Parboiled.createParser(Parser.class);
-        test(parser.LotsOfAs(), "AaA")
+        Rule rule = parser.Clause();
+        test(rule, "1+5bx")
                 .hasNoErrors()
                 .hasParseTree("" +
-                        "[LotsOfAs] 'AaA'\n" +
-                        "  ['a/A'] 'A'\n" +
-                        "  [Optional] 'aA'\n" +
-                        "    [LotsOfAs] 'aA'\n" +
-                        "      ['a/A'] 'a'\n" +
-                        "      [Optional] 'A'\n" +
-                        "        [LotsOfAs] 'A'\n" +
-                        "          ['a/A'] 'A'\n" +
-                        "          [Optional]\n");
+                        "[Clause] '1+5bx'\n" +
+                        "  [Digit] '1'\n" +
+                        "  [Operator] '+'\n" +
+                        "    ['+'] '+'\n" +
+                        "  [Digit] '5'\n" +
+                        "  [[abcd]] 'b'\n" +
+                        "  [OneOrMore] 'x'\n" +
+                        "    [![abcdEOI]] 'x'\n" +
+                        "  [EOI]\n");
     }
 
 }

@@ -8,6 +8,5 @@ module imagingbook.parboiled.java {
     exports org.parboiled;
     exports org.parboiled.annotations;
     exports org.parboiled.testing;
-    opens org.parboiled.other;
     opens org.parboiled.parserunners_tests;
 }
