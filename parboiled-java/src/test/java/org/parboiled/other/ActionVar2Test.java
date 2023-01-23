@@ -21,7 +21,7 @@ import org.parboiled.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.common.Reference;
 import org.parboiled.parse.Rule;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
 public class ActionVar2Test extends TestNgParboiledTest<Object> {

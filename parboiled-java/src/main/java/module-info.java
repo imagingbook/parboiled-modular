@@ -1,10 +1,13 @@
 module imagingbook.parboiled.java {
-    requires imagingbook.parboiled.core;
     requires org.objectweb.asm;
     requires org.objectweb.asm.tree;
     requires org.objectweb.asm.tree.analysis;
     requires org.objectweb.asm.util;
+    requires imagingbook.parboiled.core;
 
     exports org.parboiled;
     exports org.parboiled.annotations;
+    exports org.parboiled.testing;
+    opens org.parboiled.other;
+    opens org.parboiled.parserunners_tests;
 }

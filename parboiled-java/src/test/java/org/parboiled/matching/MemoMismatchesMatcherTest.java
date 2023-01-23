@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package org.parboiled.matchers;
+package org.parboiled.matching;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.MemoMismatches;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
 public class MemoMismatchesMatcherTest extends TestNgParboiledTest<Object> {

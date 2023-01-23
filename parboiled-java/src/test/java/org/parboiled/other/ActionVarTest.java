@@ -22,7 +22,7 @@ import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.matchers.Matcher;
 import org.parboiled.parse.Rule;
 import org.parboiled.support.Var;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
 import java.util.ArrayList;

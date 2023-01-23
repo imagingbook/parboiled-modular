@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.test;
+package org.parboiled.testing;
 
 import org.parboiled.parse.Node;
 import org.parboiled.parse.Rule;

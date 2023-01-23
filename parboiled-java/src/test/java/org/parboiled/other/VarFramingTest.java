@@ -23,7 +23,7 @@ import org.parboiled.annotations.SuppressNode;
 import org.parboiled.parse.ParserStatistics;
 import org.parboiled.parse.Rule;
 import org.parboiled.support.Var;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
 public class VarFramingTest extends TestNgParboiledTest<Integer> {

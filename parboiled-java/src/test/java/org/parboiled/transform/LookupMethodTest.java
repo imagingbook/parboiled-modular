@@ -19,7 +19,7 @@ package org.parboiled.transform;
 import org.parboiled.BaseParser;
 import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Assert;
 import org.junit.Test;
 
