@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0bc6639-70e6-41a3-8092-a761c219e397" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-java/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
