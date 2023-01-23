@@ -42,7 +42,7 @@
 
 package org.parboiled.examples.java;
 
-import org.parboiled.BaseParser;
+import org.parboiled.wilburB.BaseParser;
 import org.parboiled.wilburA.Rule;
 import org.parboiled.annotations.*;
 

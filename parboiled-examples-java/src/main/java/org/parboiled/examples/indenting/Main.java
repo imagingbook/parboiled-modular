@@ -2,7 +2,7 @@ package org.parboiled.examples.indenting;
 
 import static org.parboiled.support.ParseTreeUtils.printNodeTree;
 
-import org.parboiled.Parboiled;
+import org.parboiled.wilburB.Parboiled;
 import org.parboiled.buffers.IndentDedentInputBuffer;
 import org.parboiled.errors.ErrorUtils;
 import org.parboiled.parserunners.ReportingParseRunner;

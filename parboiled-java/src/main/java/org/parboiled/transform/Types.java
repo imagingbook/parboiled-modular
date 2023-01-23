@@ -20,7 +20,7 @@ import org.objectweb.asm.Type;
 import org.parboiled.annotations.*;
 import org.parboiled.common.Factory;
 import org.parboiled.wilburA.Action;
-import org.parboiled.BaseParser;
+import org.parboiled.wilburB.BaseParser;
 import org.parboiled.matchers.Matcher;
 import org.parboiled.matchers.ProxyMatcher;
 import org.parboiled.matchers.VarFramingMatcher;

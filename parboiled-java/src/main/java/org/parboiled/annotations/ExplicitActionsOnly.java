@@ -17,6 +17,7 @@
 package org.parboiled.annotations;
 
 import org.parboiled.wilburA.Rule;
+import org.parboiled.wilburB.BaseParser;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -28,7 +29,7 @@ import java.lang.annotation.Target;
  * parser class itself.
  * Instructs parboiled to not perform implicit action expression wrapping, i.e. not treat expressions that form
  * parameters to Boolean.valueOf(boolean) calls as action expressions.
- * Instead only expressions wrapped by explicit calls to {@link org.parboiled.BaseParser#ACTION(boolean)} will be
+ * Instead only expressions wrapped by explicit calls to {@link BaseParser#ACTION(boolean)} will be
  * treated as action expressions.
  */
 @Retention(RetentionPolicy.RUNTIME)
