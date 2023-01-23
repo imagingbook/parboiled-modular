@@ -14,30 +14,33 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
-import org.parboiled.parserunners.RecoveringParseRunner;
+import org.parboiled.test.TestNgParboiledTest;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+public class BugIn0990Test extends TestNgParboiledTest<Integer> {
 
-public class CurrentCharTest {
-
-    public static class Parser extends BaseParser<Object> {
-
-        public Rule Clause() {
-            return Sequence(currentChar() == 'a', ANY, EOI);
+    public static class Parser extends BaseParser<Integer> {
+        Rule ID() {
+            return Sequence('a', WhiteSpaceChar(), 'b');
         }
 
+        Rule WhiteSpaceChar() {
+            return AnyOf(" \n\r\t\f");
+        }
     }
 
     @Test
-    public void testCurrentChar() {
+    public void testBugIn0990() {
         Parser parser = Parboiled.createParser(Parser.class);
-        assertFalse(new RecoveringParseRunner(parser.Clause()).run("a").hasErrors());
-        assertTrue(new RecoveringParseRunner(parser.Clause()).run("b").hasErrors());
+        test(parser.ID(), "ab")
+                .hasErrors("" +
+                        "Invalid input 'b', expected WhiteSpaceChar (line 1, pos 2):\n" +
+                        "ab\n" +
+                        " ^\n");
     }
-
 }

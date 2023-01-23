@@ -14,29 +14,32 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.parse.Rule;
-import org.parboiled.test.TestNgParboiledTest;
+import org.parboiled.parserunners.RecoveringParseRunner;
 import org.junit.Test;
 
-public class BugIn0100Test extends TestNgParboiledTest<Integer> {
-    
-    public interface A {
-        public String get();
-    }
-    
-    public interface B extends A {}
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-    public static class Parser extends BaseParser<B> {
-        Rule ID() {
-            return Sequence('a', match().equals(peek().get()));
+public class CurrentCharTest {
+
+    public static class Parser extends BaseParser<Object> {
+
+        public Rule Clause() {
+            return Sequence(currentChar() == 'a', ANY, EOI);
         }
+
     }
 
     @Test
-    public void testBugIn0100() {
-        // throws NPE in 0.10.0
-        Parboiled.createParser(Parser.class);
+    public void testCurrentChar() {
+        Parser parser = Parboiled.createParser(Parser.class);
+        assertFalse(new RecoveringParseRunner(parser.Clause()).run("a").hasErrors());
+        assertTrue(new RecoveringParseRunner(parser.Clause()).run("b").hasErrors());
     }
+
 }

@@ -14,8 +14,10 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.other;
 
+import org.parboiled.BaseParser;
+import org.parboiled.Parboiled;
 import org.parboiled.annotations.MemoMismatches;
 import org.parboiled.parse.ParserStatistics;
 import org.parboiled.parse.Rule;
