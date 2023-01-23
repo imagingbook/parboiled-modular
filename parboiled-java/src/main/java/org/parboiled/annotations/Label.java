@@ -16,13 +16,15 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser methods returning {@link org.parboiled.Rule} objects.
+ * Annotation that can be used on parser methods returning {@link Rule} objects.
  * Instructs parboiled to automatically label the created rules with the given label.
  * If this annotation is not present on a rule method parboiled automatically names the created rules with the
  * method name, unless a {@link DontLabel} annotation is present on the method or the parser class.

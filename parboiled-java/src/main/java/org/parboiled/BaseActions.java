@@ -19,6 +19,8 @@ package org.parboiled;
 import org.parboiled.support.Checks;
 import org.parboiled.support.IndexRange;
 import org.parboiled.support.Position;
+import org.parboiled.wilburA.Context;
+import org.parboiled.wilburA.ContextAware;
 
 import static org.parboiled.common.Preconditions.checkArgNotNull;
 

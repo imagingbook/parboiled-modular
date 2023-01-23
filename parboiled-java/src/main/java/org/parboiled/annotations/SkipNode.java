@@ -16,18 +16,21 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Context;
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser methods returning {@link org.parboiled.Rule} objects.
+ * Annotation that can be used on parser methods returning {@link Rule} objects.
  * Instructs parboiled to not create a parse tree node for this rule. The parse tree nodes of all subrules are
  * directly attached to the parent of this rule (or more correctly: the first ancestor not carrying @SkipNode).
  * Note that, even though a rule carrying @SkipNode does not create a parse tree node of its own and is therefore
  * "invisible" in the parse tree, the rule still exists as a regular rule in the rule tree and is accompanied by
- * a "regular" rule {@link org.parboiled.Context} during rule matching.
+ * a "regular" rule {@link Context} during rule matching.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})

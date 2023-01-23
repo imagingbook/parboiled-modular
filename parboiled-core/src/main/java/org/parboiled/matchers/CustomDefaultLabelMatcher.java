@@ -16,7 +16,7 @@
 
 package org.parboiled.matchers;
 
-import org.parboiled.Rule;
+import org.parboiled.wilburA.Rule;
 
 abstract class CustomDefaultLabelMatcher<T extends CustomDefaultLabelMatcher<T>> extends AbstractMatcher {
     private String defaultLabel;

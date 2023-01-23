@@ -17,7 +17,7 @@
 package org.parboiled.examples.java;
 
 import org.parboiled.parserunners.ProfilingParseRunner;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.support.ParsingResult;
 
 public class JavaParserProfiler extends Main {

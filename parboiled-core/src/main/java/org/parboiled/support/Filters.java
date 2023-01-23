@@ -16,14 +16,13 @@
 
 package org.parboiled.support;
 
-import org.parboiled.Context;
-import org.parboiled.Node;
-import org.parboiled.Rule;
+import org.parboiled.wilburA.Context;
+import org.parboiled.wilburA.Node;
+import org.parboiled.wilburA.Rule;
 import org.parboiled.common.Predicate;
 import org.parboiled.common.Predicates;
 import org.parboiled.common.Tuple2;
 import org.parboiled.matchers.Matcher;
-import org.parboiled.matchers.ProxyMatcher;
 
 import java.util.HashSet;
 import java.util.Set;

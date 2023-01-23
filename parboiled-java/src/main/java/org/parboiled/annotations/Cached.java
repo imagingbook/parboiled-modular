@@ -16,15 +16,17 @@
 
 package org.parboiled.annotations;
 
+import org.parboiled.wilburA.Rule;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Annotation that can be used on parser methods returning {@link org.parboiled.Rule}s and having parameters.
+ * Annotation that can be used on parser methods returning {@link Rule}s and having parameters.
  * Instructs parboiled to automatically cache the method return value for the parameters it was created with.
- * Note that all parser methods returning {@link org.parboiled.Rule} objects and <b>not</b> taking any parameter are
+ * Note that all parser methods returning {@link Rule} objects and <b>not</b> taking any parameter are
  * automatically cached and are therefore not allowed to carry this annotation.
  */
 @Retention(RetentionPolicy.RUNTIME)
