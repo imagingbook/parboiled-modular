@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-java/src/test/java/org/parboiled/transform/RuleMethodRewriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-java/src/test/java/org/parboiled/transform/RuleMethodRewriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2KjbKcCJCn9YslPpLR9dyOK6MF5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.general"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.parboiled.matchers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in parboiled-java">
+    <configuration name="All in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturnInstructionUnifierTest.testReturnInstructionUnification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
+      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.ReturnInstructionUnifierTest" />
+      <option name="METHOD_NAME" value="testReturnInstructionUnification" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuleMethodRewriterTest.testRuleMethodRewriting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
+      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.RuleMethodRewriterTest" />
+      <option name="METHOD_NAME" value="testRuleMethodRewriting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VarInitClassGeneratorTest.testVarInitClassGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
+      <option name="MAIN_CLASS_NAME" value="org.parboiled.transform.VarInitClassGeneratorTest" />
+      <option name="METHOD_NAME" value="testVarInitClassGeneration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.parboiled.transform in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parboiled-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.parboiled.transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in parboiled-java" />
+        <item itemvalue="JUnit.org.parboiled.transform in parboiled-java" />
+        <item itemvalue="JUnit.VarInitClassGeneratorTest.testVarInitClassGeneration" />
+        <item itemvalue="JUnit.RuleMethodRewriterTest.testRuleMethodRewriting" />
+        <item itemvalue="JUnit.ReturnInstructionUnifierTest.testReturnInstructionUnification" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="" />
+      <created>1674490880364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674490880364</updated>
+    </task>
+    <servers />
+  </component>
+</project>
