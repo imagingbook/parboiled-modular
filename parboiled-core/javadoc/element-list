@@ -1,0 +1,9 @@
+module:imagingbook.parboiled.core
+org.parboiled.buffers
+org.parboiled.common
+org.parboiled.errors
+org.parboiled.matchers
+org.parboiled.parse
+org.parboiled.parserunners
+org.parboiled.support
+org.parboiled.trees
