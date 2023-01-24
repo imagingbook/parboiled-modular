@@ -12,6 +12,10 @@
 
     <artifactId>parboiled-scala</artifactId>
 
+    <properties>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -64,6 +68,7 @@
                             <goal>testCompile</goal>
                         </goals>
                         <configuration>
+                            <checkMultipleScalaVersions>false</checkMultipleScalaVersions>
                             <args>
                                 <!--<arg>-make:transitive</arg>-->
                                 <!--<arg>-dependencyfile</arg>-->

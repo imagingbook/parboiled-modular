@@ -12,6 +12,10 @@
 
     <artifactId>parboiled-examples-java</artifactId>
 
+    <properties>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.imagingbook</groupId>
