@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
+    <list default="true" id="c94eb18f-6e9a-4ac7-8091-b75fb0dff4fb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-scala/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +14,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +36,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2KjbKcCJCn9YslPpLR9dyOK6MF5" />
+  <component name="ProjectId" id="2Km0V9LJkwlVg09gEItqlei2rju" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -53,111 +44,21 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/_GITHUB/parboiled-2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.parboiled" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.parboiled.matchers" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.IndentDedentInputBufferTest">
-    <configuration name="All in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IndentDedentInputBufferTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.buffers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.buffers" />
-      <option name="MAIN_CLASS_NAME" value="org.parboiled.buffers.IndentDedentInputBufferTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatcherPathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.support_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.support_tests" />
-      <option name="MAIN_CLASS_NAME" value="org.parboiled.support_tests.MatcherPathTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.parboiled.parserunners_tests in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.parserunners_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.parserunners_tests" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.parboiled.transform in parboiled-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parboiled-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.parboiled.transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.parboiled.transform" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.IndentDedentInputBufferTest" />
-        <item itemvalue="JUnit.org.parboiled.parserunners_tests in parboiled-java" />
-        <item itemvalue="JUnit.MatcherPathTest" />
-        <item itemvalue="JUnit.All in parboiled-java" />
-        <item itemvalue="JUnit.org.parboiled.transform in parboiled-java" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ScalaProjectSettings">
-    <option name="scala3DisclaimerShown" value="true" />
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="" />
-      <created>1674490880364</created>
+      <changelist id="c94eb18f-6e9a-4ac7-8091-b75fb0dff4fb" name="Changes" comment="" />
+      <created>1674564477671</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674490880364</updated>
+      <updated>1674564477671</updated>
     </task>
     <servers />
   </component>
