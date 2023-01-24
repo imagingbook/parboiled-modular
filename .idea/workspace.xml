@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c94eb18f-6e9a-4ac7-8091-b75fb0dff4fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-scala/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c94eb18f-6e9a-4ac7-8091-b75fb0dff4fb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,13 +42,13 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="ScalaProjectSettings">
     <option name="scala3DisclaimerShown" value="true" />
   </component>
