@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c94eb18f-6e9a-4ac7-8091-b75fb0dff4fb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-scala/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,9 @@
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
+  <component name="ScalaProjectSettings">
+    <option name="scala3DisclaimerShown" value="true" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

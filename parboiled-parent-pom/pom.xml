@@ -23,7 +23,7 @@
         <scalalibrary.version>2.13.10</scalalibrary.version>
 
         <scalatest.artifact>scalatest_2.13</scalatest.artifact>
-        <scalatest.version>3.2.11</scalatest.version>
+        <scalatest.version>3.2.10</scalatest.version>
 
         <scalatestplus.artifact>testng-7-5_2.13</scalatestplus.artifact>
         <scalatestplus.version>3.2.15.0</scalatestplus.version>
@@ -31,7 +31,6 @@
         <maven.javadoc.skip>false</maven.javadoc.skip>
         <!--<imagingbook.skipjavadoc>false</imagingbook.skipjavadoc>-->
         <!-- <imagingbook.javadocdir>javadoc</imagingbook.javadocdir>-->
-
     </properties>
 
 <!--    <dependencies>-->
