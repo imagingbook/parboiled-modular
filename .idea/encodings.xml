@@ -7,10 +7,17 @@
     <file url="file://$PROJECT_DIR$/parboiled-examples-java/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-examples-scala/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-examples-scala/src/main/scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-java-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-java-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-java-pom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-java-pom/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-java/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-java/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/parboiled-parent-pom/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/parboiled-parent-pom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-scala-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-scala-examples/src/main/scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-scala-pom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-scala-pom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parboiled-scala-pom/src/main/scala" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-scala/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/parboiled-scala/src/main/scala" charset="UTF-8" />
   </component>
