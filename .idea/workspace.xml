@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parboiled-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-java/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-scala/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +146,9 @@
         <item itemvalue="JUnit.org.parboiled.transform in parboiled-java" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="scala3DisclaimerShown" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

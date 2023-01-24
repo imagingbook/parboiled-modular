@@ -19,6 +19,16 @@
         <asm.version>9.4</asm.version>
         <junit.version>4.13.2</junit.version>
 
+        <!-- SCALA settings -->
+        <scalalibrary.artifact>scala-library</scalalibrary.artifact>
+        <scalalibrary.version>2.13.10</scalalibrary.version>
+
+        <scalatest.artifact>scalatest_2.13</scalatest.artifact>
+        <scalatest.version>3.2.11</scalatest.version>
+
+        <scalatestplus.artifact>testng-7-5_2.13</scalatestplus.artifact>
+        <scalatestplus.version>3.2.15.0</scalatestplus.version>
+
     </properties>
 
     <build>

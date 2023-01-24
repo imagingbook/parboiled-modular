@@ -21,28 +21,28 @@
 
         <dependency>
             <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
-            <version>2.13.6</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.scalatestplus</groupId>
-            <artifactId>testng-7-5_2.13</artifactId>
-            <version>3.2.11.0</version>
-            <scope>test</scope>
+            <artifactId>${scalalibrary.artifact}</artifactId>
+            <version>${scalalibrary.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_2.13</artifactId>
-            <version>3.2.11</version>
+            <artifactId>${scalatest.artifact}</artifactId>
+            <version>${scalatest.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scalatestplus</groupId>
+            <artifactId>${scalatestplus.artifact}</artifactId>
+            <version>${scalatestplus.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
