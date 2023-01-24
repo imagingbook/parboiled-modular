@@ -391,12 +391,12 @@ public abstract class BaseActions<V> implements ContextAware<V> {
     /**
      * Returns true if the current rule is running somewhere underneath a Test/TestNot rule.
      * Useful for example for making sure actions are not run inside of a predicate evaluation:
-     * <code>
+     * <pre>
      * return Sequence(
      * ...,
      * inPredicate() || actions.doSomething()
      * );
-     * </code>
+     * </pre>
      *
      * @return true if in a predicate
      */
@@ -406,8 +406,8 @@ public abstract class BaseActions<V> implements ContextAware<V> {
     }
 
     /**
-     * Returns true if the current context is for or below a rule marked @SuppressNode or below one
-     * marked @SuppressSubnodes.
+     * Returns true if the current context is for or below a rule marked {@literal @SuppressNode} or below one
+     * marked {@literal @SuppressSubnodes}.
      *
      * @return true or false
      */
@@ -419,12 +419,12 @@ public abstract class BaseActions<V> implements ContextAware<V> {
     /**
      * Determines whether the current rule or a sub rule has recorded a parse error.
      * Useful for example for making sure actions are not run on erroneous input:
-     * <code>
+     * <pre>
      * return Sequence(
      * ...,
-     * !hasError() && actions.doSomething()
+     * !hasError() &amp;&amp; actions.doSomething()
      * );
-     * </code>
+     * </pre>
      *
      * @return true if either the current rule or a sub rule has recorded a parse error
      */

@@ -22,7 +22,7 @@ import java.util.NoSuchElementException;
  * Simple static methods to be called at the start of your own methods to verify
  * correct arguments and state. This allows constructs such as
  * <pre>
- *     if (count <= 0) {
+ *     if (count &le; 0) {
  *       throw new IllegalArgumentException("must be positive: " + count);
  *     }
  * </pre>
