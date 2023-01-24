@@ -5,11 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.imagingbook</groupId>
     <version>1.0-SNAPSHOT</version>
-    <!--<parent>
-
-        <artifactId>parboiled-2</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>-->
 
     <artifactId>parboiled-parent-pom</artifactId>
     <packaging>pom</packaging>
