@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63333fa7-390f-450c-9169-eccf98d6637e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/parboiled-core/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-core/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-examples-scala/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parboiled-parent-pom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +56,15 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/_GITHUB/parboiled-2",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/_GITHUB/parboiled-2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.parboiled" />
