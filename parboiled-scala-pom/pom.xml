@@ -3,23 +3,37 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.imagingbook</groupId>
-        <artifactId>parboiled-parent-pom</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>../parboiled-parent-pom/pom.xml</relativePath>
-    </parent>
+    <groupId>com.imagingbook</groupId>
+    <version>1.0-SNAPSHOT</version>
 
-    <artifactId>parboiled-examples-scala</artifactId>
+    <artifactId>parboiled-scala-pom</artifactId>
+    <packaging>pom</packaging>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <junit.version>4.13.2</junit.version>
+
+        <!-- SCALA settings -->
+        <scalalibrary.artifact>scala-library</scalalibrary.artifact>
+        <scalalibrary.version>2.13.10</scalalibrary.version>
+
+        <scalatest.artifact>scalatest_2.13</scalatest.artifact>
+        <scalatest.version>3.2.10</scalatest.version>
+
+        <scalatestplus.artifact>testng-7-5_2.13</scalatestplus.artifact>
+        <scalatestplus.version>3.2.15.0</scalatestplus.version>
+
         <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>com.imagingbook</groupId>
-            <artifactId>parboiled-scala</artifactId>
+            <artifactId>parboiled-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -78,22 +92,29 @@
                 </executions>
             </plugin>
 
+<!--            <plugin>-->
+<!--                &lt;!&ndash; Note: this is ESSENTIAL to make Java modules work properly! &ndash;&gt;-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.10.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>${java.version}</source>-->
+<!--                    <target>${java.version}</target>-->
+<!--                    &lt;!&ndash; <compilerArgs>-->
+<!--                        <arg>-Xpkginfo:nonempty</arg>-->
+<!--                    </compilerArgs> &ndash;&gt;-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.6</version>
+                <version>2.12.4</version>
                 <configuration>
                     <skipTests>false</skipTests>
-                    <useFile>false</useFile>
-                    <disableXmlReport>true</disableXmlReport>
-                    <!-- If you have classpath issue like NoDefClassError,... -->
-                    <!-- useManifestOnlyJar>false</useManifestOnlyJar -->
-                    <includes>
-                        <include>**/*Test.*</include>
-                        <include>**/*Suite.*</include>
-                    </includes>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
