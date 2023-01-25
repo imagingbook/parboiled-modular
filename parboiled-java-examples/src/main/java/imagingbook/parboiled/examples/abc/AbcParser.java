@@ -17,15 +17,17 @@
 package imagingbook.parboiled.examples.abc;
 
 import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 
 /**
- * A parser for the classic non-context free language example { a^n b^n c^n : n >= 1 }
- * S <- &(A c) a+ B !(a|b|c)
- * A <- a A? b
- * B <- b B? c
+ * A parser for the classic non-context free language example {@literal { a^n b^n c^n : n >= 1 }}
+ * <br>
+ * {@literal S <- &(A c) a+ B !(a|b|c)}
+ * <br>
+ * {@literal A <- a A? b}
+ * <br>
+ * {@literal B <- b B? c}
  */
 @SuppressWarnings({"InfiniteRecursion"})
 @BuildParseTree

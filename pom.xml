@@ -6,7 +6,7 @@
 
     <groupId>com.imagingbook</groupId>
     <artifactId>parboiled-2</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <!-- This POM is only for defining Maven submodules. It is not deployed. -->
@@ -16,8 +16,8 @@
         <module>parboiled-core</module>
         <module>parboiled-java</module>
         <module>parboiled-java-examples</module>
-		
-		<module>parboiled-scala-pom</module>
+
+        <module>parboiled-scala-pom</module>
         <module>parboiled-scala</module>
         <module>parboiled-scala-examples</module>
     </modules>
