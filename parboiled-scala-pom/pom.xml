@@ -5,17 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.imagingbook</groupId>
     <artifactId>parboiled-scala-pom</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>
         Elegant parsing in Java and Scala - lightweight, easy-to-use, powerful.
-        This is a modularized version of the 'parpoiled' PEG parser Java/Scala
+        This is a modularized version of the 'parboiled' PEG parser Java/Scala
         implementation developed by Mathias Doenitz, refactored from
-        Version 1.4.1 (https://github.com/sirthias/parboiled, Jan. 2023).
+        https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
     </description>
     <inceptionYear>2009</inceptionYear>
+    <url>https://github.com/imagingbook/parboiled-modular</url>
 
     <developers>
         <developer>
@@ -83,7 +84,7 @@
         <dependency>
             <groupId>com.imagingbook</groupId>
             <artifactId>parboiled-core</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
