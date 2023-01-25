@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.parseXX;
+package org.parboiled.parser;
 
 import org.parboiled.annotations.*;
 import org.parboiled.common.Utils;

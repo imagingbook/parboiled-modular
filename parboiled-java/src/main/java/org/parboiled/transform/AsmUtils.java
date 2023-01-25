@@ -29,7 +29,7 @@ import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.VarInsnNode;
-import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parser.BaseParser;
 import org.parboiled.ContextAware;
 import org.parboiled.support.Var;
 

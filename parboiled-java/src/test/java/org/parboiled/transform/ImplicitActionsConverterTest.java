@@ -65,9 +65,9 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "   L1\n" +
                 "    ICONST_0\n" +
                 "   L2\n" +
-                "    INVOKESTATIC org/parboiled/parseXX/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/parser/BaseParser.ACTION (Z)Lorg/parboiled/Action;\n" +
                 "    AASTORE\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         assertTraceDumpEquality(processMethod("RuleWithDirectImplicitAction", processors), "" +
@@ -82,7 +82,7 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "   L0\n" +
                 "    ICONST_0\n" +
                 "   L1\n" +
-                "    INVOKESTATIC org/parboiled/parseXX/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/parser/BaseParser.ACTION (Z)Lorg/parboiled/Action;\n" +
                 "    ICONST_2\n" +
                 "    ANEWARRAY java/lang/Object\n" +
                 "    DUP\n" +
@@ -95,7 +95,7 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "    BIPUSH 99\n" +
                 "    INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "    AASTORE\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
     }
 

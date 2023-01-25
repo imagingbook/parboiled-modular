@@ -16,8 +16,8 @@
 
 package org.parboiled.transform;
 
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.Rule;
 import org.parboiled.parserunners.ReportingParseRunner;
 import org.junit.Test;

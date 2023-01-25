@@ -47,7 +47,7 @@ public class ReturnInstructionUnifierTest extends TransformationTest {
                 "      default: L1\n" +
                 "   L0\n" +
                 "    ALOAD 0\n" +
-                "    GETSTATIC org/parboiled/transform/TestParser.EMPTY : Lorg/parboiled/parse/Rule;\n" +
+                "    GETSTATIC org/parboiled/transform/TestParser.EMPTY : Lorg/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
                 "    ICONST_1\n" +
                 "    INVOKESTATIC java/lang/Integer.valueOf (I)Ljava/lang/Integer;\n" +
@@ -55,7 +55,7 @@ public class ReturnInstructionUnifierTest extends TransformationTest {
                 "    INVOKESTATIC java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;\n" +
                 "    ICONST_0\n" +
                 "    ANEWARRAY java/lang/Object\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "    GOTO L2\n" +
                 "   L1\n" +
                 "    ACONST_NULL\n" +
@@ -72,13 +72,13 @@ public class ReturnInstructionUnifierTest extends TransformationTest {
                 "    INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "    ALOAD 0\n" +
                 "    INVOKEVIRTUAL org/parboiled/transform/TestParser.action ()Z\n" +
-                "    INVOKESTATIC org/parboiled/transform/TestParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/transform/TestParser.ACTION (Z)Lorg/parboiled/Action;\n" +
                 "    ICONST_0\n" +
                 "    ANEWARRAY java/lang/Object\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "    GOTO L1\n" +
                 "   L0\n" +
-                "    GETSTATIC org/parboiled/transform/TestParser.EOI : Lorg/parboiled/parse/Rule;\n" +
+                "    GETSTATIC org/parboiled/transform/TestParser.EOI : Lorg/parboiled/Rule;\n" +
                 "   L1\n" +
                 "    ARETURN\n");
 
@@ -97,7 +97,7 @@ public class ReturnInstructionUnifierTest extends TransformationTest {
                 "   L0\n" +
                 "    ICONST_0\n" +
                 "   L1\n" +
-                "    INVOKESTATIC org/parboiled/transform/TestParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/transform/TestParser.ACTION (Z)Lorg/parboiled/Action;\n" +
                 "    ICONST_1\n" +
                 "    ANEWARRAY java/lang/Object\n" +
                 "    DUP\n" +
@@ -105,7 +105,7 @@ public class ReturnInstructionUnifierTest extends TransformationTest {
                 "    BIPUSH 98\n" +
                 "    INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "    AASTORE\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
     }
 

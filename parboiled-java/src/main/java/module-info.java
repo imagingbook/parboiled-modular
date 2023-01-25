@@ -7,5 +7,5 @@ module imagingbook.parboiled.java {
 
     exports org.parboiled.annotations;
     exports org.parboiled.testing;
-    exports org.parboiled.parseXX;
+    exports org.parboiled.parser;
 }
