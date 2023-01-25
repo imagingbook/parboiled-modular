@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parser;
 
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.parboiled.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
-import org.parboiled.annotations.SuppressNode;
-import org.parboiled.annotations.SuppressSubnodes;
+import org.parboiled.annotations.SkipNode;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 
-public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
+public class NodeSkippingTest extends TestNgParboiledTest<Object> {
 
     @BuildParseTree
     public static class Parser extends BaseParser<Object> {
@@ -38,14 +38,14 @@ public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
         }
 
         public Rule EFGH() {
-            return Sequence(EF(), GH());
+            return Sequence(EF(), GH()).skipNode();
         }
 
         public Rule AB() {
             return Sequence(A(), B());
         }
 
-        @SuppressSubnodes
+        @SkipNode
         public Rule CD() {
             return Sequence(C(), D());
         }
@@ -54,17 +54,17 @@ public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
             return Sequence(E(), F());
         }
 
+        @SkipNode
         public Rule GH() {
-            return Sequence(G(), H()).suppressNode();
+            return Sequence(G(), H()).skipNode();
         }
 
         public Rule A() {
             return Ch('a');
         }
 
-        @SuppressNode
         public Rule B() {
-            return Ch('b');
+            return Ch('b').skipNode();
         }
 
         public Rule C() {
@@ -76,11 +76,11 @@ public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
         }
 
         public Rule E() {
-            return Ch('e').suppressSubnodes();
+            return Ch('e');
         }
 
         public Rule F() {
-            return Ch('f').suppressNode();
+            return Ch('f');
         }
 
         public Rule G() {
@@ -90,10 +90,17 @@ public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
         public Rule H() {
             return Ch('h');
         }
+
+        public Rule BugIn101() {
+            return FirstOf(
+                    Sequence("a", "c").skipNode(),
+                    "a"
+            );
+        }
     }
 
     @Test
-    public void testNodeSuppression() {
+    public void testNodeSkipping() {
         Parser parser = Parboiled.createParser(Parser.class);
         test(parser.ABCDEFGH(), "abcdefgh")
                 .hasNoErrors()
@@ -102,10 +109,18 @@ public class NodeSuppressionTest extends TestNgParboiledTest<Object> {
                         "  [ABCD] 'abcd'\n" +
                         "    [AB] 'ab'\n" +
                         "      [A] 'a'\n" +
-                        "    [CD] 'cd'\n" +
-                        "  [EFGH] 'efgh'\n" +
-                        "    [EF] 'ef'\n" +
-                        "      [E] 'e'\n");
+                        "    [C] 'c'\n" +
+                        "    [D] 'd'\n" +
+                        "  [EF] 'ef'\n" +
+                        "    [E] 'e'\n" +
+                        "    [F] 'f'\n" +
+                        "  [G] 'g'\n" +
+                        "  [H] 'h'\n");
+        test(parser.BugIn101(), "abc")
+                .hasNoErrors()
+                .hasParseTree("" +
+                        "[BugIn101] 'a'\n" +
+                        "  ['a'] 'a'\n");
     }
 
 }

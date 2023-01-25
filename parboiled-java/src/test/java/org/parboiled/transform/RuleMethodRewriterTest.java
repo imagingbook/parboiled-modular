@@ -67,7 +67,7 @@ public class RuleMethodRewriterTest extends TransformationTest {
                 "14     ALOAD 0\n" +
                 "15     PUTFIELD org/parboiled/transform/Action$9oFgHpRIhPPzfI17.field$0 : Lorg/parboiled/transform/TestParser;\n" +
                 "16     AASTORE\n" +
-                "17     INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "17     INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "18     ARETURN\n");
 
         assertEquals(getMethodInstructionList(processMethod("RuleWithComplexActionSetup", processors)), "" +
@@ -138,7 +138,7 @@ public class RuleMethodRewriterTest extends TransformationTest {
                 "63     ILOAD 3\n" +
                 "64     PUTFIELD org/parboiled/transform/Action$xPqljUb88dWGGhyd.field$4 : I\n" +
                 "65     AASTORE\n" +
-                "66     INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
+                "66     INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
                 "67     NEW org/parboiled/matchers/VarFramingMatcher\n" +
                 "68     DUP_X1\n" +
                 "69     SWAP\n" +
@@ -151,7 +151,7 @@ public class RuleMethodRewriterTest extends TransformationTest {
                 "76     LDC \"RuleWithComplexActionSetup:string\"\n" +
                 "77     INVOKEVIRTUAL org/parboiled/support/Var.setName (Ljava/lang/String;)V\n" +
                 "78     AASTORE\n" +
-                "79     INVOKESPECIAL org/parboiled/matchers/VarFramingMatcher.<init> (Lorg/parboiled/parse/Rule;[Lorg/parboiled/support/Var;)V\n" +
+                "79     INVOKESPECIAL org/parboiled/matchers/VarFramingMatcher.<init> (Lorg/parboiled/Rule;[Lorg/parboiled/support/Var;)V\n" +
                 "80     ARETURN\n");
     }
 

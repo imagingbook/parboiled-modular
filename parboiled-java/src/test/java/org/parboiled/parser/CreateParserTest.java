@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parser;
 
 import org.junit.Test;
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

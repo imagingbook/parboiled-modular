@@ -21,7 +21,7 @@
  */
 package org.parboiled.examples.sparql;
 
-import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parser.BaseParser;
 import org.parboiled.Rule;
 
 /**

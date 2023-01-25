@@ -1,6 +1,6 @@
 package org.parboiled.examples.indenting;
 
-import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parser.BaseParser;
 import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 

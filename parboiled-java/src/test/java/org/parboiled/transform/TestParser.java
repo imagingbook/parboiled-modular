@@ -16,7 +16,7 @@
 
 package org.parboiled.transform;
 
-import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parser.BaseParser;
 import org.parboiled.Rule;
 import org.parboiled.support.Var;
 import org.parboiled.annotations.*;

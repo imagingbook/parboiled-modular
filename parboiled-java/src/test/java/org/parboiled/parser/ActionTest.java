@@ -14,11 +14,15 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parser;
 
-import org.parboiled.parseXX.BaseActions;
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.parboiled.Action;
+import org.parboiled.Context;
+import org.parboiled.ParserStatistics;
+import org.parboiled.Rule;
+import org.parboiled.parser.BaseActions;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.Label;
 import org.parboiled.testing.TestNgParboiledTest;

@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parser;
 
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.parboiled.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 

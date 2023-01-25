@@ -14,10 +14,13 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parser;
 
-import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parseXX.Parboiled;
+import org.junit.Assert;
+import org.parboiled.ParserStatistics;
+import org.parboiled.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.annotations.Label;
 import org.parboiled.matchers.FirstOfMatcher;
 import org.parboiled.matchers.Matcher;
@@ -69,7 +72,7 @@ public class CachingTest {
         assertEquals(countAllDistinct(matcher1), 5);
         assertEquals(countAllDistinct(matcher2), 6);
 
-        assertEquals(ParserStatistics.generateFor(parser.Rule1()).toString(), "" +
+        Assert.assertEquals(ParserStatistics.generateFor(parser.Rule1()).toString(), "" +
                 "Parser statistics for rule 'Rule1':\n" +
                 "    Total rules       : 5\n" +
                 "        Actions       : 0\n" +
