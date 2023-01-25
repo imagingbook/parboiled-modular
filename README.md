@@ -112,7 +112,7 @@ public class CalculatorParser0 extends CalculatorParser<Integer> {
   
 ## Notes on Unit Tests
 
-* Some unit tests in this project check against canonical class names and/or Java object hash values and are thus sensitive
+* Some unit tests in this project check against package/class names and/or Java object hash values and are thus sensitive
   to any package and class name changes within the library.
 * Some of the tests that read input strings from files check againsto results provided in text files require
   that line endings (EOLs) must remain *unchanged* by GIT. Otherwise tests may fail.
