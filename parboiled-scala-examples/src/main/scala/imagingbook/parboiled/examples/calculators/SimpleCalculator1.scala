@@ -17,8 +17,8 @@
 package imagingbook.parboiled.examples.calculators
 
 import imagingbook.parboiled.errors.{ErrorUtils, ParsingException}
-import imagingbook.parboiled.scala.Parser
-import imagingbook.parboiled.scala.rules.Rule1
+import org.parboiled.scala.Parser
+import org.parboiled.scala.rules.Rule1
 import org.parboiled.scala._
 
 /**

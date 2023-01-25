@@ -16,8 +16,8 @@
 
 package imagingbook.parboiled.examples.calculators
 
-import imagingbook.parboiled.scala.Parser
-import imagingbook.parboiled.scala.rules.Rule0
+import org.parboiled.scala.Parser
+import org.parboiled.scala.rules.Rule0
 import org.parboiled.scala._
 
 /**
