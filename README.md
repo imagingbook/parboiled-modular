@@ -1,10 +1,10 @@
 # parboiled-modular
 
-This is a modularized version of the brilliant ``parboiled`` Java/Scala PEG parser implementation
+This is a modularized version of the brilliant _parboiled_ Java/Scala PEG parser implementation
 developed by Mathias Doenitz, refactored from https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
-The original *parboiled* library provides "for lightweight and easy-to-use, yet powerful and elegant parsing of
-arbitrary input text based on Parsing expression grammars (PEGs)". See <https://github.com/sirthias/parboiled/wiki>
-for additional details
+The original *parboiled* library provides *"for lightweight and easy-to-use, yet powerful and elegant parsing of
+arbitrary input text based on Parsing expression grammars (PEGs)"*. See <https://github.com/sirthias/parboiled/wiki>
+for additional details.
 
 The features of _this_ implementation are:
 
@@ -39,7 +39,7 @@ The features of _this_ implementation are:
 * [**parboiled-java**](https://imagingbook.github.io/parboiled-modular/parboiled-java/javadoc)
 * [**parboiled-java-examples**](https://imagingbook.github.io/parboiled-modular/parboiled-java-examples/javadoc)
   
-## Notes
+## A note on the unit tests
 
 * Some of the tests that read input strings from files or compare to results given in files require
   that line endings (EOLs) must remain *unchanged* by GIT. Otherwise tests may fail.
