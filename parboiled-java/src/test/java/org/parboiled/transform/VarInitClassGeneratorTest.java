@@ -17,7 +17,7 @@
 package org.parboiled.transform;
 
 import org.parboiled.parseXX.BaseParser;
-import org.parboiled.parse.Rule;
+import org.parboiled.Rule;
 import org.parboiled.common.ImmutableList;
 import org.parboiled.support.Var;
 import org.junit.Before;

@@ -323,7 +323,7 @@ loadScripts(document, 'script');</script>
 <div class="block">A predicate usable as a filter (element) of a <a href="../../parserunners/TracingParseRunner.html" title="class in org.parboiled.parserunners"><code>TracingParseRunner</code></a>.</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Tuple2.html" title="class in org.parboiled.common">Tuple2</a>&lt;<a href="../../parse/Context.html" title="interface in org.parboiled.parse">Context</a>&lt;?&gt;,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#onlyRules(org.parboiled.parse.Rule...)" class="member-name-link">onlyRules</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#onlyRules(org.parboiled.Rule...)" class="member-name-link">onlyRules</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
 <div class="col-last even-row-color">
 <div class="block">A predicate usable as a filter (element) of a <a href="../../parserunners/TracingParseRunner.html" title="class in org.parboiled.parserunners"><code>TracingParseRunner</code></a>.</div>
 </div>
@@ -333,12 +333,12 @@ loadScripts(document, 'script');</script>
 <div class="block">A predicate for rule tree printing.</div>
 </div>
 <div class="col-first even-row-color"><code>static <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Tuple2.html" title="class in org.parboiled.common">Tuple2</a>&lt;<a href="../../parse/Context.html" title="interface in org.parboiled.parse">Context</a>&lt;?&gt;,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#rules(org.parboiled.parse.Rule...)" class="member-name-link">rules</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
+<div class="col-second even-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#rules(org.parboiled.Rule...)" class="member-name-link">rules</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
 <div class="col-last even-row-color">
 <div class="block">A predicate usable as a filter (element) of a <a href="../../parserunners/TracingParseRunner.html" title="class in org.parboiled.parserunners"><code>TracingParseRunner</code></a>.</div>
 </div>
 <div class="col-first odd-row-color"><code>static <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Tuple2.html" title="class in org.parboiled.common">Tuple2</a>&lt;<a href="../../parse/Context.html" title="interface in org.parboiled.parse">Context</a>&lt;?&gt;,<wbr><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;&gt;</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#rulesBelow(org.parboiled.parse.Rule...)" class="member-name-link">rulesBelow</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
+<div class="col-second odd-row-color"><span class="type-name-label">Filters.</span><code><a href="../../support/Filters.html#rulesBelow(org.parboiled.Rule...)" class="member-name-link">rulesBelow</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>...&nbsp;rules)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">A predicate usable as a filter (element) of a <a href="../../parserunners/TracingParseRunner.html" title="class in org.parboiled.parserunners"><code>TracingParseRunner</code></a>.</div>
 </div>
@@ -363,7 +363,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </div>
 <div class="col-first odd-row-color"><code>static &lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&gt;&gt;<br>C</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#collectNodes(org.parboiled.parse.Node,org.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#collectNodes(org.parboiled.Node,org.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&gt;&nbsp;predicate,
  C&nbsp;collection)</code></div>
 <div class="col-last odd-row-color">
@@ -376,7 +376,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the last node underneath the given parents for which the given predicate evaluates to true.</div>
 </div>
 <div class="col-first odd-row-color"><code>static &lt;V&gt;&nbsp;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#findLastNode(org.parboiled.parse.Node,org.parboiled.common.Predicate)" class="member-name-link">findLastNode</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#findLastNode(org.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findLastNode</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Returns the last node underneath the given parent for which the given predicate evaluates to true.</div>
@@ -388,7 +388,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the first node underneath the given parents for which the given predicate evaluates to true.</div>
 </div>
 <div class="col-first odd-row-color"><code>static &lt;V&gt;&nbsp;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#findNode(org.parboiled.parse.Node,org.parboiled.common.Predicate)" class="member-name-link">findNode</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#findNode(org.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findNode</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Returns the first node underneath the given parent for which the given predicate evaluates to true.</div>

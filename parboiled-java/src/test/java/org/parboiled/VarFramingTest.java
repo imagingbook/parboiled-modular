@@ -20,8 +20,6 @@ import org.parboiled.parseXX.BaseParser;
 import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressNode;
-import org.parboiled.parse.ParserStatistics;
-import org.parboiled.parse.Rule;
 import org.parboiled.support.Var;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;

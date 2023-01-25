@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.parse;
+package org.parboiled;
 
 import org.parboiled.matchers.Matcher;
 import org.parboiled.trees.TreeNode;

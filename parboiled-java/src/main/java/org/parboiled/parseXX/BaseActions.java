@@ -16,8 +16,8 @@
 
 package org.parboiled.parseXX;
 
-import org.parboiled.parse.Context;
-import org.parboiled.parse.ContextAware;
+import org.parboiled.Context;
+import org.parboiled.ContextAware;
 import org.parboiled.support.Checks;
 import org.parboiled.support.IndexRange;
 import org.parboiled.support.Position;

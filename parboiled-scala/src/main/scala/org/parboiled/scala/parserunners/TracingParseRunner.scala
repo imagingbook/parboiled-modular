@@ -17,11 +17,11 @@
 package org.parboiled.scala
 package parserunners
 
+import org.parboiled.Context
 import org.parboiled.parserunners.{TracingParseRunner => PTracingParseRunner}
 import utils.Predicate
 import org.parboiled.support.MatcherPath
 import org.parboiled.common.{Sink, Predicate => PPredicate, Tuple2 => T2}
-import org.parboiled.parse.Context
 
 /**
  * A wrapper for org.parboiled.parserunners.TracingParseRunner which returns a scala ParsingResult.

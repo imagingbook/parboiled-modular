@@ -17,9 +17,8 @@
 package org.parboiled.scala
 package rules
 
-import org.parboiled.parse
-import org.parboiled.parse.Action
-import org.parboiled.parse.Context
+import org.parboiled
+import org.parboiled.{Action, Context, parse}
 import org.parboiled.matchers._
 import org.parboiled.scala.rules.Rule._
 import org.parboiled.support.{IndexRange, ValueStack}
@@ -109,9 +108,9 @@ object Rule {
   private[parboiled] val Pop = (vs:ValueStack[Any], _:Int) => vs.pop
   private[parboiled] val Peek: ((ValueStack[Any], Int) => Any) = _.peek(_)
 
-  private def addSub(subs: java.util.List[Matcher], element: Matcher): Array[parse.Rule] = {
+  private def addSub(subs: java.util.List[Matcher], element: Matcher): Array[parboiled.Rule] = {
     val count = subs.size
-    val array = new Array[parse.Rule](count + 1)
+    val array = new Array[parboiled.Rule](count + 1)
     subs.toArray(array)
     array(count) = element
     array

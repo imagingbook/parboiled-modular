@@ -16,8 +16,8 @@
 
 package org.parboiled.examples.testing
 
+import org.parboiled.Node
 import org.parboiled.errors.{ErrorUtils, ParseError}
-import org.parboiled.parse.Node
 import org.parboiled.scala.{Input, ParseRunner, ParsingResult}
 import org.parboiled.support.ParseTreeUtils
 import org.scalatest.Suite

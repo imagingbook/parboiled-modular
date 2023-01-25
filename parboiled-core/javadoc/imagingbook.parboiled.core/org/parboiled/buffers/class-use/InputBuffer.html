@@ -217,7 +217,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../parse/MatcherContext.html#%3Cinit%3E(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.parse.MatchHandler,org.parboiled.matchers.Matcher,boolean)" class="member-name-link">MatcherContext</a><wbr>(<a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
+<div class="col-second even-row-color"><code><a href="../../parse/MatcherContext.html#%3Cinit%3E(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.MatchHandler,org.parboiled.matchers.Matcher,boolean)" class="member-name-link">MatcherContext</a><wbr>(<a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
  <a href="../../support/ValueStack.html" title="interface in org.parboiled.support">ValueStack</a>&lt;<a href="../../parse/MatcherContext.html" title="type parameter in MatcherContext">V</a>&gt;&nbsp;valueStack,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../errors/ParseError.html" title="interface in org.parboiled.errors">ParseError</a>&gt;&nbsp;parseErrors,
  <a href="../../parse/MatchHandler.html" title="interface in org.parboiled.parse">MatchHandler</a>&nbsp;matchHandler,
@@ -247,7 +247,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>protected <a href="../../parse/MatcherContext.html" title="class in org.parboiled.parse">MatcherContext</a>&lt;<a href="../../parserunners/AbstractParseRunner.html" title="type parameter in AbstractParseRunner">V</a>&gt;</code></div>
-<div class="col-second even-row-color"><span class="type-name-label">AbstractParseRunner.</span><code><a href="../../parserunners/AbstractParseRunner.html#createRootContext(org.parboiled.buffers.InputBuffer,org.parboiled.parse.MatchHandler,boolean)" class="member-name-link">createRootContext</a><wbr>(<a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
+<div class="col-second even-row-color"><span class="type-name-label">AbstractParseRunner.</span><code><a href="../../parserunners/AbstractParseRunner.html#createRootContext(org.parboiled.buffers.InputBuffer,org.parboiled.MatchHandler,boolean)" class="member-name-link">createRootContext</a><wbr>(<a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
  <a href="../../parse/MatchHandler.html" title="interface in org.parboiled.parse">MatchHandler</a>&nbsp;matchHandler,
  boolean&nbsp;fastStringMatching)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
@@ -294,7 +294,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Constructor</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>&nbsp;</code></div>
-<div class="col-second even-row-color"><code><a href="../../parserunners/RecoveringParseRunner.TimeoutException.html#%3Cinit%3E(org.parboiled.parse.Rule,org.parboiled.buffers.InputBuffer,org.parboiled.support.ParsingResult)" class="member-name-link">TimeoutException</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>&nbsp;rule,
+<div class="col-second even-row-color"><code><a href="../../parserunners/RecoveringParseRunner.TimeoutException.html#%3Cinit%3E(org.parboiled.Rule,org.parboiled.buffers.InputBuffer,org.parboiled.support.ParsingResult)" class="member-name-link">TimeoutException</a><wbr>(<a href="../../parse/Rule.html" title="interface in org.parboiled.parse">Rule</a>&nbsp;rule,
  <a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
  <a href="../../support/ParsingResult.html" title="class in org.parboiled.support">ParsingResult</a>&lt;?&gt;&nbsp;lastParsingResult)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
@@ -321,7 +321,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#getNodeText(org.parboiled.parse.Node,org.parboiled.buffers.InputBuffer)" class="member-name-link">getNodeText</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;?&gt;&nbsp;node,
+<div class="col-second even-row-color"><span class="type-name-label">ParseTreeUtils.</span><code><a href="../../support/ParseTreeUtils.html#getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer)" class="member-name-link">getNodeText</a><wbr>(<a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;?&gt;&nbsp;node,
  <a href="../InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer)</code></div>
 <div class="col-last even-row-color">
 <div class="block">Returns the input text matched by the given node, with error correction.</div>
@@ -338,7 +338,7 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a new NodeFormatter.</div>
 </div>
 <div class="col-first odd-row-color"><code>&nbsp;</code></div>
-<div class="col-second odd-row-color"><code><a href="../../support/ParsingResult.html#%3Cinit%3E(boolean,org.parboiled.parse.Node,org.parboiled.support.ValueStack,java.util.List,org.parboiled.buffers.InputBuffer)" class="member-name-link">ParsingResult</a><wbr>(boolean&nbsp;matched,
+<div class="col-second odd-row-color"><code><a href="../../support/ParsingResult.html#%3Cinit%3E(boolean,org.parboiled.Node,org.parboiled.support.ValueStack,java.util.List,org.parboiled.buffers.InputBuffer)" class="member-name-link">ParsingResult</a><wbr>(boolean&nbsp;matched,
  <a href="../../parse/Node.html" title="interface in org.parboiled.parse">Node</a>&lt;<a href="../../support/ParsingResult.html" title="type parameter in ParsingResult">V</a>&gt;&nbsp;parseTreeRoot,
  <a href="../../support/ValueStack.html" title="interface in org.parboiled.support">ValueStack</a>&lt;<a href="../../support/ParsingResult.html" title="type parameter in ParsingResult">V</a>&gt;&nbsp;valueStack,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../../errors/ParseError.html" title="interface in org.parboiled.errors">ParseError</a>&gt;&nbsp;parseErrors,
