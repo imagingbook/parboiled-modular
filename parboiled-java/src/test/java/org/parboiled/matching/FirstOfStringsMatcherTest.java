@@ -17,8 +17,8 @@
 package org.parboiled.matching;
 
 import org.junit.Test;
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.errors.GrammarException;
 import org.parboiled.parse.Rule;

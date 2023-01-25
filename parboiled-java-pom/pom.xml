@@ -28,8 +28,7 @@
         <scalatestplus.artifact>testng-7-5_2.13</scalatestplus.artifact>
         <scalatestplus.version>3.2.15.0</scalatestplus.version>
 
-        <maven.javadoc.skip>false</maven.javadoc.skip>
-        <!--<imagingbook.skipjavadoc>false</imagingbook.skipjavadoc>-->
+        <maven.javadoc.skip>true</maven.javadoc.skip>
         <!-- <imagingbook.javadocdir>javadoc</imagingbook.javadocdir>-->
     </properties>
 

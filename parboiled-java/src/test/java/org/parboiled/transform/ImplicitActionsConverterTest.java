@@ -65,7 +65,7 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "   L1\n" +
                 "    ICONST_0\n" +
                 "   L2\n" +
-                "    INVOKESTATIC org/parboiled/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/parseXX/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
                 "    AASTORE\n" +
                 "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/parse/Rule;\n" +
                 "    ARETURN\n");
@@ -82,7 +82,7 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "   L0\n" +
                 "    ICONST_0\n" +
                 "   L1\n" +
-                "    INVOKESTATIC org/parboiled/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
+                "    INVOKESTATIC org/parboiled/parseXX/BaseParser.ACTION (Z)Lorg/parboiled/parse/Action;\n" +
                 "    ICONST_2\n" +
                 "    ANEWARRAY java/lang/Object\n" +
                 "    DUP\n" +

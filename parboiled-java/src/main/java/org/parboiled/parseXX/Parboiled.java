@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parseXX;
 
 import static org.parboiled.common.Preconditions.*;
 import org.parboiled.transform.ParserTransformer;
