@@ -16,10 +16,10 @@
 
 package org.parboiled.examples.calculators;
 
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.parserunners.RecoveringParseRunner;
-import org.parboiled.parse.Rule;
+import org.parboiled.Rule;
 import org.parboiled.common.StringUtils;
 import org.parboiled.support.ParsingResult;
 import org.parboiled.support.ToStringFormatter;

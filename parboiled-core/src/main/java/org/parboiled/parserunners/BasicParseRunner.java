@@ -17,9 +17,9 @@
 package org.parboiled.parserunners;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.parse.MatchHandler;
-import org.parboiled.parse.MatcherContext;
-import org.parboiled.parse.Rule;
+import org.parboiled.MatchHandler;
+import org.parboiled.MatcherContext;
+import org.parboiled.Rule;
 import org.parboiled.buffers.InputBuffer;
 import org.parboiled.support.*;
 

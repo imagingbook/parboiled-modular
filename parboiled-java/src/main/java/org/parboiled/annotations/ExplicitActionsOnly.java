@@ -16,8 +16,8 @@
 
 package org.parboiled.annotations;
 
-import org.parboiled.parse.Rule;
-import org.parboiled.BaseParser;
+import org.parboiled.Rule;
+import org.parboiled.parser.BaseParser;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

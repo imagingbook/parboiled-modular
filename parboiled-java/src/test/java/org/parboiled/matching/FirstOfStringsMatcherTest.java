@@ -17,11 +17,11 @@
 package org.parboiled.matching;
 
 import org.junit.Test;
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.errors.GrammarException;
-import org.parboiled.parse.Rule;
+import org.parboiled.Rule;
 import org.parboiled.testing.TestNgParboiledTest;
 
 /**

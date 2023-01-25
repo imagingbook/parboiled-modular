@@ -31,7 +31,7 @@ import org.objectweb.asm.tree.LabelNode;
 import org.objectweb.asm.tree.LocalVariableNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.BasicValue;
-import org.parboiled.BaseParser;
+import org.parboiled.parser.BaseParser;
 import org.parboiled.common.StringUtils;
 import org.parboiled.support.Var;
 

@@ -19,7 +19,7 @@ package org.parboiled.matchers;
 import static org.parboiled.common.Preconditions.*;
 import static org.parboiled.common.StringUtils.escape;
 
-import org.parboiled.parse.MatcherContext;
+import org.parboiled.MatcherContext;
 import org.parboiled.matchervisitors.MatcherVisitor;
 
 /**

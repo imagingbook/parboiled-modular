@@ -17,8 +17,8 @@
 package org.parboiled.matchers;
 
 import static org.parboiled.common.Preconditions.*;
-import org.parboiled.parse.MatcherContext;
-import org.parboiled.parse.Rule;
+import org.parboiled.MatcherContext;
+import org.parboiled.Rule;
 import org.parboiled.common.ImmutableList;
 import org.parboiled.common.Utils;
 import org.parboiled.trees.ImmutableGraphNode;
