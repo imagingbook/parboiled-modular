@@ -17,14 +17,11 @@
 package imagingbook.parboiled.transform;
 
 import imagingbook.parboiled.common.ImmutableList;
-import imagingbook.parboiled.common.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.List;
-
-import static imagingbook.parboiled.transform.AsmTestUtils.assertTraceDumpEquality;
 
 public class ImplicitActionsConverterTest extends TransformationTest {
 
@@ -54,10 +51,10 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "    DUP\n" +
                 "    ICONST_0\n" +
                 "    ALOAD 0\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.action ()Z\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/transform/TestParser.action ()Z\n" +
                 "    IFNE L0\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser.integer : I\n" +
+                "    GETFIELD imagingbook/parboiled/transform/TestParser.integer : I\n" +
                 "    ICONST_5\n" +
                 "    IF_ICMPNE L1\n" +
                 "   L0\n" +
@@ -66,9 +63,9 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "   L1\n" +
                 "    ICONST_0\n" +
                 "   L2\n" +
-                "    INVOKESTATIC org/parboiled/parser/BaseParser.ACTION (Z)Lorg/parboiled/Action;\n" +
+                "    INVOKESTATIC imagingbook/parboiled/parser/BaseParser.ACTION (Z)Limagingbook/parboiled/Action;\n" +
                 "    AASTORE\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         AsmTestUtils.assertTraceDumpEquality(processMethod("RuleWithDirectImplicitAction", processors), "" +
@@ -76,14 +73,14 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "    BIPUSH 97\n" +
                 "    INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser.integer : I\n" +
+                "    GETFIELD imagingbook/parboiled/transform/TestParser.integer : I\n" +
                 "    IFNE L0\n" +
                 "    ICONST_1\n" +
                 "    GOTO L1\n" +
                 "   L0\n" +
                 "    ICONST_0\n" +
                 "   L1\n" +
-                "    INVOKESTATIC org/parboiled/parser/BaseParser.ACTION (Z)Lorg/parboiled/Action;\n" +
+                "    INVOKESTATIC imagingbook/parboiled/parser/BaseParser.ACTION (Z)Limagingbook/parboiled/Action;\n" +
                 "    ICONST_2\n" +
                 "    ANEWARRAY java/lang/Object\n" +
                 "    DUP\n" +
@@ -96,7 +93,7 @@ public class ImplicitActionsConverterTest extends TransformationTest {
                 "    BIPUSH 99\n" +
                 "    INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "    AASTORE\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/transform/TestParser.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "    ARETURN\n");
     }
 

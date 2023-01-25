@@ -17,7 +17,6 @@
 package imagingbook.parboiled.annotations;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.Rule;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

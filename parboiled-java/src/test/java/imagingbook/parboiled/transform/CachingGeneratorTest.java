@@ -17,14 +17,11 @@
 package imagingbook.parboiled.transform;
 
 import imagingbook.parboiled.common.ImmutableList;
-import imagingbook.parboiled.common.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.List;
-
-import static imagingbook.parboiled.transform.AsmTestUtils.assertTraceDumpEquality;
 
 public class CachingGeneratorTest extends TransformationTest {
 
@@ -45,100 +42,100 @@ public class CachingGeneratorTest extends TransformationTest {
     public void testCachingGenerator() throws Exception {
         AsmTestUtils.assertTraceDumpEquality(processMethod("RuleWithoutAction", processors), "" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
+                "    GETFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
                 "   L0\n" +
                 "    POP\n" +
-                "    NEW org/parboiled/matchers/ProxyMatcher\n" +
+                "    NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 "    DUP\n" +
-                "    INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Limagingbook/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithoutAction ()Lorg/parboiled/Rule;\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/TestParser.RuleWithoutAction ()Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"RuleWithoutAction\"\n" +
-                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "    INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP_X1\n" +
-                "    CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "    INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "    CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Limagingbook/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         AsmTestUtils.assertTraceDumpEquality(processMethod("RuleWithNamedLabel", processors), "" +
-                "  @Lorg/parboiled/annotations/Label;(value=\"harry\")\n" +
+                "  @Limagingbook/parboiled/annotations/Label;(value=\"harry\")\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
+                "    GETFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
                 "   L0\n" +
                 "    POP\n" +
-                "    NEW org/parboiled/matchers/ProxyMatcher\n" +
+                "    NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 "    DUP\n" +
-                "    INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Limagingbook/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithNamedLabel ()Lorg/parboiled/Rule;\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/TestParser.RuleWithNamedLabel ()Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"harry\"\n" +
-                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "    INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP_X1\n" +
-                "    CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "    INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "    CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Limagingbook/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         AsmTestUtils.assertTraceDumpEquality(processMethod("RuleWithLeaf", processors), "" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
+                "    GETFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
                 "   L0\n" +
                 "    POP\n" +
-                "    NEW org/parboiled/matchers/ProxyMatcher\n" +
+                "    NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 "    DUP\n" +
-                "    INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Limagingbook/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithLeaf ()Lorg/parboiled/Rule;\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/TestParser.RuleWithLeaf ()Limagingbook/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"RuleWithLeaf\"\n" +
-                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "    INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP\n" +
                 "    IFNULL L2\n" +
-                "    INVOKEINTERFACE org/parboiled/Rule.suppressNode ()Lorg/parboiled/Rule; (itf)\n" +
+                "    INVOKEINTERFACE imagingbook/parboiled/Rule.suppressNode ()Limagingbook/parboiled/Rule; (itf)\n" +
                 "   L2\n" +
                 "    DUP_X1\n" +
-                "    CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "    INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "    CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
+                "    PUTFIELD imagingbook/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Limagingbook/parboiled/Rule;\n" +
                 "    ARETURN\n");
     }
 

@@ -21,10 +21,6 @@ import imagingbook.parboiled.common.ImmutableList;
 import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.support.Var;
 import org.junit.Assert;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.common.ImmutableList;
-import imagingbook.parboiled.support.Var;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,7 +28,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static imagingbook.parboiled.transform.AsmTestUtils.getClassDump;
 import static org.junit.Assert.assertEquals;
 
 public class VarInitClassGeneratorTest extends TransformationTest {
@@ -74,14 +69,14 @@ public class VarInitClassGeneratorTest extends TransformationTest {
         Assert.assertEquals(AsmTestUtils.getClassDump(group.getGroupClassCode()), "" +
                 "// class version 51.0 (51)\n" +
                 "// access flags 0x1011\n" +
-                "public final synthetic class org/parboiled/transform/VarInit$eYqwbz6zYKb27FsS extends org/parboiled/transform/BaseVarInit {\n" +
+                "public final synthetic class imagingbook/parboiled/transform/VarInit$eYqwbz6zYKb27FsS extends imagingbook/parboiled/transform/BaseVarInit {\n" +
                 "\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
                 "  public <init>(Ljava/lang/String;)V\n" +
                 "    ALOAD 0\n" +
                 "    ALOAD 1\n" +
-                "    INVOKESPECIAL org/parboiled/transform/BaseVarInit.<init> (Ljava/lang/String;)V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/BaseVarInit.<init> (Ljava/lang/String;)V\n" +
                 "    RETURN\n" +
                 "    MAXSTACK = 2\n" +
                 "    MAXLOCALS = 2\n" +
@@ -100,14 +95,14 @@ public class VarInitClassGeneratorTest extends TransformationTest {
         Assert.assertEquals(AsmTestUtils.getClassDump(group.getGroupClassCode()), "" +
                 "// class version 51.0 (51)\n" +
                 "// access flags 0x1011\n" +
-                "public final synthetic class org/parboiled/transform/VarInit$L7SMqNxExCwCkL9F extends org/parboiled/transform/BaseVarInit {\n" +
+                "public final synthetic class imagingbook/parboiled/transform/VarInit$L7SMqNxExCwCkL9F extends imagingbook/parboiled/transform/BaseVarInit {\n" +
                 "\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
                 "  public <init>(Ljava/lang/String;)V\n" +
                 "    ALOAD 0\n" +
                 "    ALOAD 1\n" +
-                "    INVOKESPECIAL org/parboiled/transform/BaseVarInit.<init> (Ljava/lang/String;)V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/BaseVarInit.<init> (Ljava/lang/String;)V\n" +
                 "    RETURN\n" +
                 "    MAXSTACK = 2\n" +
                 "    MAXLOCALS = 2\n" +
@@ -125,36 +120,36 @@ public class VarInitClassGeneratorTest extends TransformationTest {
         Assert.assertEquals(AsmTestUtils.getClassDump(group.getGroupClassCode()), "" +
                 "// class version 51.0 (51)\n" +
                 "// access flags 0x1011\n" +
-                "public final synthetic class org/parboiled/transform/Action$wahXW5a63chqvc1g extends org/parboiled/transform/BaseAction {\n" +
+                "public final synthetic class imagingbook/parboiled/transform/Action$CXnu9x5PCAdIq4vP extends imagingbook/parboiled/transform/BaseAction {\n" +
                 "\n" +
                 "\n" +
                 "  // access flags 0x1001\n" +
-                "  public synthetic Lorg/parboiled/support/Var; field$0\n" +
+                "  public synthetic Limagingbook/parboiled/support/Var; field$0\n" +
                 "\n" +
                 "  // access flags 0x1001\n" +
-                "  public synthetic Lorg/parboiled/transform/VarInitClassGeneratorTest$Parser; field$1\n" +
+                "  public synthetic Limagingbook/parboiled/transform/VarInitClassGeneratorTest$Parser; field$1\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
                 "  public <init>(Ljava/lang/String;)V\n" +
                 "    ALOAD 0\n" +
                 "    ALOAD 1\n" +
-                "    INVOKESPECIAL org/parboiled/transform/BaseAction.<init> (Ljava/lang/String;)V\n" +
+                "    INVOKESPECIAL imagingbook/parboiled/transform/BaseAction.<init> (Ljava/lang/String;)V\n" +
                 "    RETURN\n" +
                 "    MAXSTACK = 2\n" +
                 "    MAXLOCALS = 2\n" +
                 "\n" +
                 "  // access flags 0x1\n" +
-                "  public run(Lorg/parboiled/Context;)Z\n" +
+                "  public run(Limagingbook/parboiled/Context;)Z\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/Action$wahXW5a63chqvc1g.field$0 : Lorg/parboiled/support/Var;\n" +
-                "    INVOKEVIRTUAL org/parboiled/support/Var.get ()Ljava/lang/Object;\n" +
+                "    GETFIELD imagingbook/parboiled/transform/Action$CXnu9x5PCAdIq4vP.field$0 : Limagingbook/parboiled/support/Var;\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/support/Var.get ()Ljava/lang/Object;\n" +
                 "    CHECKCAST java/util/List\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/Action$wahXW5a63chqvc1g.field$1 : Lorg/parboiled/transform/VarInitClassGeneratorTest$Parser;\n" +
+                "    GETFIELD imagingbook/parboiled/transform/Action$CXnu9x5PCAdIq4vP.field$1 : Limagingbook/parboiled/transform/VarInitClassGeneratorTest$Parser;\n" +
                 "    DUP\n" +
                 "    ALOAD 1\n" +
-                "    INVOKEINTERFACE org/parboiled/ContextAware.setContext (Lorg/parboiled/Context;)V (itf)\n" +
-                "    INVOKEVIRTUAL org/parboiled/transform/VarInitClassGeneratorTest$Parser.match ()Ljava/lang/String;\n" +
+                "    INVOKEINTERFACE imagingbook/parboiled/ContextAware.setContext (Limagingbook/parboiled/Context;)V (itf)\n" +
+                "    INVOKEVIRTUAL imagingbook/parboiled/transform/VarInitClassGeneratorTest$Parser.match ()Ljava/lang/String;\n" +
                 "    INVOKEINTERFACE java/util/List.add (Ljava/lang/Object;)Z (itf)\n" +
                 "    IRETURN\n" +
                 "    MAXSTACK = 4\n" +

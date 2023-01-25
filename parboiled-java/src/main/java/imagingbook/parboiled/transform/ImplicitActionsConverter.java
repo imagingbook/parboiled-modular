@@ -26,10 +26,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import static org.objectweb.asm.Opcodes.*;
 import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 import static imagingbook.parboiled.common.Preconditions.checkState;
 import static imagingbook.parboiled.transform.AsmUtils.isBooleanValueOfZ;
+import static org.objectweb.asm.Opcodes.AASTORE;
+import static org.objectweb.asm.Opcodes.ANEWARRAY;
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
 
 /**
  * Makes all implicit action expressions in a rule method explicit.

@@ -16,10 +16,10 @@
 
 package imagingbook.parboiled.parser;
 
-import imagingbook.parboiled.buffers.InputBuffer;
-import imagingbook.parboiled.errors.GrammarException;
 import imagingbook.parboiled.Context;
 import imagingbook.parboiled.ContextAware;
+import imagingbook.parboiled.buffers.InputBuffer;
+import imagingbook.parboiled.errors.GrammarException;
 import imagingbook.parboiled.support.Checks;
 import imagingbook.parboiled.support.IndexRange;
 import imagingbook.parboiled.support.Position;

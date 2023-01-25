@@ -19,9 +19,6 @@ package imagingbook.parboiled.transform;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.common.ImmutableList;
 import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.common.ImmutableList;
 import org.junit.Test;
 
 import java.util.List;

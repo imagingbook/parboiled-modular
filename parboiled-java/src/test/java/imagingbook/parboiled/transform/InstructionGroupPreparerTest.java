@@ -19,7 +19,6 @@ package imagingbook.parboiled.transform;
 import imagingbook.parboiled.common.ImmutableList;
 import org.junit.Before;
 import org.junit.Test;
-import imagingbook.parboiled.common.ImmutableList;
 
 import java.io.IOException;
 import java.util.List;
@@ -56,11 +55,11 @@ public class InstructionGroupPreparerTest extends TransformationTest {
         assertEquals(group.getFields().get(2).desc, "I");
 
         group = method.getGroups().get(2);
-        assertEquals(group.getName(), "Action$xPqljUb88dWGGhyd");
+        assertEquals(group.getName(), "Action$QAHchRlb6kxsU2nC");
         assertEquals(group.getFields().size(), 5);
-        assertEquals(group.getFields().get(0).desc, "Lorg/parboiled/transform/TestParser;");
+        assertEquals(group.getFields().get(0).desc, "Limagingbook/parboiled/transform/TestParser;");
         assertEquals(group.getFields().get(1).desc, "I");
-        assertEquals(group.getFields().get(2).desc, "Lorg/parboiled/support/Var;");
+        assertEquals(group.getFields().get(2).desc, "Limagingbook/parboiled/support/Var;");
         assertEquals(group.getFields().get(3).desc, "I");
         assertEquals(group.getFields().get(4).desc, "I");
     }

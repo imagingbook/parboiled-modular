@@ -22,7 +22,6 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.analysis.BasicValue;
 import org.objectweb.asm.util.Printer;
@@ -31,7 +30,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static org.objectweb.asm.Opcodes.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static org.objectweb.asm.Opcodes.IALOAD;
+import static org.objectweb.asm.Opcodes.IASTORE;
+import static org.objectweb.asm.Opcodes.ILOAD;
+import static org.objectweb.asm.Opcodes.ISTORE;
 
 /**
  * A node in the instruction dependency graph.

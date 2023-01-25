@@ -16,12 +16,22 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-import org.objectweb.asm.tree.*;
 import imagingbook.parboiled.support.Checks;
+import org.objectweb.asm.tree.InsnList;
+import org.objectweb.asm.tree.InsnNode;
+import org.objectweb.asm.tree.MethodInsnNode;
+import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.TypeInsnNode;
+import org.objectweb.asm.tree.VarInsnNode;
 
-import static org.objectweb.asm.Opcodes.*;
-import static imagingbook.parboiled.transform.AsmUtils.createArgumentLoaders;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
+import static org.objectweb.asm.Opcodes.ALOAD;
+import static org.objectweb.asm.Opcodes.ARETURN;
+import static org.objectweb.asm.Opcodes.DUP;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
+import static org.objectweb.asm.Opcodes.NEW;
+import static org.objectweb.asm.Opcodes.RETURN;
 
 /**
  * Adds one constructor for each of the ParserClassNode.constructors,

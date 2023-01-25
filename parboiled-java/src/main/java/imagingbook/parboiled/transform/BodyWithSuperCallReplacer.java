@@ -16,13 +16,15 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.tree.InsnNode;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.VarInsnNode;
 
-import static org.objectweb.asm.Opcodes.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 import static imagingbook.parboiled.transform.AsmUtils.createArgumentLoaders;
+import static org.objectweb.asm.Opcodes.ALOAD;
+import static org.objectweb.asm.Opcodes.ARETURN;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
 
 /**
  * Replaces the method code with a simple call to the super method.

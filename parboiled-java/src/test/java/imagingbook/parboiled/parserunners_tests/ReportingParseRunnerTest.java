@@ -23,14 +23,8 @@ import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.parserunners.ReportingParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 import org.junit.Assert;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parserunners.ReportingParseRunner;
-import imagingbook.parboiled.support.ParsingResult;
 import org.junit.Test;
 
-import static imagingbook.parboiled.errors.ErrorUtils.printParseErrors;
 import static org.junit.Assert.assertEquals;
 
 public class ReportingParseRunnerTest {

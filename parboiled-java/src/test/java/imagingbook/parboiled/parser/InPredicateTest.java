@@ -17,9 +17,6 @@
 package imagingbook.parboiled.parser;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.SkipActionsInPredicates;
 import imagingbook.parboiled.testing.TestNgParboiledTest;

@@ -16,8 +16,9 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.tree.AbstractInsnNode;
+
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 
 /**
  * Removes all unused labels.

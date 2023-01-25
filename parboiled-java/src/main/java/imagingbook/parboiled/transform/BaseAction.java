@@ -22,8 +22,9 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import imagingbook.parboiled.SkippableAction;
+
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 
 /**
  * Base class of generated classes wrapping action expressions.

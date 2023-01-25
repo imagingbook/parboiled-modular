@@ -16,11 +16,13 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Type;
-import static org.objectweb.asm.Opcodes.*;
+
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
+import static org.objectweb.asm.Opcodes.IRETURN;
 
 class ActionClassGenerator extends GroupClassGenerator {
 

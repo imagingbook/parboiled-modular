@@ -22,17 +22,30 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
+import imagingbook.parboiled.support.Checks;
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
-import imagingbook.parboiled.support.Checks;
 
 import java.lang.reflect.Modifier;
-import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import static org.objectweb.asm.Opcodes.*;
-import static imagingbook.parboiled.transform.AsmUtils.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.common.Preconditions.checkState;
+import static imagingbook.parboiled.transform.AsmUtils.getClassConstructor;
+import static imagingbook.parboiled.transform.AsmUtils.getClassField;
+import static imagingbook.parboiled.transform.AsmUtils.getClassForInternalName;
+import static imagingbook.parboiled.transform.AsmUtils.getClassMethod;
+import static org.objectweb.asm.Opcodes.GETFIELD;
+import static org.objectweb.asm.Opcodes.GETSTATIC;
+import static org.objectweb.asm.Opcodes.INVOKEINTERFACE;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
+import static org.objectweb.asm.Opcodes.INVOKEVIRTUAL;
 
 class InstructionGroupCreator implements RuleMethodProcessor  {
 

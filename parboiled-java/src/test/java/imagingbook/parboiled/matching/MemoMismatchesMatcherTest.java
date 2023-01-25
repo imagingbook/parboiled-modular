@@ -17,13 +17,10 @@
 package imagingbook.parboiled.matching;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.MemoMismatches;
+import imagingbook.parboiled.parser.BaseParser;
+import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 

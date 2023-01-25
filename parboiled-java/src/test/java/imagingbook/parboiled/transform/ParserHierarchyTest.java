@@ -17,17 +17,11 @@
 package imagingbook.parboiled.transform;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import org.junit.Assert;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.MemoMismatches;
+import imagingbook.parboiled.parser.BaseParser;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static imagingbook.parboiled.transform.AsmTestUtils.getMethodInstructionList;
-import static imagingbook.parboiled.transform.AsmTestUtils.verifyIntegrity;
-import static org.junit.Assert.assertEquals;
 
 public class ParserHierarchyTest {
 
@@ -81,162 +75,162 @@ public class ParserHierarchyTest {
         ParserClassNode classNode = ParserTransformer.extendParserClass(Parser3.class);
         AsmTestUtils.verifyIntegrity(classNode.name, classNode.getClassCode());
 
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$A()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$A()Limagingbook/parboiled/Rule;")), "" +
                 "Method '$A':\n" +
-                " 0     GETSTATIC org/parboiled/transform/ParserHierarchyTest$Parser1.EMPTY : Lorg/parboiled/Rule;\n" +
+                " 0     GETSTATIC imagingbook/parboiled/transform/ParserHierarchyTest$Parser1.EMPTY : Limagingbook/parboiled/Rule;\n" +
                 " 1     ARETURN\n");
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("A()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("A()Limagingbook/parboiled/Rule;")), "" +
                 "Method 'A':\n" +
                 " 0     ALOAD 0\n" +
-                " 1     GETFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Lorg/parboiled/Rule;\n" +
+                " 1     GETFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Limagingbook/parboiled/Rule;\n" +
                 " 2     DUP\n" +
                 " 3     IFNULL L0\n" +
                 " 4     ARETURN\n" +
                 " 5    L0\n" +
                 " 6     POP\n" +
-                " 7     NEW org/parboiled/matchers/ProxyMatcher\n" +
+                " 7     NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 " 8     DUP\n" +
-                " 9     INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                " 9     INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "10     DUP\n" +
                 "11     ALOAD 0\n" +
                 "12     SWAP\n" +
-                "13     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Lorg/parboiled/Rule;\n" +
+                "13     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Limagingbook/parboiled/Rule;\n" +
                 "14     ALOAD 0\n" +
                 "15     ALOAD 0\n" +
-                "16     INVOKESPECIAL org/parboiled/transform/ParserHierarchyTest$Parser1.A ()Lorg/parboiled/Rule;\n" +
+                "16     INVOKESPECIAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser1.A ()Limagingbook/parboiled/Rule;\n" +
                 "17     BIPUSH 65\n" +
                 "18     INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "19     ICONST_0\n" +
                 "20     ANEWARRAY java/lang/Object\n" +
-                "21     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser2.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "21     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser2.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "22     DUP\n" +
                 "23     IFNULL L1\n" +
                 "24     LDC \"A\"\n" +
-                "25     INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "25     INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "26    L1\n" +
                 "27     DUP_X1\n" +
-                "28     CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "29     INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "28     CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "29     INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "30     DUP\n" +
                 "31     ALOAD 0\n" +
                 "32     SWAP\n" +
-                "33     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Lorg/parboiled/Rule;\n" +
+                "33     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$A : Limagingbook/parboiled/Rule;\n" +
                 "34     ARETURN\n");
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$B()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$B()Limagingbook/parboiled/Rule;")), "" +
                 "Method '$B':\n" +
                 " 0     ALOAD 0\n" +
                 " 1     BIPUSH 66\n" +
                 " 2     INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
-                " 3     NEW org/parboiled/transform/Action$02sFO02Q9LhJ2mmp\n" +
+                " 3     NEW imagingbook/parboiled/transform/Action$n8fyeehUeUjt04sT\n" +
                 " 4     DUP\n" +
                 " 5     LDC \"$B_Action1\"\n" +
-                " 6     INVOKESPECIAL org/parboiled/transform/Action$02sFO02Q9LhJ2mmp.<init> (Ljava/lang/String;)V\n" +
+                " 6     INVOKESPECIAL imagingbook/parboiled/transform/Action$n8fyeehUeUjt04sT.<init> (Ljava/lang/String;)V\n" +
                 " 7     DUP\n" +
                 " 8     ALOAD 0\n" +
-                " 9     PUTFIELD org/parboiled/transform/Action$02sFO02Q9LhJ2mmp.field$0 : Lorg/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
+                " 9     PUTFIELD imagingbook/parboiled/transform/Action$n8fyeehUeUjt04sT.field$0 : Limagingbook/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
                 "10     ICONST_0\n" +
                 "11     ANEWARRAY java/lang/Object\n" +
-                "12     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser1.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "12     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser1.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "13     ARETURN\n");
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("B()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("B()Limagingbook/parboiled/Rule;")), "" +
                 "Method 'B':\n" +
                 " 0     ALOAD 0\n" +
-                " 1     GETFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Lorg/parboiled/Rule;\n" +
+                " 1     GETFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Limagingbook/parboiled/Rule;\n" +
                 " 2     DUP\n" +
                 " 3     IFNULL L0\n" +
                 " 4     ARETURN\n" +
                 " 5    L0\n" +
                 " 6     POP\n" +
-                " 7     NEW org/parboiled/matchers/ProxyMatcher\n" +
+                " 7     NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 " 8     DUP\n" +
-                " 9     INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                " 9     INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "10     DUP\n" +
                 "11     ALOAD 0\n" +
                 "12     SWAP\n" +
-                "13     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Lorg/parboiled/Rule;\n" +
+                "13     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Limagingbook/parboiled/Rule;\n" +
                 "14     ALOAD 0\n" +
                 "15     ALOAD 0\n" +
-                "16     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.$B ()Lorg/parboiled/Rule;\n" +
+                "16     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.$B ()Limagingbook/parboiled/Rule;\n" +
                 "17     BIPUSH 66\n" +
                 "18     INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "19     ICONST_1\n" +
                 "20     ANEWARRAY java/lang/Object\n" +
                 "21     DUP\n" +
                 "22     ICONST_0\n" +
-                "23     NEW org/parboiled/transform/Action$UbnKC3brDnPwNKXv\n" +
+                "23     NEW imagingbook/parboiled/transform/Action$BVh8I0V0xhz9ZCkY\n" +
                 "24     DUP\n" +
                 "25     LDC \"B_Action1\"\n" +
-                "26     INVOKESPECIAL org/parboiled/transform/Action$UbnKC3brDnPwNKXv.<init> (Ljava/lang/String;)V\n" +
+                "26     INVOKESPECIAL imagingbook/parboiled/transform/Action$BVh8I0V0xhz9ZCkY.<init> (Ljava/lang/String;)V\n" +
                 "27     DUP\n" +
                 "28     ALOAD 0\n" +
-                "29     PUTFIELD org/parboiled/transform/Action$UbnKC3brDnPwNKXv.field$0 : Lorg/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
+                "29     PUTFIELD imagingbook/parboiled/transform/Action$BVh8I0V0xhz9ZCkY.field$0 : Limagingbook/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
                 "30     AASTORE\n" +
-                "31     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser3.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "31     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser3.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "32     DUP\n" +
                 "33     IFNULL L1\n" +
                 "34     LDC \"B\"\n" +
-                "35     INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "35     INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "36    L1\n" +
                 "37     DUP_X1\n" +
-                "38     CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "39     INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "38     CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "39     INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "40     DUP\n" +
                 "41     ALOAD 0\n" +
                 "42     SWAP\n" +
-                "43     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Lorg/parboiled/Rule;\n" +
+                "43     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$B : Limagingbook/parboiled/Rule;\n" +
                 "44     ARETURN\n");
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$C()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("$C()Limagingbook/parboiled/Rule;")), "" +
                 "Method '$C':\n" +
                 " 0     ALOAD 0\n" +
                 " 1     ALOAD 0\n" +
-                " 2     INVOKESPECIAL org/parboiled/transform/ParserHierarchyTest$Parser1.C ()Lorg/parboiled/Rule;\n" +
-                " 3     NEW org/parboiled/transform/Action$COjnrfuG0T4POBCt\n" +
+                " 2     INVOKESPECIAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser1.C ()Limagingbook/parboiled/Rule;\n" +
+                " 3     NEW imagingbook/parboiled/transform/Action$Bm4gz4aE0Mv1SWxR\n" +
                 " 4     DUP\n" +
                 " 5     LDC \"$C_Action1\"\n" +
-                " 6     INVOKESPECIAL org/parboiled/transform/Action$COjnrfuG0T4POBCt.<init> (Ljava/lang/String;)V\n" +
+                " 6     INVOKESPECIAL imagingbook/parboiled/transform/Action$Bm4gz4aE0Mv1SWxR.<init> (Ljava/lang/String;)V\n" +
                 " 7     DUP\n" +
                 " 8     ALOAD 0\n" +
-                " 9     PUTFIELD org/parboiled/transform/Action$COjnrfuG0T4POBCt.field$0 : Lorg/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
+                " 9     PUTFIELD imagingbook/parboiled/transform/Action$Bm4gz4aE0Mv1SWxR.field$0 : Limagingbook/parboiled/transform/ParserHierarchyTest$Parser3;\n" +
                 "10     ICONST_0\n" +
                 "11     ANEWARRAY java/lang/Object\n" +
-                "12     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser2.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "12     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser2.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "13     ARETURN\n");
-        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("C()Lorg/parboiled/Rule;")), "" +
+        Assert.assertEquals(AsmTestUtils.getMethodInstructionList(classNode.getRuleMethods().get("C()Limagingbook/parboiled/Rule;")), "" +
                 "Method 'C':\n" +
                 " 0     ALOAD 0\n" +
-                " 1     GETFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Lorg/parboiled/Rule;\n" +
+                " 1     GETFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Limagingbook/parboiled/Rule;\n" +
                 " 2     DUP\n" +
                 " 3     IFNULL L0\n" +
                 " 4     ARETURN\n" +
                 " 5    L0\n" +
                 " 6     POP\n" +
-                " 7     NEW org/parboiled/matchers/ProxyMatcher\n" +
+                " 7     NEW imagingbook/parboiled/matchers/ProxyMatcher\n" +
                 " 8     DUP\n" +
-                " 9     INVOKESPECIAL org/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
+                " 9     INVOKESPECIAL imagingbook/parboiled/matchers/ProxyMatcher.<init> ()V\n" +
                 "10     DUP\n" +
                 "11     ALOAD 0\n" +
                 "12     SWAP\n" +
-                "13     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Lorg/parboiled/Rule;\n" +
+                "13     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Limagingbook/parboiled/Rule;\n" +
                 "14     ALOAD 0\n" +
                 "15     BIPUSH 67\n" +
                 "16     INVOKESTATIC java/lang/Character.valueOf (C)Ljava/lang/Character;\n" +
                 "17     ALOAD 0\n" +
-                "18     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.$C ()Lorg/parboiled/Rule;\n" +
+                "18     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.$C ()Limagingbook/parboiled/Rule;\n" +
                 "19     ICONST_0\n" +
                 "20     ANEWARRAY java/lang/Object\n" +
-                "21     INVOKEVIRTUAL org/parboiled/transform/ParserHierarchyTest$Parser3.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lorg/parboiled/Rule;\n" +
+                "21     INVOKEVIRTUAL imagingbook/parboiled/transform/ParserHierarchyTest$Parser3.Sequence (Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Limagingbook/parboiled/Rule;\n" +
                 "22     DUP\n" +
                 "23     IFNULL L1\n" +
                 "24     LDC \"C\"\n" +
-                "25     INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
+                "25     INVOKEINTERFACE imagingbook/parboiled/Rule.label (Ljava/lang/String;)Limagingbook/parboiled/Rule; (itf)\n" +
                 "26    L1\n" +
                 "27     DUP_X1\n" +
-                "28     CHECKCAST org/parboiled/matchers/Matcher\n" +
-                "29     INVOKEVIRTUAL org/parboiled/matchers/ProxyMatcher.arm (Lorg/parboiled/matchers/Matcher;)V\n" +
+                "28     CHECKCAST imagingbook/parboiled/matchers/Matcher\n" +
+                "29     INVOKEVIRTUAL imagingbook/parboiled/matchers/ProxyMatcher.arm (Limagingbook/parboiled/matchers/Matcher;)V\n" +
                 "30     DUP\n" +
                 "31     ALOAD 0\n" +
                 "32     SWAP\n" +
-                "33     PUTFIELD org/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Lorg/parboiled/Rule;\n" +
+                "33     PUTFIELD imagingbook/parboiled/transform/ParserHierarchyTest$Parser3$$parboiled.cache$C : Limagingbook/parboiled/Rule;\n" +
                 "34     ARETURN\n");
     }
 

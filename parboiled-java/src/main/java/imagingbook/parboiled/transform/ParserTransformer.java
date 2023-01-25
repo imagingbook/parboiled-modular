@@ -16,13 +16,14 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-import org.objectweb.asm.ClassWriter;
 import imagingbook.parboiled.common.ImmutableList;
+import org.objectweb.asm.ClassWriter;
 
 import java.util.List;
 
-import static imagingbook.parboiled.transform.AsmUtils.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.transform.AsmUtils.defineClass;
+import static imagingbook.parboiled.transform.AsmUtils.getExtendedParserClassName;
 
 public class ParserTransformer {
 

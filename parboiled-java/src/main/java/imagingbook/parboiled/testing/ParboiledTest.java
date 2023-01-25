@@ -24,7 +24,10 @@ import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.parserunners.ReportingParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import static imagingbook.parboiled.errors.ErrorUtils.printParseErrors;
 import static imagingbook.parboiled.support.ParseTreeUtils.printNodeTree;

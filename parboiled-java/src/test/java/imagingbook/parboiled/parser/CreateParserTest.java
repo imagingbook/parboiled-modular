@@ -17,8 +17,6 @@
 package imagingbook.parboiled.parser;
 
 import org.junit.Test;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

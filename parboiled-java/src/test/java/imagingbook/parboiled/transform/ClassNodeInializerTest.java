@@ -17,10 +17,8 @@
 package imagingbook.parboiled.transform;
 
 import imagingbook.parboiled.common.Predicate;
-import org.objectweb.asm.tree.MethodNode;
-import imagingbook.parboiled.common.Predicate;
 import org.junit.Before;
-import org.junit.Test;
+import org.objectweb.asm.tree.MethodNode;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -36,8 +34,8 @@ public class ClassNodeInializerTest extends TransformationTest {
 
     //@Test(enabled = false)
     public void testClassNodeSetup() throws Exception {
-        assertEquals(classNode.name, "org/parboiled/transform/TestParser$$parboiled");
-        assertEquals(classNode.superName, "org/parboiled/transform/TestParser");
+        assertEquals(classNode.name, "imagingbook/parboiled/transform/TestParser$$parboiled");
+        assertEquals(classNode.superName, "imagingbook/parboiled/transform/TestParser");
 
         assertEquals(join(classNode.getConstructors(), null), "<init>");
 
