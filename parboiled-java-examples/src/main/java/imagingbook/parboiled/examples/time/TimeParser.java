@@ -16,10 +16,9 @@
 
 package imagingbook.parboiled.examples.time;
 
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
+import imagingbook.parboiled.parser.BaseParser;
 
 /**
  * Parser for very relaxed time literals. Demonstrates usage of the value stack with default values for unmatched rules.

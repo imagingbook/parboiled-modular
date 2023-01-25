@@ -16,7 +16,6 @@
 
 package imagingbook.parboiled.examples.calculators;
 
-import imagingbook.parboiled.support.Var;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.examples.calculators.CalculatorParser3.CalcNode;

@@ -16,9 +16,9 @@
 
 package imagingbook.parboiled.examples.calculators;
 
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
+import imagingbook.parboiled.parser.BaseParser;
 
 /**
  * A basic calculator parser without any actions.
