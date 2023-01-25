@@ -5,32 +5,93 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.imagingbook</groupId>
     <version>2.0.0-SNAPSHOT</version>
-
     <artifactId>parboiled-java-pom</artifactId>
     <packaging>pom</packaging>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>
+        Elegant parsing in Java and Scala - lightweight, easy-to-use, powerful.
+        This is a modularized version of the 'parpoiled' PEG parser Java/Scala
+        implementation developed by Mathias Doenitz, refactored from
+        Version 1.4.1 (https://github.com/sirthias/parboiled, Jan. 2023).
+    </description>
+    <inceptionYear>2009</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>sirthias</id>
+            <name>Mathias Doenitz</name>
+            <organization>org.parboiled</organization>
+            <url>http://parboiled.org</url>
+            <roles>
+                <role>architect</role>
+                <role>original developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Wilhelm Burger</name>
+            <url>https://imagingbook.com</url>
+            <roles>
+                <role>refactoring</role>
+            </roles>
+        </contributor>
+    </contributors>
+
+    <scm>
+        <connection>scm:git:git://github.com/imagingbook/parboiled-modular.git</connection>
+        <developerConnection>scm:git:ssh://github.com:imagingbook/parboiled-modular.git.git</developerConnection>
+        <url>http://github.com/imagingbook/parboiled-modular.git/tree/master</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>Original project licence</comments>
+        </license>
+    </licenses>
+
+    <!-- ********************************************************************* -->
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <asm.version>9.4</asm.version>
         <junit.version>4.13.2</junit.version>
 
-        <!-- SCALA settings -->
-        <scalalibrary.artifact>scala-library</scalalibrary.artifact>
-        <scalalibrary.version>2.13.10</scalalibrary.version>
-
-        <scalatest.artifact>scalatest_2.13</scalatest.artifact>
-        <scalatest.version>3.2.10</scalatest.version>
-
-        <scalatestplus.artifact>testng-7-5_2.13</scalatestplus.artifact>
-        <scalatestplus.version>3.2.15.0</scalatestplus.version>
-
+        <!--   *************** JavDoc related items ****************** -->
         <maven.javadoc.skip>false</maven.javadoc.skip>
-        <!-- <imagingbook.javadocdir>javadoc</imagingbook.javadocdir>-->
+        <imagingbook.header>
+            <![CDATA[<br><font face="verdana"><B>]]>${project.name} ${project.version}<![CDATA[</B></font>]]>
+        </imagingbook.header>
+        <imagingbook.bottom>Build Date: ${maven.build.timestamp}</imagingbook.bottom>
+        <imagingbook.gpgSkip>true</imagingbook.gpgSkip>	<!-- set false on command line for deploy only! -->
+
+        <!--   *************** Deployment related items ****************** -->
+        <imagingbook.deploydir>DEPLOY</imagingbook.deploydir>
+        <imagingbook.skipdeploy>false</imagingbook.skipdeploy>
     </properties>
+
+    <distributionManagement>
+        <!-- used by 'mvn deploy' -->
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+
+        <snapshotRepository>
+            <!-- <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url> -->
+            <id>local-deploy</id>
+            <url>file:///${project.basedir}${file.separator}${imagingbook.deploydir}</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -120,30 +181,75 @@
                 <destDir>javadoc</destDir>
                 <doclint>all,-missing</doclint>
                 <show>protected</show>
+                <author>false</author>
                 <source>${java.version}</source>
-                <linksource>true</linksource>
                 <failOnError>false</failOnError>
                 <verbose>true</verbose>
+                <linksource>true</linksource>
                 <detectJavaApiLink>true</detectJavaApiLink>
                 <detectLinks>true</detectLinks>
+                <header>${imagingbook.header}</header>
+                <!--<footer>${imagingbook.header}</footer>-->
+                <bottom>${imagingbook.bottom}</bottom>
                 <packagesheader>${project.name}</packagesheader>
                 <nohelp>true</nohelp>
             </configuration>
+            <executions> <!-- see https://maven.apache.org/plugins/maven-javadoc-plugin/examples/aggregate.html -->
+                <execution>
+                    <id>aggregate</id>
+                    <goals>
+                        <goal>aggregate</goal>
+                    </goals>
+                    <phase>site</phase>
+                    <configuration>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>attach-javadocs</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                    <configuration>
+                    </configuration>
+                </execution>
+            </executions>
         </plugin>
 
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>3.0.1</version>
+            <configuration>
+                <skip>${imagingbook.gpgSkip}</skip>	<!-- exception with Eclipse maven plugin! -->
+            </configuration>
+            <executions>
+                <execution>
+                    <id>sign-artifacts</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>sign</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
 
-<!--        <plugin>-->
-<!--            <groupId>net.alchim31.maven</groupId>-->
-<!--            <artifactId>scala-maven-plugin</artifactId>-->
-<!--            <version>4.8.0</version>-->
-<!--            &lt;!&ndash;<execution>-->
-<!--                <id>attach-javadocs</id>-->
-<!--                <goals>-->
-<!--                    <goal>doc-jar</goal>-->
-<!--                </goals>-->
-<!--            </execution>&ndash;&gt;-->
-<!--        </plugin>-->
-
+        <plugin> <!-- explicitly define maven-deploy-plugin after other to force exec order -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <skip>${imagingbook.skipdeploy}</skip>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>deploy</id>
+                    <phase>deploy</phase>
+                    <goals>
+                        <goal>deploy</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         </plugins>
     </build>
 
