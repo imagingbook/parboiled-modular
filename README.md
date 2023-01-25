@@ -11,8 +11,13 @@ The features of THIS implementation are:
 * Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
 * Supports the Java 9 module system by defining named modules with controlled imports and exports. 
   Note that the original library could not be imported into a modularized Java project due to overlapping packages
-  in ``parboiled-core`` and ``parboiled-java`` modules. Packages are now separated but
-  some classes in ``parboiled-java`` had to be relocated to the new ``parser`` package.
+  in the ``parboiled-core`` and ``parboiled-java`` modules. Packages are now separated but
+  some classes in ``parboiled-java`` had to be relocated to the new ``parboiled.parser`` package.
+* Module ``parboiled-core`` is 1:1 compatible with the original library.
+  In module ``parboiled-java``, the following classes now reside in package ``parboiled.parser``:
+  * ``BaseActions``, 
+  * ``BaseParser``,
+  * ``Parboiled``.
 
 
 
