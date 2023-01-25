@@ -27,7 +27,12 @@ The features of _this_ implementation are:
 ## Use With Maven
 
 Each of the Java modules is available as a 
-[Maven artifact on Maven Central](https://search.maven.org/search?q=g:com.imagingbook).
+[Maven artifact on Maven Central](https://search.maven.org/search?q=g:com.imagingbook), that is,
+
+* [**parboiled-core**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-core)
+* [**parboiled-java**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java)
+* [**parboiled-java-examples**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java-examples)
+
 For example, to use the `parboiled-core` module, include the following in your
 project's `pom.xml`file:
 ```
@@ -41,13 +46,71 @@ Replace the number in `<version>...</version>` by the most current release versi
 [Maven Central](https://mvnrepository.com/artifact/com.imagingbook/parboiled-core).
 
 
+
 ## API Documentation
 
 * [**parboiled-core**](https://imagingbook.github.io/parboiled-modular/parboiled-core/javadoc)
 * [**parboiled-java**](https://imagingbook.github.io/parboiled-modular/parboiled-java/javadoc)
 * [**parboiled-java-examples**](https://imagingbook.github.io/parboiled-modular/parboiled-java-examples/javadoc)
+
+
+## Examples
+
+The examples in ``parboiled-java-examples`` are an excellent place to get started. 
+Here is an excerpt from the ``CalculatorParser0`` class (note the imports from `imagingbook.parboiled`!):
+```
+package imagingbook.parboiled.examples.calculators;
+
+import imagingbook.parboiled.parser.BaseParser;
+import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.annotations.BuildParseTree;
+
+/**
+ * A basic calculator parser without any actions.
+ */
+@BuildParseTree
+public class CalculatorParser0 extends CalculatorParser<Integer> {
+
+    @Override
+    public Rule InputLine() {
+        return Sequence(Expression(), BaseParser.EOI);
+    }
+
+    Rule Expression() {
+        return Sequence(Term(), ZeroOrMore(AnyOf("+-"), Term()));
+    }
+
+    Rule Term() {
+        return Sequence(Factor(), ZeroOrMore(AnyOf("*/"), Factor()));
+    }
+
+    Rule Factor() {
+        return FirstOf(Number(), Parens());
+    }
+
+    Rule Parens() {
+        return Sequence('(', Expression(), ')');
+    }
+
+    Rule Number() {
+        return OneOrMore(Digit());
+    }
+
+    Rule Digit() {
+        return CharRange('0', '9');
+    }
+
+    //**************** MAIN ****************
+
+    public static void main(String[] args) {
+        main(CalculatorParser0.class);
+    }
+}
+```
+
+
   
-## Notes on unit tests
+## Notes on Unit Tests
 
 * Some unit tests check against canonical class names and/or Java object hash values and are thus sensitive
   to any package and class name changes within the library.
