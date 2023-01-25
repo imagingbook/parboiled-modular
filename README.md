@@ -14,7 +14,7 @@ The features of _this_ implementation are:
   in modules `parboiled-core` and ``parboiled-java``. To separate package `parboiled` the associated classes
   in ``parboiled-java`` were relocated to a _new package_ named `parboiled.parser`.
 * Module ``parboiled-core`` is 1:1 compatible with the original library (just replace `org.` with `imagingbook.`).
-* In module ``parboiled-java``, the following classes moved from `org.parboiled` to the new package `imagingbookparboiled.parser`:
+* In module ``parboiled-java``, the following classes moved from `org.parboiled` to the new package `imagingbook.parboiled.parser`:
   * `BaseActions`,
   * `BaseParser`,
   * `Parboiled`.
