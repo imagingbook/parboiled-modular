@@ -16,7 +16,7 @@
 
 package org.parboiled.scala.rules
 
-import org.parboiled.matchers._
+import imagingbook.parboiled.matchers._
 /**
  * The base class of all rules simply removing a certain number of elements off the top of the value stack.
  */

@@ -20,7 +20,7 @@ import org.testng.annotations.Test
 import org.scalatestplus.testng.TestNGSuiteLike
 import org.testng.Assert._
 import testing.ParboiledTest
-import org.parboiled.matchers.FirstOfStringsMatcher
+import imagingbook.parboiled.matchers.FirstOfStringsMatcher
 
 class FirstOfStringsTest extends ParboiledTest with TestNGSuiteLike {
   // def fail(message: String): Nothing = super.fail(message)(null)

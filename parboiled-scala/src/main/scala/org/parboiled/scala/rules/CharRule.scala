@@ -16,8 +16,8 @@
 
 package org.parboiled.scala.rules
 
-import org.parboiled.matchers._
-import org.parboiled.common.StringUtils.escape
+import imagingbook.parboiled.matchers._
+import imagingbook.parboiled.common.StringUtils.escape
 import java.lang.String
 
 /**

@@ -16,7 +16,7 @@
 
 package org.parboiled.scala.rules
 
-import org.parboiled.matchers._
+import imagingbook.parboiled.matchers._
 import Rule._
 
 /**

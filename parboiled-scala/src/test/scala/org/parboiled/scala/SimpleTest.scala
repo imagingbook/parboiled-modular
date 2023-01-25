@@ -19,9 +19,9 @@ package org.parboiled.scala
 import org.testng.annotations.Test
 import org.scalatestplus.testng.TestNGSuiteLike
 import org.testng.Assert.assertEquals
-import org.parboiled.matchers.Matcher
-import org.parboiled.support.ToStringFormatter
-import org.parboiled.trees.GraphUtils
+import imagingbook.parboiled.matchers.Matcher
+import imagingbook.parboiled.support.ToStringFormatter
+import imagingbook.parboiled.trees.GraphUtils
 import testing.ParboiledTest
 
 class SimpleTest extends ParboiledTest with TestNGSuiteLike {

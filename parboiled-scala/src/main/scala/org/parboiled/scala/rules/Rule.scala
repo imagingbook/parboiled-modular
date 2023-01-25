@@ -17,12 +17,12 @@
 package org.parboiled.scala
 package rules
 
-import org.parboiled.matchers._
-import org.parboiled.Action
-import org.parboiled.Context
+import imagingbook.parboiled.matchers._
+import imagingbook.parboiled.Action
+import imagingbook.parboiled.Context
 import java.lang.String
 import Rule._
-import org.parboiled.support.{IndexRange, ValueStack}
+import imagingbook.parboiled.support.{IndexRange, ValueStack}
 
 /**
  * The base class of all scala parser rules.
@@ -109,9 +109,9 @@ object Rule {
   private[parboiled] val Pop = (vs:ValueStack[Any], _:Int) => vs.pop
   private[parboiled] val Peek: ((ValueStack[Any], Int) => Any) = _.peek(_)
 
-  private def addSub(subs: java.util.List[Matcher], element: Matcher): Array[org.parboiled.Rule] = {
+  private def addSub(subs: java.util.List[Matcher], element: Matcher): Array[imagingbook.parboiled.Rule] = {
     val count = subs.size
-    val array = new Array[org.parboiled.Rule](count + 1)
+    val array = new Array[imagingbook.parboiled.Rule](count + 1)
     subs.toArray(array)
     array(count) = element
     array

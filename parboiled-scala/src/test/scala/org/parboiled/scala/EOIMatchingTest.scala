@@ -18,7 +18,7 @@ package org.parboiled.scala
 
 import org.testng.annotations.Test
 import org.scalatestplus.testng.TestNGSuiteLike
-import org.parboiled.errors.ParserRuntimeException
+import imagingbook.parboiled.errors.ParserRuntimeException
 import testing.ParboiledTest
 
 class EOIMatchingTest extends ParboiledTest with TestNGSuiteLike {
