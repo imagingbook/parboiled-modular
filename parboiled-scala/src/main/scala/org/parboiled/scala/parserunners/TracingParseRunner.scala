@@ -17,11 +17,11 @@
 package org.parboiled.scala
 package parserunners
 
-import org.parboiled.parserunners.{TracingParseRunner => PTracingParseRunner}
-import org.parboiled.Context
+import imagingbook.parboiled.parserunners.{TracingParseRunner => PTracingParseRunner}
+import imagingbook.parboiled.Context
+import imagingbook.parboiled.support.MatcherPath
+import imagingbook.parboiled.common.{Sink, Predicate => PPredicate, Tuple2 => T2}
 import utils.Predicate
-import org.parboiled.support.MatcherPath
-import org.parboiled.common.{Sink, Predicate => PPredicate, Tuple2 => T2}
 
 /**
  * A wrapper for org.parboiled.parserunners.TracingParseRunner which returns a scala ParsingResult.

@@ -17,10 +17,10 @@
 package org.parboiled.scala
 package testing
 
-import org.parboiled.Node
+import imagingbook.parboiled.Node
 import util.DynamicVariable
-import org.parboiled.support.ParseTreeUtils
-import org.parboiled.errors.{ParseError, ErrorUtils}
+import imagingbook.parboiled.support.ParseTreeUtils
+import imagingbook.parboiled.errors.{ParseError, ErrorUtils}
 import org.scalatest.Suite
 
 /**

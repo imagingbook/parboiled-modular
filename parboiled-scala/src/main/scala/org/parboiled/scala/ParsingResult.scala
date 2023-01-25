@@ -16,12 +16,12 @@
 
 package org.parboiled.scala
 
-import org.parboiled.Node
-import org.parboiled.support.ValueStack
-import org.parboiled.errors.ParseError
-import org.parboiled.support.{ParsingResult => PParsingResult}
+import imagingbook.parboiled.Node
+import imagingbook.parboiled.support.ValueStack
+import imagingbook.parboiled.errors.ParseError
+import imagingbook.parboiled.support.{ParsingResult => PParsingResult}
 import annotation.unchecked.uncheckedVariance
-import org.parboiled.buffers.InputBuffer
+import imagingbook.parboiled.buffers.InputBuffer
 import scala.collection.JavaConverters._
 
 object ParsingResult {

@@ -17,7 +17,7 @@
 package org.parboiled.scala
 package parserunners
 
-import org.parboiled.parserunners.{RecoveringParseRunner => PRecoveringParseRunner}
+import imagingbook.parboiled.parserunners.{RecoveringParseRunner => PRecoveringParseRunner}
 
 /**
  * A simple wrapper for org.parboiled.parserunners.RecoveringParseRunner which returns a scala ParsingResult.

@@ -16,11 +16,13 @@
 
 package org.parboiled
 
-import common.FileUtils
-import matchers._
+import imagingbook.parboiled.Action
+import imagingbook.parboiled.Context
+import imagingbook.parboiled.common.FileUtils
+import imagingbook.parboiled.matchers._
+import imagingbook.parboiled.support.Chars
 import scala._
 import rules.Rule._
-import support.Chars
 import io.{Codec, Source}
 import java.io.InputStream
 import util.DynamicVariable

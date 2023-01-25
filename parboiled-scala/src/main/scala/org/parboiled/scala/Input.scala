@@ -16,7 +16,7 @@
 
 package org.parboiled.scala
 
-import org.parboiled.buffers.{InputBuffer, IndentDedentInputBuffer, DefaultInputBuffer}
+import imagingbook.parboiled.buffers.{InputBuffer, IndentDedentInputBuffer, DefaultInputBuffer}
 
 /**
  * Simple Input abstraction serving as the target of a number of implicit conversions defined in the

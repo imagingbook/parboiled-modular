@@ -16,11 +16,11 @@
 
 package org.parboiled.scala
 
-import org.parboiled.matchers._
+import imagingbook.parboiled.matchers._
 import _root_.scala.collection.mutable
-import org.parboiled.Context
+import imagingbook.parboiled.Context
 import rules.Rule._
-import org.parboiled.support.{Chars, ValueStack, Characters}
+import imagingbook.parboiled.support.{Chars, ValueStack, Characters}
 
 /**
  * The main Parser trait for scala parboiled parsers. Defines the basic rule building methods as well as the
