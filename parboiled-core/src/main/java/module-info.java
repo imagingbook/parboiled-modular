@@ -1,10 +1,10 @@
 module imagingbook.parboiled.core {
-    exports org.parboiled.buffers;
-    exports org.parboiled.common;
-    exports org.parboiled.errors;
-    exports org.parboiled.matchers;
-    exports org.parboiled.parserunners;
-    exports org.parboiled.support;
-    exports org.parboiled.trees;
-    exports org.parboiled;
+    exports imagingbook.parboiled.buffers;
+    exports imagingbook.parboiled.common;
+    exports imagingbook.parboiled.errors;
+    exports imagingbook.parboiled.matchers;
+    exports imagingbook.parboiled.parserunners;
+    exports imagingbook.parboiled.support;
+    exports imagingbook.parboiled.trees;
+    exports imagingbook.parboiled;
 }
