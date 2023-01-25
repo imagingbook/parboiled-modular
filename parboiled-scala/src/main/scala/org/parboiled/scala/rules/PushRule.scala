@@ -17,10 +17,8 @@
 package org.parboiled.scala.rules
 
 import org.parboiled.matchers._
-
 import java.lang.String
 import Rule._
-import org.parboiled
 import org.parboiled.support.IndexRange
 
 /**
@@ -85,7 +83,7 @@ class Rule1[+A](val matcher: Matcher) extends PushRule {
 }
 
 object Rule1 {
-  implicit def toRule(rule: Rule1[_]): parboiled.Rule = rule.matcher
+  implicit def toRule(rule: Rule1[_]): org.parboiled.Rule = rule.matcher
 }
 
 /**

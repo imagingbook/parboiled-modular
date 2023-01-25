@@ -16,9 +16,9 @@
 
 package org.parboiled.scala
 
-import org.parboiled.Context
 import org.parboiled.matchers._
 import _root_.scala.collection.mutable
+import org.parboiled.Context
 import rules.Rule._
 import org.parboiled.support.{Chars, ValueStack, Characters}
 
