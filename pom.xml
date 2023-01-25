@@ -15,11 +15,11 @@
         <module>parboiled-java-pom</module>
         <module>parboiled-core</module>
         <module>parboiled-java</module>
-        <module>parboiled-java-examples</module>
+        <module>examples-java</module>
 		
 		<module>parboiled-scala-pom</module>
         <module>parboiled-scala</module>
-        <module>parboiled-scala-examples</module>
+        <module>examples-scala</module>
     </modules>
 
     <build>
