@@ -19,7 +19,7 @@ The features of _this_ implementation are:
   * `BaseParser`,
   * `Parboiled`.
 * All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
-* The build process is based on Maven, all Java modules are available as Maven artifacts on Central.
+* The build process is based on Maven and all Java modules are available as Maven artifacts on Central.
 * The original *Scala* implementation (library and examples) has been refactored and is included here as well. (It is not
   published as a Maven artifact). Note that the Scala part
   may be dropped in a future release.
