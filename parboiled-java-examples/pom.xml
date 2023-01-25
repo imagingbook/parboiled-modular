@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.imagingbook</groupId>
-        <artifactId>parboiled-parent-pom</artifactId>
+        <artifactId>parboiled-java-pom</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../parboiled-parent-pom/pom.xml</relativePath>
+        <relativePath>../parboiled-java-pom/pom.xml</relativePath>
     </parent>
 
-    <artifactId>parboiled-examples-java</artifactId>
+    <artifactId>parboiled-java-examples</artifactId>
 
     <properties>
         <maven.javadoc.skip>true</maven.javadoc.skip>
@@ -23,6 +23,5 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 
 </project>
