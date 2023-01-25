@@ -2,10 +2,17 @@
 
 This is a modularized version of the brilliant ``parboiled`` Java/Scala PEG parser implementation
 developed by Mathias Doenitz, refactored from https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
-The original *parboiled* library provides "for lightweight and easy-to-use, yet powerful and elegant parsing of arbitrary input text based on Parsing expression grammars (PEGs)". 
+The original *parboiled* library provides "for lightweight and easy-to-use, yet powerful and elegant parsing of
+arbitrary input text based on Parsing expression grammars (PEGs)". See <https://github.com/sirthias/parboiled/wiki>
+for additional details
 
+The features of THIS implementation are:
 
-The purpose of this project is to provide a 
+* Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
+* Supports the Java 9 module system by defining named modules with controlled imports and exports. 
+  Note that the original library could not be imported into a modularized Java project due to overlapping packages
+  in ``parboiled-core`` and ``parboiled-java`` modules. Packages are now separated but
+  some classes in ``parboiled-java`` had to be relocated to the new ``parser`` package.
 
 
 
