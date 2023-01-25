@@ -1,4 +1,4 @@
-# parboiled-modular (lighweight & elegant PEG parser)
+# parboiled-modular (a lighweight & elegant PEG parser)
 
 This is a modularized version of the brilliant _parboiled_ Java/Scala PEG parser implementation
 developed by Mathias Doenitz, refactored from https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
