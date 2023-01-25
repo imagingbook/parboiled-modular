@@ -6,10 +6,10 @@ The original *parboiled* library provides "for lightweight and easy-to-use, yet 
 arbitrary input text based on Parsing expression grammars (PEGs)". See <https://github.com/sirthias/parboiled/wiki>
 for additional details
 
-The features of THIS implementation are:
+The features of _this_ implementation are:
 
 * Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
-* Supports the Java 9 module system by defining named modules with controlled imports and exports. 
+* Supports the *Java 9 module system* by defining named modules with controlled imports and exports. 
   Note that the original library could not be imported into a modularized Java project due to overlapping packages
   in the ``parboiled-core`` and ``parboiled-java`` modules. Packages are now separated but
   some classes in ``parboiled-java`` had to be relocated to the new ``parboiled.parser`` package.
@@ -18,7 +18,10 @@ The features of THIS implementation are:
   * ``BaseActions``, 
   * ``BaseParser``,
   * ``Parboiled``.
-
+* All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
+* The build process is based on Maven.
+* The original *Scala* implementation has been refactored and is included as well. Note that the Scala part
+  may be dropped in a future release.
 
 
 ## Please see
