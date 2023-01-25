@@ -12,12 +12,14 @@
     <!-- This POM is only for defining Maven submodules. It is not deployed. -->
 
     <modules>
-        <module>parboiled-parent-pom</module>
+        <module>parboiled-java-pom</module>
         <module>parboiled-core</module>
         <module>parboiled-java</module>
-        <module>parboiled-examples-java</module>
+        <module>parboiled-java-examples</module>
+		
+		<module>parboiled-scala-pom</module>
         <module>parboiled-scala</module>
-        <module>parboiled-examples-scala</module>
+        <module>parboiled-scala-examples</module>
     </modules>
 
     <build>

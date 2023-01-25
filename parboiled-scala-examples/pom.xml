@@ -10,6 +10,16 @@
         <relativePath>../parboiled-scala-pom/pom.xml</relativePath>
     </parent>
 
-    <artifactId>parboiled-scala</artifactId>
+    <artifactId>parboiled-scala-examples</artifactId>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.imagingbook</groupId>
+            <artifactId>parboiled-scala</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
