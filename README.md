@@ -24,6 +24,23 @@ The features of _this_ implementation are:
   published as a Maven artifact). Note that the Scala part
   may be dropped in a future release.
 
+## Use With Maven
+
+Each of the Java modules is available as a 
+[Maven artifact on Maven Central](https://search.maven.org/search?q=g:com.imagingbook).
+For example, to use the `parboiled-core` module, include the following in your
+project's `pom.xml`file:
+```
+<dependency>
+  <groupId>com.imagingbook</groupId>
+  <artifactId>parboiled-core</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+Replace the number in `<version>...</version>` by the most current release version found on 
+[Maven Central](https://mvnrepository.com/artifact/com.imagingbook/parboiled-core).
+
+
 ## API Documentation
 
 * [**parboiled-core**](https://imagingbook.github.io/parboiled-modular/parboiled-core/javadoc)
