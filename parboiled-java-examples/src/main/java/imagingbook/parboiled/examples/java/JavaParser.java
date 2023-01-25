@@ -48,9 +48,7 @@ import imagingbook.parboiled.annotations.MemoMismatches;
 import imagingbook.parboiled.annotations.SuppressNode;
 import imagingbook.parboiled.annotations.SuppressSubnodes;
 import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
-import org.parboiled.annotations.*;
 
 @SuppressWarnings({"InfiniteRecursion"})
 @BuildParseTree
