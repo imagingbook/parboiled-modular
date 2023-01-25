@@ -22,14 +22,10 @@ import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.support.MatcherPath;
 import org.junit.Assert;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.matchers.Matcher;
 import org.junit.Test;
-import imagingbook.parboiled.support.MatcherPath;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MatcherPathTest {
 

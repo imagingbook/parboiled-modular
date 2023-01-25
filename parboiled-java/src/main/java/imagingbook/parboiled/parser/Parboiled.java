@@ -16,14 +16,12 @@
 
 package imagingbook.parboiled.parser;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-
 import imagingbook.parboiled.parserunners.ParseRunner;
-import imagingbook.parboiled.transform.ParserTransformer;
 import imagingbook.parboiled.transform.ParserTransformer;
 
 import java.lang.reflect.Constructor;
 
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 import static imagingbook.parboiled.common.Utils.findConstructor;
 
 /**

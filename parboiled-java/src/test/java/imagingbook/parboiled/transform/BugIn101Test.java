@@ -20,13 +20,7 @@ import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.parserunners.ReportingParseRunner;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parserunners.ReportingParseRunner;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class BugIn101Test {
 

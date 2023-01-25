@@ -18,11 +18,6 @@ package imagingbook.parboiled.parser;
 
 import imagingbook.parboiled.ParserStatistics;
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parserunners.ProfilingParseRunner;
-import imagingbook.parboiled.ParserStatistics;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.annotations.MemoMismatches;
 import imagingbook.parboiled.parserunners.ProfilingParseRunner;
 import org.junit.Test;

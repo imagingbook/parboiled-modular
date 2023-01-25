@@ -22,10 +22,10 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.analysis.Analyzer;
+
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 
 /**
  * Performs data/control flow analysis and constructs the instructions graph.

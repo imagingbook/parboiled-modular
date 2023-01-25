@@ -17,16 +17,12 @@
 package imagingbook.parboiled.matching;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.errors.GrammarException;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import org.junit.Test;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.errors.GrammarException;
-import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.parser.BaseParser;
+import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.testing.TestNgParboiledTest;
+import org.junit.Test;
 
 /**
  * wilbur: partly moved to parboiled-core:org.parboiled.matchers.CreateRecordTests

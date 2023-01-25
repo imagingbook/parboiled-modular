@@ -20,11 +20,6 @@ import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 import org.junit.Assert;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.RecoveringParseRunner;
-import imagingbook.parboiled.support.ParsingResult;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

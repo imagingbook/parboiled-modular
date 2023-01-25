@@ -18,20 +18,13 @@ package imagingbook.parboiled.parser;
 
 import imagingbook.parboiled.ParserStatistics;
 import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.annotations.Label;
 import imagingbook.parboiled.matchers.FirstOfMatcher;
 import imagingbook.parboiled.matchers.Matcher;
 import imagingbook.parboiled.trees.GraphUtils;
 import org.junit.Assert;
-import imagingbook.parboiled.ParserStatistics;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.annotations.Label;
-import imagingbook.parboiled.matchers.FirstOfMatcher;
-import imagingbook.parboiled.matchers.Matcher;
 import org.junit.Test;
 
-import static imagingbook.parboiled.trees.GraphUtils.countAllDistinct;
 import static org.junit.Assert.assertEquals;
 
 public class CachingTest {

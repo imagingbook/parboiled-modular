@@ -17,13 +17,9 @@
 package imagingbook.parboiled.transform;
 
 import imagingbook.parboiled.common.Preconditions;
-import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static imagingbook.parboiled.transform.AsmTestUtils.*;
-import static imagingbook.parboiled.common.Preconditions.*;
 
 // @Test(groups = "primary")
 public class ParserExtensionVerificationTest {

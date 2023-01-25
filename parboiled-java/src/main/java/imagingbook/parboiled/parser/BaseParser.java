@@ -16,12 +16,16 @@
 
 package imagingbook.parboiled.parser;
 
+import imagingbook.parboiled.Action;
+import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.Cached;
 import imagingbook.parboiled.annotations.DontExtend;
 import imagingbook.parboiled.annotations.DontLabel;
 import imagingbook.parboiled.annotations.SkipActionsInPredicates;
 import imagingbook.parboiled.annotations.SuppressNode;
 import imagingbook.parboiled.annotations.SuppressSubnodes;
+import imagingbook.parboiled.common.Utils;
+import imagingbook.parboiled.errors.GrammarException;
 import imagingbook.parboiled.matchers.ActionMatcher;
 import imagingbook.parboiled.matchers.AnyMatcher;
 import imagingbook.parboiled.matchers.AnyOfMatcher;
@@ -39,19 +43,14 @@ import imagingbook.parboiled.matchers.StringMatcher;
 import imagingbook.parboiled.matchers.TestMatcher;
 import imagingbook.parboiled.matchers.TestNotMatcher;
 import imagingbook.parboiled.matchers.ZeroOrMoreMatcher;
-import org.parboiled.annotations.*;
-import imagingbook.parboiled.common.Utils;
-import imagingbook.parboiled.errors.GrammarException;
-import org.parboiled.matchers.*;
-import imagingbook.parboiled.Action;
-import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.support.Characters;
 import imagingbook.parboiled.support.Chars;
 import imagingbook.parboiled.support.Checks;
 
 import java.util.Arrays;
 
-import static imagingbook.parboiled.common.Preconditions.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.common.Preconditions.checkArgument;
 
 /**
  * Base class of all parboiled parsers. Defines the basic rule creation methods.

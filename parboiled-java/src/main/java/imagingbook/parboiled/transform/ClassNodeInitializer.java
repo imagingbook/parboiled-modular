@@ -22,16 +22,24 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-import org.objectweb.asm.*;
-import org.objectweb.asm.tree.MethodNode;
 import imagingbook.parboiled.support.Checks;
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.tree.MethodNode;
 
 import java.io.IOException;
 
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 import static imagingbook.parboiled.transform.AsmUtils.createClassReader;
 import static imagingbook.parboiled.transform.AsmUtils.getExtendedParserClassName;
-import static org.objectweb.asm.Opcodes.*;
+import static org.objectweb.asm.Opcodes.ACC_ABSTRACT;
+import static org.objectweb.asm.Opcodes.ACC_FINAL;
+import static org.objectweb.asm.Opcodes.ACC_NATIVE;
+import static org.objectweb.asm.Opcodes.ACC_PRIVATE;
+import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
 
 /**
  * Initializes the basic ParserClassNode fields and collects all methods.

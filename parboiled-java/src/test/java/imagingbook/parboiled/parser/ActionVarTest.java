@@ -17,11 +17,6 @@
 package imagingbook.parboiled.parser;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.matchers.Matcher;
-import imagingbook.parboiled.support.Var;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.matchers.Matcher;
 import imagingbook.parboiled.support.Var;
@@ -49,7 +44,7 @@ public class ActionVarTest extends TestNgParboiledTest<Integer> {
         Parser parser = Parboiled.createParser(Parser.class);
         Matcher rule = (Matcher) parser.A();
 
-        assertEquals(rule.getClass().getName(), "org.parboiled.matchers.VarFramingMatcher");
+        assertEquals(rule.getClass().getName(), "imagingbook.parboiled.matchers.VarFramingMatcher");
 
         test(rule, "aaaa")
                 .hasNoErrors()

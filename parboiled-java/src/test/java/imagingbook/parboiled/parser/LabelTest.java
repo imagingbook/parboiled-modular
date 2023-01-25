@@ -17,21 +17,13 @@
 package imagingbook.parboiled.parser;
 
 import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.matchers.Matcher;
-import imagingbook.parboiled.support.ToStringFormatter;
-import imagingbook.parboiled.trees.GraphUtils;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.Label;
 import imagingbook.parboiled.matchers.Matcher;
 import imagingbook.parboiled.support.ToStringFormatter;
 import imagingbook.parboiled.testing.TestNgParboiledTest;
+import imagingbook.parboiled.trees.GraphUtils;
 import org.junit.Test;
-
-import static imagingbook.parboiled.trees.GraphUtils.countAllDistinct;
-import static imagingbook.parboiled.trees.GraphUtils.printTree;
 
 public class LabelTest extends TestNgParboiledTest<Object> {
 

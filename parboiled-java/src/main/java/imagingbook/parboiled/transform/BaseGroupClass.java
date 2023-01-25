@@ -16,7 +16,7 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 
 @SuppressWarnings({"UnusedDeclaration"})
 abstract class BaseGroupClass {

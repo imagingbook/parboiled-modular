@@ -16,10 +16,19 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-import org.objectweb.asm.tree.*;
+import org.objectweb.asm.tree.AbstractInsnNode;
+import org.objectweb.asm.tree.InsnList;
+import org.objectweb.asm.tree.InsnNode;
+import org.objectweb.asm.tree.JumpInsnNode;
+import org.objectweb.asm.tree.LabelNode;
+import org.objectweb.asm.tree.MethodInsnNode;
 
-import static org.objectweb.asm.Opcodes.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.common.Preconditions.checkState;
+import static org.objectweb.asm.Opcodes.ARETURN;
+import static org.objectweb.asm.Opcodes.DUP;
+import static org.objectweb.asm.Opcodes.IFNULL;
+import static org.objectweb.asm.Opcodes.INVOKEINTERFACE;
 
 /**
  * Adds the required flag marking calls before the return instruction.

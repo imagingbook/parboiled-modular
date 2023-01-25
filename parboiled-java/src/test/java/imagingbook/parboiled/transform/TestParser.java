@@ -26,13 +26,8 @@ import imagingbook.parboiled.annotations.SuppressNode;
 import imagingbook.parboiled.common.StringUtils;
 import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.support.Var;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.support.Var;
-import org.parboiled.annotations.*;
 
 import static java.lang.Integer.parseInt;
-import static imagingbook.parboiled.common.StringUtils.isEmpty;
 
 @SuppressWarnings({"UnusedDeclaration"})
 @BuildParseTree

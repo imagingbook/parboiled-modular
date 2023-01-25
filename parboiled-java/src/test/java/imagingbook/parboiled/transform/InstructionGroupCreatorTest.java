@@ -16,13 +16,9 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-
 import imagingbook.parboiled.common.FileUtils;
 import imagingbook.parboiled.common.ImmutableList;
 import imagingbook.parboiled.common.Preconditions;
-import imagingbook.parboiled.common.FileUtils;
-import imagingbook.parboiled.common.ImmutableList;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -30,7 +26,6 @@ import java.io.FileOutputStream;
 import java.util.List;
 import java.util.zip.CRC32;
 
-import static imagingbook.parboiled.transform.AsmTestUtils.getMethodInstructionList;
 import static org.junit.Assert.assertEquals;
 
 public class InstructionGroupCreatorTest extends TransformationTest {
@@ -51,7 +46,7 @@ public class InstructionGroupCreatorTest extends TransformationTest {
         setup(TestParser.class);
 
         // testMethodAnalysis("RuleWithComplexActionSetup", 724347041L);
-        testMethodAnalysis("RuleWithComplexActionSetup", 2079378583L);  // wilbur changed (depends on package names!)
+        testMethodAnalysis("RuleWithComplexActionSetup", 3877178706L);  // wilbur changed (depends on package names!)
         //renderToGraphViz(dotSource);
     }
 

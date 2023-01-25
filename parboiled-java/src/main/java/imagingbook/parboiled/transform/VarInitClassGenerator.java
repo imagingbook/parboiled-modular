@@ -16,12 +16,14 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Type;
-import static org.objectweb.asm.Opcodes.*;
-import static imagingbook.parboiled.transform.Types.*;
+
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.transform.Types.BASE_VAR_INIT;
+import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
+import static org.objectweb.asm.Opcodes.ARETURN;
 
 class VarInitClassGenerator extends GroupClassGenerator {
 

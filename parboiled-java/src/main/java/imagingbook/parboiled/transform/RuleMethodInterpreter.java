@@ -22,17 +22,18 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
+import imagingbook.parboiled.support.Checks;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.analysis.AnalyzerException;
 import org.objectweb.asm.tree.analysis.BasicInterpreter;
 import org.objectweb.asm.tree.analysis.BasicValue;
-import imagingbook.parboiled.support.Checks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import static imagingbook.parboiled.common.Preconditions.checkState;
 
 class RuleMethodInterpreter extends BasicInterpreter {
 

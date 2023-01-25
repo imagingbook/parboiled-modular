@@ -16,13 +16,16 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
 import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
 
-import static org.objectweb.asm.Opcodes.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.common.Preconditions.checkState;
+import static org.objectweb.asm.Opcodes.ARETURN;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
+import static org.objectweb.asm.Opcodes.INVOKEVIRTUAL;
 
 /**
  * Replaces the method code with a simple call to the super method.

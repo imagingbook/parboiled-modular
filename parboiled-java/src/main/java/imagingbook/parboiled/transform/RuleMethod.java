@@ -22,7 +22,9 @@
 
 package imagingbook.parboiled.transform;
 
-import static imagingbook.parboiled.common.Preconditions.*;
+import imagingbook.parboiled.common.StringUtils;
+import imagingbook.parboiled.parser.BaseParser;
+import imagingbook.parboiled.support.Var;
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.Type;
@@ -31,16 +33,21 @@ import org.objectweb.asm.tree.LabelNode;
 import org.objectweb.asm.tree.LocalVariableNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.BasicValue;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.common.StringUtils;
-import imagingbook.parboiled.support.Var;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.objectweb.asm.Opcodes.*;
-import static imagingbook.parboiled.transform.AsmUtils.*;
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
+import static imagingbook.parboiled.common.Preconditions.checkState;
+import static imagingbook.parboiled.transform.AsmUtils.getClassForType;
+import static imagingbook.parboiled.transform.AsmUtils.isActionRoot;
+import static imagingbook.parboiled.transform.AsmUtils.isAssignableTo;
+import static imagingbook.parboiled.transform.AsmUtils.isBooleanValueOfZ;
+import static imagingbook.parboiled.transform.AsmUtils.isVarRoot;
+import static org.objectweb.asm.Opcodes.ARETURN;
+import static org.objectweb.asm.Opcodes.INVOKESPECIAL;
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
 
 class RuleMethod extends MethodNode {
 
