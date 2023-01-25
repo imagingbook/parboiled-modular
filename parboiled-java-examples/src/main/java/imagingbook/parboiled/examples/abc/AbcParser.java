@@ -16,9 +16,9 @@
 
 package imagingbook.parboiled.examples.abc;
 
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
+import imagingbook.parboiled.parser.BaseParser;
 
 /**
  * A parser for the classic non-context free language example {@literal { a^n b^n c^n : n >= 1 }}

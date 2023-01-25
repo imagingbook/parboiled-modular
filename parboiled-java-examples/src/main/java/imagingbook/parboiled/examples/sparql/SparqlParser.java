@@ -21,9 +21,8 @@
  */
 package imagingbook.parboiled.examples.sparql;
 
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.parser.BaseParser;
 
 /**
  * SPARQL Parser

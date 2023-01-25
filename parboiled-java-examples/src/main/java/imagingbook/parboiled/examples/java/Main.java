@@ -16,20 +16,27 @@
 
 package imagingbook.parboiled.examples.java;
 
-import static imagingbook.parboiled.common.Preconditions.*;
-
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.ReportingParseRunner;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.ReportingParseRunner;
 import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.parser.Parboiled;
+import imagingbook.parboiled.parserunners.ReportingParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
+import static imagingbook.parboiled.common.Preconditions.checkArgNotNull;
 import static imagingbook.parboiled.errors.ErrorUtils.printParseErrors;
 
 public class Main {

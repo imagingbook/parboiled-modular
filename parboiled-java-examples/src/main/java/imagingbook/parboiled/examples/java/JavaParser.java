@@ -42,13 +42,13 @@
 
 package imagingbook.parboiled.examples.java;
 
+import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.DontLabel;
 import imagingbook.parboiled.annotations.MemoMismatches;
 import imagingbook.parboiled.annotations.SuppressNode;
 import imagingbook.parboiled.annotations.SuppressSubnodes;
 import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.Rule;
 
 @SuppressWarnings({"InfiniteRecursion"})
 @BuildParseTree

@@ -1,9 +1,8 @@
 package imagingbook.parboiled.examples.indenting;
 
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
+import imagingbook.parboiled.parser.BaseParser;
 
 @BuildParseTree
 public class SimpleIndent extends BaseParser<IndentNode> {

@@ -16,15 +16,14 @@
 
 package imagingbook.parboiled.examples.time;
 
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.RecoveringParseRunner;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.common.StringUtils;
-import static imagingbook.parboiled.support.ParseTreeUtils.printNodeTree;
+import imagingbook.parboiled.parser.Parboiled;
+import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 
 import java.util.Scanner;
+
+import static imagingbook.parboiled.support.ParseTreeUtils.printNodeTree;
 
 public class Main {
 

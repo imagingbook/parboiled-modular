@@ -16,10 +16,10 @@
 
 package imagingbook.parboiled.examples.calculators;
 
-import imagingbook.parboiled.parser.BaseParser;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 import imagingbook.parboiled.annotations.SuppressSubnodes;
+import imagingbook.parboiled.parser.BaseParser;
 
 /**
  * A calculator parser building calculation results directly in the parsers value stack.

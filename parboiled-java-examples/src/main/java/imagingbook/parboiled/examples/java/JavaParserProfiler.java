@@ -16,9 +16,8 @@
 
 package imagingbook.parboiled.examples.java;
 
-import imagingbook.parboiled.parserunners.ProfilingParseRunner;
-import imagingbook.parboiled.parserunners.ProfilingParseRunner;
 import imagingbook.parboiled.Rule;
+import imagingbook.parboiled.parserunners.ProfilingParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 
 public class JavaParserProfiler extends Main {

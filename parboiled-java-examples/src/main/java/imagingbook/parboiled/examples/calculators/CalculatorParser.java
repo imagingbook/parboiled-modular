@@ -16,14 +16,11 @@
 
 package imagingbook.parboiled.examples.calculators;
 
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.RecoveringParseRunner;
-import imagingbook.parboiled.parser.BaseParser;
-import imagingbook.parboiled.parser.Parboiled;
-import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.common.StringUtils;
+import imagingbook.parboiled.parser.BaseParser;
+import imagingbook.parboiled.parser.Parboiled;
+import imagingbook.parboiled.parserunners.RecoveringParseRunner;
 import imagingbook.parboiled.support.ParsingResult;
 import imagingbook.parboiled.support.ToStringFormatter;
 import imagingbook.parboiled.trees.GraphNode;
