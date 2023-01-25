@@ -35,7 +35,7 @@
 <span class="source-line-no">022</span><span id="line-22">import org.parboiled.support.IndexRange;</span>
 <span class="source-line-no">023</span><span id="line-23">import org.parboiled.support.Position;</span>
 <span class="source-line-no">024</span><span id="line-24"></span>
-<span class="source-line-no">025</span><span id="line-25">import static org.parboiled.common.Preconditions.checkArgument;</span>
+<span class="source-line-no">025</span><span id="line-25">import static imagingbook.parboiled.common.Preconditions.checkArgument;</span>
 <span class="source-line-no">026</span><span id="line-26"></span>
 <span class="source-line-no">027</span><span id="line-27">/**</span>
 <span class="source-line-no">028</span><span id="line-28"> * Special, immutable InputBuffer implementation for indentation based grammars.</span>
@@ -70,7 +70,7 @@
 <span class="source-line-no">057</span><span id="line-57">     * @param lineCommentStart the string starting a line comment or null, if line comments are not defined</span>
 <span class="source-line-no">058</span><span id="line-58">     * @param strict           signals whether the buffer should throw an {@link IllegalIndentationException} on</span>
 <span class="source-line-no">059</span><span id="line-59">     * "semi-dedents", if false the buffer silently accepts these</span>
-<span class="source-line-no">060</span><span id="line-60">     * @throws org.parboiled.errors.IllegalIndentationException</span>
+<span class="source-line-no">060</span><span id="line-60">     * @throws imagingbook.parboiled.errors.IllegalIndentationException</span>
 <span class="source-line-no">061</span><span id="line-61">     *          if the input contains illegal indentations and the strict flag is set</span>
 <span class="source-line-no">062</span><span id="line-62">     */</span>
 <span class="source-line-no">063</span><span id="line-63">    public IndentDedentInputBuffer(char[] input, int tabStop, String lineCommentStart, boolean strict) {</span>
@@ -87,7 +87,7 @@
 <span class="source-line-no">074</span><span id="line-74">     * @param strict           signals whether the buffer should throw an {@link IllegalIndentationException} on</span>
 <span class="source-line-no">075</span><span id="line-75">     * "semi-dedents", if false the buffer silently accepts these</span>
 <span class="source-line-no">076</span><span id="line-76">     * @param skipEmptyLines   signals whether the buffer should swallow empty lines</span>
-<span class="source-line-no">077</span><span id="line-77">     * @throws org.parboiled.errors.IllegalIndentationException</span>
+<span class="source-line-no">077</span><span id="line-77">     * @throws imagingbook.parboiled.errors.IllegalIndentationException</span>
 <span class="source-line-no">078</span><span id="line-78">     *          if the input contains illegal indentations and the strict flag is set</span>
 <span class="source-line-no">079</span><span id="line-79">     */</span>
 <span class="source-line-no">080</span><span id="line-80">    public IndentDedentInputBuffer(char[] input, int tabStop, String lineCommentStart, boolean strict,</span>

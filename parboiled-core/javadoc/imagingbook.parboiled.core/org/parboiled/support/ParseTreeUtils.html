@@ -74,7 +74,7 @@ loadScripts(document, 'script');</script>
 <h1 title="Class ParseTreeUtils" class="title">Class ParseTreeUtils</h1>
 </div>
 <div class="inheritance" title="Inheritance Tree"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">java.lang.Object</a>
-<div class="inheritance">org.parboiled.support.ParseTreeUtils</div>
+<div class="inheritance">imagingbook.parboiled.support.ParseTreeUtils</div>
 </div>
 <section class="class-description" id="class-description">
 <hr>
@@ -97,7 +97,7 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;<br>C</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodes(java.util.List,org.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;parents,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodes(java.util.List,imagingbook.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;parents,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate,
  C&nbsp;collection)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -105,7 +105,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;<br>C</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodes(org.parboiled.Node,org.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodes(imagingbook.parboiled.Node,imagingbook.parboiled.common.Predicate,C)" class="member-name-link">collectNodes</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate,
  C&nbsp;collection)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -121,7 +121,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;<br>C</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodesByPath(org.parboiled.Node,java.lang.String,C)" class="member-name-link">collectNodesByPath</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#collectNodesByPath(imagingbook.parboiled.Node,java.lang.String,C)" class="member-name-link">collectNodesByPath</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;path,
  C&nbsp;collection)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -134,7 +134,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the last node underneath the given parents for which the given predicate evaluates to true.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V&gt;&nbsp;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findLastNode(org.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findLastNode</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findLastNode(imagingbook.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findLastNode</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the last node underneath the given parent for which the given predicate evaluates to true.</div>
@@ -146,7 +146,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the first node underneath the given parents for which the given predicate evaluates to true.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V&gt;&nbsp;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNode(org.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findNode</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNode(imagingbook.parboiled.Node,org.parboiled.common.Predicate)" class="member-name-link">findNode</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the first node underneath the given parent for which the given predicate evaluates to true.</div>
@@ -158,7 +158,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the first node underneath the given parents which matches the given label prefix.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V&gt;&nbsp;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNodeByLabel(org.parboiled.Node,java.lang.String)" class="member-name-link">findNodeByLabel</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNodeByLabel(imagingbook.parboiled.Node,java.lang.String)" class="member-name-link">findNodeByLabel</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;labelPrefix)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the first node underneath the given parent for which matches the given label prefix.</div>
@@ -170,13 +170,13 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Returns the node underneath the given parents that matches the given path.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V&gt;&nbsp;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNodeByPath(org.parboiled.Node,java.lang.String)" class="member-name-link">findNodeByPath</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#findNodeByPath(imagingbook.parboiled.Node,java.lang.String)" class="member-name-link">findNodeByPath</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;path)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the parse tree node underneath the given parent that matches the given path.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer)" class="member-name-link">getNodeText</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;?&gt;&nbsp;node,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#getNodeText(imagingbook.parboiled.Node,org.parboiled.buffers.InputBuffer)" class="member-name-link">getNodeText</a><wbr>(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;?&gt;&nbsp;node,
  <a href="../buffers/InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Returns the input text matched by the given node, with error correction.</div>
@@ -187,7 +187,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="block">Creates a readable string represenation of the parse tree in the given <a href="ParsingResult.html" title="class in org.parboiled.support"><code>ParsingResult</code></a> object.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static &lt;V&gt;&nbsp;<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#printNodeTree(org.parboiled.support.ParsingResult,org.parboiled.common.Predicate,org.parboiled.common.Predicate)" class="member-name-link">printNodeTree</a><wbr>(<a href="ParsingResult.html" title="class in org.parboiled.support">ParsingResult</a>&lt;V&gt;&nbsp;parsingResult,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#printNodeTree(imagingbook.parboiled.support.ParsingResult,imagingbook.parboiled.common.Predicate,org.parboiled.common.Predicate)" class="member-name-link">printNodeTree</a><wbr>(<a href="ParsingResult.html" title="class in org.parboiled.support">ParsingResult</a>&lt;V&gt;&nbsp;parsingResult,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;nodeFilter,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;subTreeFilter)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
@@ -211,7 +211,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="findNodeByPath(org.parboiled.Node,java.lang.String)">
+<section class="detail" id="findNodeByPath(imagingbook.parboiled.Node,java.lang.String)">
 <h3>findNodeByPath</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-53">findNodeByPath</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;path)</span></div>
@@ -238,7 +238,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-67">findNodeByPath</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;parents,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;path)</span></div>
 <div class="block">Returns the node underneath the given parents that matches the given path.
- See <a href="#findNodeByPath(org.parboiled.Node,java.lang.String)"><code>findNodeByPath(Node, String)</code></a> )} for a description of the path argument.
+ See <a href="#findNodeByPath(imagingbook.parboiled.Node,java.lang.String)"><code>findNodeByPath(Node, String)</code></a> )} for a description of the path argument.
  If the given collections of parents is null or empty or no node is found the method returns null.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -250,8 +250,8 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="collectNodesByPath(org.parboiled.Node,java.lang.String,C)">
-<h3 id="collectNodesByPath(org.parboiled.Node,java.lang.String,java.util.Collection)">collectNodesByPath</h3>
+<section class="detail" id="collectNodesByPath(imagingbook.parboiled.Node,java.lang.String,C)">
+<h3 id="collectNodesByPath(imagingbook.parboiled.Node,java.lang.String,java.util.Collection)">collectNodesByPath</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;</span>&nbsp;<span class="return-type">C</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-98">collectNodesByPath</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;path,
@@ -290,7 +290,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="findNode(org.parboiled.Node,org.parboiled.common.Predicate)">
+<section class="detail" id="findNode(imagingbook.parboiled.Node,org.parboiled.common.Predicate)">
 <h3>findNode</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-143">findNode</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</span></div>
@@ -322,7 +322,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="findNodeByLabel(org.parboiled.Node,java.lang.String)">
+<section class="detail" id="findNodeByLabel(imagingbook.parboiled.Node,java.lang.String)">
 <h3>findNodeByLabel</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-182">findNodeByLabel</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;labelPrefix)</span></div>
@@ -354,7 +354,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="findLastNode(org.parboiled.Node,org.parboiled.common.Predicate)">
+<section class="detail" id="findLastNode(imagingbook.parboiled.Node,org.parboiled.common.Predicate)">
 <h3>findLastNode</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-206">findLastNode</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate)</span></div>
@@ -386,8 +386,8 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="collectNodes(org.parboiled.Node,org.parboiled.common.Predicate,C)">
-<h3 id="collectNodes(org.parboiled.Node,org.parboiled.common.Predicate,java.util.Collection)">collectNodes</h3>
+<section class="detail" id="collectNodes(imagingbook.parboiled.Node,imagingbook.parboiled.common.Predicate,C)">
+<h3 id="collectNodes(imagingbook.parboiled.Node,imagingbook.parboiled.common.Predicate,java.util.Collection)">collectNodes</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;</span>&nbsp;<span class="return-type">C</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-246">collectNodes</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&nbsp;parent,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate,
@@ -404,7 +404,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="getNodeText(org.parboiled.Node,org.parboiled.buffers.InputBuffer)">
+<section class="detail" id="getNodeText(imagingbook.parboiled.Node,org.parboiled.buffers.InputBuffer)">
 <h3>getNodeText</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-262">getNodeText</a></span><wbr><span class="parameters">(<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;?&gt;&nbsp;node,
  <a href="../buffers/InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer)</span></div>
@@ -419,8 +419,8 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="collectNodes(java.util.List,org.parboiled.common.Predicate,C)">
-<h3 id="collectNodes(java.util.List,org.parboiled.common.Predicate,java.util.Collection)">collectNodes</h3>
+<section class="detail" id="collectNodes(java.util.List,imagingbook.parboiled.common.Predicate,C)">
+<h3 id="collectNodes(java.util.List,imagingbook.parboiled.common.Predicate,java.util.Collection)">collectNodes</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V,<wbr>
 C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&gt;</span>&nbsp;<span class="return-type">C</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-304">collectNodes</a></span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;parents,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;predicate,
@@ -450,7 +450,7 @@ C extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/
 </section>
 </li>
 <li>
-<section class="detail" id="printNodeTree(org.parboiled.support.ParsingResult,org.parboiled.common.Predicate,org.parboiled.common.Predicate)">
+<section class="detail" id="printNodeTree(imagingbook.parboiled.support.ParsingResult,imagingbook.parboiled.common.Predicate,org.parboiled.common.Predicate)">
 <h3>printNodeTree</h3>
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="type-parameters">&lt;V&gt;</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/support/ParseTreeUtils.html#line-340">printNodeTree</a></span><wbr><span class="parameters">(<a href="ParsingResult.html" title="class in org.parboiled.support">ParsingResult</a>&lt;V&gt;&nbsp;parsingResult,
  <a href="../common/Predicate.html" title="interface in org.parboiled.common">Predicate</a>&lt;<a href="../Node.html" title="interface in org.parboiled">Node</a>&lt;V&gt;&gt;&nbsp;nodeFilter,
