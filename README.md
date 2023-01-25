@@ -12,7 +12,7 @@ The features of _this_ implementation are:
 * Supports the *Java 9 module system* by defining named modules with controlled imports and exports. 
   Note that the original library could not be imported into a modularized Java project due to package overlaps
   in modules `parboiled-core` and ``parboiled-java``. To separate package `parboiled` the associated classes
-  in ``parboiled-java`` were relocated to a _new package_ named `parboiled.parser`.
+  in ``org.parboiled-java`` were relocated to a _new package_ named `imagingbook.parboiled.parser`.
 * Module ``parboiled-core`` is 1:1 compatible with the original library (just replace `org.` with `imagingbook.`).
 * In module ``parboiled-java``, the following classes moved from `org.parboiled` to the new package `imagingbook.parboiled.parser`:
   * `BaseActions`,
