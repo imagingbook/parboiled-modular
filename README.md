@@ -10,14 +10,14 @@ The features of _this_ implementation are:
 
 * Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
 * Supports the *Java 9 module system* by defining named modules with controlled imports and exports. 
-  Note that the original library could not be imported into a modularized Java project due to overlapping packages
-  in the ``parboiled-core`` and ``parboiled-java`` modules. Packages are now separated but
-  some classes in ``parboiled-java`` had to be relocated to the new ``parboiled.parser`` package.
+  Note that the original library could not be imported into a modularized Java project due to package overlaps
+  in modules `parboiled-core` and ``parboiled-java``. To separate package `parboiled` the associated classes
+  in ``parboiled-java`` were relocated to a _new package_ named `parboiled.parser`.
 * Module ``parboiled-core`` is 1:1 compatible with the original library.
-  In module ``parboiled-java``, the following classes now reside in package ``parboiled.parser``:
-  * ``BaseActions``, 
-  * ``BaseParser``,
-  * ``Parboiled``.
+* In module ``parboiled-java``, the following classes moved from `parboiled` to the new package `parboiled.parser`:
+  * `BaseActions`,
+  * `BaseParser`,
+  * `Parboiled`.
 * All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
 * The build process is based on Maven, all Java modules are available as Maven artifacts on Central.
 * The original *Scala* implementation (library and examples) has been refactored and is included here as well. (It is not
@@ -112,7 +112,7 @@ public class CalculatorParser0 extends CalculatorParser<Integer> {
   
 ## Notes on Unit Tests
 
-* Some unit tests check against canonical class names and/or Java object hash values and are thus sensitive
+* Some unit tests in this project check against canonical class names and/or Java object hash values and are thus sensitive
   to any package and class name changes within the library.
 * Some of the tests that read input strings from files check againsto results provided in text files require
   that line endings (EOLs) must remain *unchanged* by GIT. Otherwise tests may fail.
