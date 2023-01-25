@@ -21,7 +21,6 @@ import matchers._
 import scala._
 import rules.Rule._
 import support.Chars
-
 import io.{Codec, Source}
 import java.io.InputStream
 import util.DynamicVariable
