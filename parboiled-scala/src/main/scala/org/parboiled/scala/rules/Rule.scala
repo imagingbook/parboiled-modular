@@ -18,7 +18,7 @@ package org.parboiled.scala
 package rules
 
 import org.parboiled
-import org.parboiled.{Action, Context, parse}
+import org.parboiled.{Action, Context}
 import org.parboiled.matchers._
 import org.parboiled.scala.rules.Rule._
 import org.parboiled.support.{IndexRange, ValueStack}
