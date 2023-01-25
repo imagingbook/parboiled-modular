@@ -75,6 +75,7 @@
         <scalatestplus.version>3.2.15.0</scalatestplus.version>
 
         <maven.javadoc.skip>true</maven.javadoc.skip>
+        <imagingbook.skipdeploy>true</imagingbook.skipdeploy>
     </properties>
 
     <dependencies>
@@ -160,6 +161,15 @@
                 <version>2.12.4</version>
                 <configuration>
                     <skipTests>false</skipTests>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <skip>${imagingbook.skipdeploy}</skip>
                 </configuration>
             </plugin>
 
