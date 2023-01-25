@@ -114,8 +114,8 @@ public class CalculatorParser0 extends CalculatorParser<Integer> {
 
 * Some unit tests in this project check against package/class names and/or Java object hash values and are thus sensitive
   to any package and class name changes within the library.
-* Some of the tests that read input strings from files check againsto results provided in text files require
-  that line endings (EOLs) must remain *unchanged* by GIT. Otherwise tests may fail.
+* Some of the tests that read input or expected output texts from files require
+  that line endings (EOLs) must remain *unchanged* by GIT, otherwise tests are likely to fail.
   The same is true for scala source files that contain literal strings for either input or parsing results.
   EOL conversion should be suppressed by the repo's ``.gitattributes`` settings.
   However, it may be necessary to also change the global GIT settings on your client machine
