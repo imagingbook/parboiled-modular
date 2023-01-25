@@ -1,4 +1,4 @@
-# parboiled-modular
+# parboiled-modular (lighweight & elegant PEG parser)
 
 This is a modularized version of the brilliant _parboiled_ Java/Scala PEG parser implementation
 developed by Mathias Doenitz, refactored from https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
@@ -19,19 +19,10 @@ The features of _this_ implementation are:
   * ``BaseParser``,
   * ``Parboiled``.
 * All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
-* The build process is based on Maven.
-* The original *Scala* implementation has been refactored and is included as well. Note that the Scala part
+* The build process is based on Maven, all Java modules are available as Maven artifacts on Central.
+* The original *Scala* implementation (library and examples) has been refactored and is included here as well. (It is not
+  published as a Maven artifact). Note that the Scala part
   may be dropped in a future release.
-
-
-## Please see
-
-* <https://repo1.maven.org/maven2/org/parboiled/> for download access to the artifacts
-* <https://github.com/sirthias/parboiled/wiki> for all documentation
-* <https://sirthias.github.io/parboiled/api/core> for the parboiled-core API javadoc
-* <https://sirthias.github.io/parboiled/api/java> for the parboiled-java API javadoc
-* <https://sirthias.github.io/parboiled/api/scala> for the parboiled-scala API scaladoc
-* <https://github.com/sirthias/parboiled/wiki/Patch-Policy> for the Patch Policy
 
 ## API Documentation
 
@@ -39,10 +30,10 @@ The features of _this_ implementation are:
 * [**parboiled-java**](https://imagingbook.github.io/parboiled-modular/parboiled-java/javadoc)
 * [**parboiled-java-examples**](https://imagingbook.github.io/parboiled-modular/parboiled-java-examples/javadoc)
   
-## A note on the unit tests
+## Notes on unit tests
 
 * Some unit tests check against canonical class names and/or Java object hash values and are thus sensitive
-  to any package and class name changes.
+  to any package and class name changes within the library.
 * Some of the tests that read input strings from files check againsto results provided in text files require
   that line endings (EOLs) must remain *unchanged* by GIT. Otherwise tests may fail.
   The same is true for scala source files that contain literal strings for either input or parsing results.
