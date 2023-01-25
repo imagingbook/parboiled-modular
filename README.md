@@ -13,7 +13,7 @@ The features of _this_ implementation are:
   Note that the original library could not be imported into a modularized Java project due to package overlaps
   in modules `parboiled-core` and ``parboiled-java``. To separate package `parboiled` the associated classes
   in ``parboiled-java`` were relocated to a _new package_ named `parboiled.parser`.
-* Module ``parboiled-core`` is 1:1 compatible with the original library.
+* Module ``parboiled-core`` is 1:1 compatible with the original library (just replace `org.` with `imagingbook.`).
 * In module ``parboiled-java``, the following classes moved from `parboiled` to the new package `parboiled.parser`:
   * `BaseActions`,
   * `BaseParser`,
@@ -62,6 +62,7 @@ Here is an excerpt from the ``CalculatorParser0`` class (note the imports from `
 package imagingbook.parboiled.examples.calculators;
 
 import imagingbook.parboiled.parser.BaseParser;
+//     ^^^^^^^^^^^           ^^^^^^                      NOTE package names!
 import imagingbook.parboiled.Rule;
 import imagingbook.parboiled.annotations.BuildParseTree;
 
