@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled;
+package org.parboiled.parseXX;
 
 import org.parboiled.parse.Context;
 import org.parboiled.parse.ContextAware;

@@ -16,8 +16,8 @@
 
 package org.parboiled;
 
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressSubnodes;
 import org.parboiled.common.Reference;

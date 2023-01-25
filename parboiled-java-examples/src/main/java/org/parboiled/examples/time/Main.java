@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.time;
 
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.parserunners.RecoveringParseRunner;
 import org.parboiled.common.StringUtils;
 import static org.parboiled.support.ParseTreeUtils.printNodeTree;

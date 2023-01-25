@@ -16,9 +16,9 @@
 
 package org.parboiled;
 
-import org.parboiled.BaseActions;
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.BaseActions;
+import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.Label;
 import org.parboiled.parse.Action;

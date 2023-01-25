@@ -16,8 +16,8 @@
 
 package org.parboiled.transform;
 
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.BaseParser;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.parse.Rule;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Assert;

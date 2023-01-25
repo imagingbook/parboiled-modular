@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.abc;
 
-import org.parboiled.Parboiled;
+import org.parboiled.parseXX.Parboiled;
 import org.parboiled.common.StringUtils;
 import org.parboiled.errors.ErrorUtils;
 
