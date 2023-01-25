@@ -47,7 +47,7 @@ public class InstructionGroupCreatorTest extends TransformationTest {
         setup(TestParser.class);
 
         // testMethodAnalysis("RuleWithComplexActionSetup", 724347041L);
-        testMethodAnalysis("RuleWithComplexActionSetup", 1976968592L);  // wilbur changed
+        testMethodAnalysis("RuleWithComplexActionSetup", 2079378583L);  // wilbur changed (depends on package names!)
         //renderToGraphViz(dotSource);
     }
 

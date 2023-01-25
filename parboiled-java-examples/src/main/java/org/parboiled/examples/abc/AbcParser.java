@@ -16,8 +16,8 @@
 
 package org.parboiled.examples.abc;
 
-import org.parboiled.BaseParser;
-import org.parboiled.parse.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 
 /**

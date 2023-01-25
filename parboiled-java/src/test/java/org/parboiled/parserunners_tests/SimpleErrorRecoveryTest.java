@@ -16,9 +16,9 @@
 
 package org.parboiled.parserunners_tests;
 
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
-import org.parboiled.parse.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
+import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.parserunners.RecoveringParseRunner;
 import org.parboiled.testing.TestNgParboiledTest;

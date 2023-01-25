@@ -16,9 +16,9 @@
 
 package org.parboiled.matching;
 
-import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
-import org.parboiled.parse.Rule;
+import org.parboiled.parser.BaseParser;
+import org.parboiled.parser.Parboiled;
+import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.MemoMismatches;
 import org.parboiled.testing.TestNgParboiledTest;

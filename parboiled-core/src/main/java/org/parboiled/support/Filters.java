@@ -16,9 +16,9 @@
 
 package org.parboiled.support;
 
-import org.parboiled.parse.Context;
-import org.parboiled.parse.Node;
-import org.parboiled.parse.Rule;
+import org.parboiled.Context;
+import org.parboiled.Node;
+import org.parboiled.Rule;
 import org.parboiled.common.Predicate;
 import org.parboiled.common.Predicates;
 import org.parboiled.common.Tuple2;

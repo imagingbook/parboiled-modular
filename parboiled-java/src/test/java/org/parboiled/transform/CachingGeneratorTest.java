@@ -44,7 +44,7 @@ public class CachingGeneratorTest extends TransformationTest {
     public void testCachingGenerator() throws Exception {
         assertTraceDumpEquality(processMethod("RuleWithoutAction", processors), "" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/parse/Rule;\n" +
+                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
@@ -56,13 +56,13 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithoutAction ()Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithoutAction ()Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"RuleWithoutAction\"\n" +
-                "    INVOKEINTERFACE org/parboiled/parse/Rule.label (Ljava/lang/String;)Lorg/parboiled/parse/Rule; (itf)\n" +
+                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP_X1\n" +
                 "    CHECKCAST org/parboiled/matchers/Matcher\n" +
@@ -70,13 +70,13 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithoutAction : Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         assertTraceDumpEquality(processMethod("RuleWithNamedLabel", processors), "" +
                 "  @Lorg/parboiled/annotations/Label;(value=\"harry\")\n" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/parse/Rule;\n" +
+                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
@@ -88,13 +88,13 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithNamedLabel ()Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithNamedLabel ()Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"harry\"\n" +
-                "    INVOKEINTERFACE org/parboiled/parse/Rule.label (Ljava/lang/String;)Lorg/parboiled/parse/Rule; (itf)\n" +
+                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP_X1\n" +
                 "    CHECKCAST org/parboiled/matchers/Matcher\n" +
@@ -102,12 +102,12 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithNamedLabel : Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
 
         assertTraceDumpEquality(processMethod("RuleWithLeaf", processors), "" +
                 "    ALOAD 0\n" +
-                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/parse/Rule;\n" +
+                "    GETFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L0\n" +
                 "    ARETURN\n" +
@@ -119,17 +119,17 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
                 "    ALOAD 0\n" +
-                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithLeaf ()Lorg/parboiled/parse/Rule;\n" +
+                "    INVOKESPECIAL org/parboiled/transform/TestParser.RuleWithLeaf ()Lorg/parboiled/Rule;\n" +
                 "    DUP\n" +
                 "    IFNULL L1\n" +
                 "    LDC \"RuleWithLeaf\"\n" +
-                "    INVOKEINTERFACE org/parboiled/parse/Rule.label (Ljava/lang/String;)Lorg/parboiled/parse/Rule; (itf)\n" +
+                "    INVOKEINTERFACE org/parboiled/Rule.label (Ljava/lang/String;)Lorg/parboiled/Rule; (itf)\n" +
                 "   L1\n" +
                 "    DUP\n" +
                 "    IFNULL L2\n" +
-                "    INVOKEINTERFACE org/parboiled/parse/Rule.suppressNode ()Lorg/parboiled/parse/Rule; (itf)\n" +
+                "    INVOKEINTERFACE org/parboiled/Rule.suppressNode ()Lorg/parboiled/Rule; (itf)\n" +
                 "   L2\n" +
                 "    DUP_X1\n" +
                 "    CHECKCAST org/parboiled/matchers/Matcher\n" +
@@ -137,7 +137,7 @@ public class CachingGeneratorTest extends TransformationTest {
                 "    DUP\n" +
                 "    ALOAD 0\n" +
                 "    SWAP\n" +
-                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/parse/Rule;\n" +
+                "    PUTFIELD org/parboiled/transform/TestParser$$parboiled.cache$RuleWithLeaf : Lorg/parboiled/Rule;\n" +
                 "    ARETURN\n");
     }
 
