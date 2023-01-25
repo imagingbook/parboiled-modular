@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.imagingbook</groupId>
         <artifactId>parboiled-java-pom</artifactId>
-        <version>2.0.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../parboiled-java-pom/pom.xml</relativePath>
     </parent>
 
@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.imagingbook</groupId>
             <artifactId>parboiled-core</artifactId>
-            <version>2.0.0-SNAPSHOT</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
