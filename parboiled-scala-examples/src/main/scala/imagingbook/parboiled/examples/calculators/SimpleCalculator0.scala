@@ -16,9 +16,9 @@
 
 package imagingbook.parboiled.examples.calculators
 
-import org.parboiled.scala.Parser
-import org.parboiled.scala.rules.Rule0
-import org.parboiled.scala._
+import imagingbook.parboiled.scala.Parser
+import imagingbook.parboiled.scala.rules.Rule0
+import imagingbook.parboiled.scala._
 
 /**
  * A recognizer for a very simple calculator language supporting the 4 basic calculation types on integers.

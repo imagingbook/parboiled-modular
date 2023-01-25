@@ -16,9 +16,9 @@
 
 package imagingbook.parboiled.examples.json
 
-import org.parboiled.scala.Parser
-import org.parboiled.scala.rules.Rule0
-import org.parboiled.scala._
+import imagingbook.parboiled.scala.Parser
+import imagingbook.parboiled.scala.rules.Rule0
+import imagingbook.parboiled.scala._
 
 import java.lang.String
 

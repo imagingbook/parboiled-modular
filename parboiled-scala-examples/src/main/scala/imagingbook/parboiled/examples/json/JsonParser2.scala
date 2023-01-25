@@ -17,9 +17,9 @@
 package imagingbook.parboiled.examples.json
 
 import imagingbook.parboiled.errors.{ErrorUtils, ParsingException}
-import org.parboiled.scala.Parser
-import org.parboiled.scala.rules.{Rule0, Rule1}
-import org.parboiled.scala._
+import imagingbook.parboiled.scala.Parser
+import imagingbook.parboiled.scala.rules.{Rule0, Rule1}
+import imagingbook.parboiled.scala._
 
 import java.lang.String
 
