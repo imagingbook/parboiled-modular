@@ -90,9 +90,9 @@ implements <a href="Context.html" title="interface in org.parboiled.parse">Conte
  After the rule tree (which is in fact a directed and potentially even cyclic graph of <a href="../matchers/Matcher.html" title="interface in org.parboiled.matchers"><code>Matcher</code></a> instances)
  has been created a root MatcherContext is instantiated for the root rule (Matcher).
  A subsequent call to <a href="#runMatcher()"><code>runMatcher()</code></a> starts the parsing process.</p>
- <p>The MatcherContext delegates to a given <a href="MatchHandler.html" title="interface in org.parboiled.parse"><code>MatchHandler</code></a> to call <a href="../matchers/Matcher.html#match(org.parboiled.parse.MatcherContext)"><code>Matcher.match(MatcherContext)</code></a>,
+ <p>The MatcherContext delegates to a given <a href="MatchHandler.html" title="interface in org.parboiled.parse"><code>MatchHandler</code></a> to call <a href="../matchers/Matcher.html#match(org.parboiled.MatcherContext)"><code>Matcher.match(MatcherContext)</code></a>,
  passing itself to the Matcher which executes its logic, potentially calling sub matchers.
- For each sub matcher the matcher creates/initializes a subcontext with <a href="../matchers/Matcher.html#getSubContext(org.parboiled.parse.MatcherContext)"><code>Matcher.getSubContext(MatcherContext)</code></a>
+ For each sub matcher the matcher creates/initializes a subcontext with <a href="../matchers/Matcher.html#getSubContext(org.parboiled.MatcherContext)"><code>Matcher.getSubContext(MatcherContext)</code></a>
  and then calls <a href="#runMatcher()"><code>runMatcher()</code></a> on it.</p>
  <p>This basically creates a stack of MatcherContexts, each corresponding to their rule matchers. The MatcherContext
  instances serve as companion objects to the matchers, providing them with support for building the
@@ -113,7 +113,7 @@ implements <a href="Context.html" title="interface in org.parboiled.parse">Conte
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.parse.MatchHandler,org.parboiled.matchers.Matcher,boolean)" class="member-name-link">MatcherContext</a><wbr>(<a href="../buffers/InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.MatchHandler,org.parboiled.matchers.Matcher,boolean)" class="member-name-link">MatcherContext</a><wbr>(<a href="../buffers/InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
  <a href="../support/ValueStack.html" title="interface in org.parboiled.support">ValueStack</a>&lt;<a href="MatcherContext.html" title="type parameter in MatcherContext">V</a>&gt;&nbsp;valueStack,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="../errors/ParseError.html" title="interface in org.parboiled.errors">ParseError</a>&gt;&nbsp;parseErrors,
  <a href="MatchHandler.html" title="interface in org.parboiled.parse">MatchHandler</a>&nbsp;matchHandler,
@@ -325,7 +325,7 @@ implements <a href="Context.html" title="interface in org.parboiled.parse">Conte
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.parse.MatchHandler,org.parboiled.matchers.Matcher,boolean)">
+<section class="detail" id="&lt;init&gt;(org.parboiled.buffers.InputBuffer,org.parboiled.support.ValueStack,java.util.List,org.parboiled.MatchHandler,org.parboiled.matchers.Matcher,boolean)">
 <h3>MatcherContext</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name"><a href="../../../../src-html/imagingbook.parboiled.core/org/parboiled/parse/MatcherContext.html#line-98">MatcherContext</a></span><wbr><span class="parameters">(<a href="../buffers/InputBuffer.html" title="interface in org.parboiled.buffers">InputBuffer</a>&nbsp;inputBuffer,
  <a href="../support/ValueStack.html" title="interface in org.parboiled.support">ValueStack</a>&lt;<a href="MatcherContext.html" title="type parameter in MatcherContext">V</a>&gt;&nbsp;valueStack,

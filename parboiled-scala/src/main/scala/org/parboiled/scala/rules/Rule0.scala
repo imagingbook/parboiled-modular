@@ -20,6 +20,7 @@ import org.parboiled.matchers._
 
 import java.lang.String
 import Rule._
+import org.parboiled
 import org.parboiled.parse
 import org.parboiled.support.IndexRange
 
@@ -58,6 +59,6 @@ class Rule0(val matcher: Matcher) extends Rule {
 }
 
 object Rule0 {
-  implicit def toRule(rule: Rule0): parse.Rule = rule.matcher
+  implicit def toRule(rule: Rule0): parboiled.Rule = rule.matcher
 }
 

@@ -21,7 +21,7 @@ import org.parboiled.parseXX.BaseParser;
 import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.errors.GrammarException;
-import org.parboiled.parse.Rule;
+import org.parboiled.Rule;
 import org.parboiled.testing.TestNgParboiledTest;
 
 /**

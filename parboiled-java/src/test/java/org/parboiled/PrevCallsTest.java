@@ -21,7 +21,6 @@ import org.parboiled.parseXX.Parboiled;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressSubnodes;
 import org.parboiled.common.Reference;
-import org.parboiled.parse.Rule;
 import org.parboiled.testing.TestNgParboiledTest;
 import org.junit.Test;
 

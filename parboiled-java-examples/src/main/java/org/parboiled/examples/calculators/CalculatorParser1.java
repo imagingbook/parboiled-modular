@@ -16,7 +16,7 @@
 
 package org.parboiled.examples.calculators;
 
-import org.parboiled.parse.Rule;
+import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 import org.parboiled.annotations.SuppressSubnodes;
 

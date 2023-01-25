@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.parse;
+package org.parboiled;
 
 /**
  * An action that can optionally be skipped when run underneath a predicate matcher.

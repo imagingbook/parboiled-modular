@@ -18,7 +18,6 @@ package org.parboiled;
 
 import org.parboiled.parseXX.BaseParser;
 import org.parboiled.parseXX.Parboiled;
-import org.parboiled.parse.Rule;
 import org.parboiled.parserunners.RecoveringParseRunner;
 import org.junit.Test;
 

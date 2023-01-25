@@ -14,19 +14,21 @@
  * limitations under the License.
  */
 
-package org.parboiled.parse;
+package org.parboiled;
 
 /**
- * A MatchHandler is responsible for actually running the match of a given {@link MatcherContext}.
- * Many times it wraps the actual call to the matcher with some custom logic, e.g. for error handling.
+ * Interface that can be implemented by classes containing action methods.
+ * If the class containing action methods implements this interface parboiled will use it to inform the
+ * instance of the current context, immediately before an action call.
  */
-public interface MatchHandler {
+public interface ContextAware<V> {
 
     /**
-     * Runs the given MatcherContext.
+     * Called immediately before any parser action method invocation. Informs the object containing the
+     * action about the context to be used for the coming action call.
      *
-     * @param context the MatcherContext
-     * @return true if matched
+     * @param context the context
      */
-    boolean match(MatcherContext<?> context);
+    void setContext(Context<V> context);
+
 }

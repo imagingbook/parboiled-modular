@@ -18,7 +18,6 @@ package org.parboiled
 
 import common.FileUtils
 import matchers._
-import org.parboiled.parse.{Action, Context}
 import scala._
 import rules.Rule._
 import support.Chars

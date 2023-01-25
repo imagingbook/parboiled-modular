@@ -91,7 +91,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public abstract class </span><span class="element-name"><a href="../../../src-html/imagingbook.parboiled.java/org/parboiled/BaseActions.html#line-32">BaseActions</a>&lt;V&gt;</span>
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>
-implements org.parboiled.parse.ContextAware&lt;V&gt;</span></div>
+implements org.parboiled.ContextAware&lt;V&gt;</span></div>
 <div class="block">Convenience context aware base class defining a number of useful helper methods.</div>
 </section>
 <section class="summary">
@@ -145,7 +145,7 @@ implements org.parboiled.parse.ContextAware&lt;V&gt;</span></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Duplicates the top value of the value stack.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.parboiled.parse.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>org.parboiled.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getContext()" class="member-name-link">getContext</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">The current context for use with action methods.</div>
@@ -263,7 +263,7 @@ implements org.parboiled.parse.ContextAware&lt;V&gt;</span></div>
 <div class="block">Pushes all given elements onto the value stack (in the order as given).</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setContext(org.parboiled.parse.Context)" class="member-name-link">setContext</a><wbr>(org.parboiled.parse.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;&nbsp;context)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setContext(org.parboiled.parse.Context)" class="member-name-link">setContext</a><wbr>(org.parboiled.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;&nbsp;context)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">ContextAware interface implementation.</div>
 </div>
@@ -326,7 +326,7 @@ implements org.parboiled.parse.ContextAware&lt;V&gt;</span></div>
 <li>
 <section class="detail" id="getContext()">
 <h3>getContext</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.parboiled.parse.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../src-html/imagingbook.parboiled.java/org/parboiled/BaseActions.html#line-42">getContext</a></span>()</div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">org.parboiled.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</span>&nbsp;<span class="element-name"><a href="../../../src-html/imagingbook.parboiled.java/org/parboiled/BaseActions.html#line-42">getContext</a></span>()</div>
 <div class="block">The current context for use with action methods. Updated immediately before action calls.</div>
 <dl class="notes">
 <dt>Returns:</dt>
@@ -337,11 +337,11 @@ implements org.parboiled.parse.ContextAware&lt;V&gt;</span></div>
 <li>
 <section class="detail" id="setContext(org.parboiled.parse.Context)">
 <h3>setContext</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name"><a href="../../../src-html/imagingbook.parboiled.java/org/parboiled/BaseActions.html#line-51">setContext</a></span><wbr><span class="parameters">(org.parboiled.parse.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;&nbsp;context)</span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name"><a href="../../../src-html/imagingbook.parboiled.java/org/parboiled/BaseActions.html#line-51">setContext</a></span><wbr><span class="parameters">(org.parboiled.Context&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;&nbsp;context)</span></div>
 <div class="block">ContextAware interface implementation.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code>setContext</code>&nbsp;in interface&nbsp;<code>org.parboiled.parse.ContextAware&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</code></dd>
+<dd><code>setContext</code>&nbsp;in interface&nbsp;<code>org.parboiled.ContextAware&lt;<a href="BaseActions.html" title="type parameter in BaseActions">V</a>&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>context</code> - the context</dd>
 </dl>

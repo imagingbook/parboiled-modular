@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.parboiled.parse;
+package org.parboiled;
 
 /**
  * Instances of classes implementing this interface can be used directly in a rule definition to define a parser action.
