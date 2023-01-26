@@ -47,7 +47,8 @@ public class Characters {
 
     private Characters(boolean subtractive, char[] chars) {
         this.subtractive = subtractive;
-        this.chars = checkArgNotNull(chars, "chars");
+        this.chars = checkArgNotNull(chars, "chars").clone();   // wilbur: clone and then sort for fast lookup
+        Arrays.sort(this.chars);
     }
 
     /**
@@ -94,7 +95,8 @@ public class Characters {
      * @return true if this instance contains c
      */
     public boolean contains(char c) {
-        return indexOf(chars, c) == -1 ? subtractive : !subtractive;
+        // return indexOf(chars, c) == -1 ? subtractive : !subtractive;
+        return (Arrays.binarySearch(chars, c) < 0)  ? subtractive : !subtractive;  // wilbur: faster lookup
     }
 
     /**
