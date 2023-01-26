@@ -108,10 +108,8 @@ public class CalculatorParser0 extends CalculatorParser<Integer> {
     }
 }
 ```
-
-
   
-## Notes on Unit Tests
+## Note on Unit Tests
 
 * Some unit tests in this project check against package/class names and/or Java object hash values and are thus sensitive
   to any package and class name changes within the library.
