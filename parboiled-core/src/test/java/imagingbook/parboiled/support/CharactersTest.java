@@ -19,6 +19,8 @@ package imagingbook.parboiled.support;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class CharactersTest {
 
@@ -55,6 +57,40 @@ public class CharactersTest {
         assertEquals(Characters.allBut('A', 'B').remove(Characters.of('B', 'C')), Characters.allBut('A', 'B', 'C'));
         assertEquals(Characters.of('A', 'B').remove(Characters.allBut('B', 'C')), Characters.of('B'));
         assertEquals(Characters.allBut('A', 'B').remove(Characters.allBut('B', 'C')), Characters.of('C'));
+    }
+
+    @Test   // wilbur: added
+    public void testContains() {
+        String letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        Characters LETTERS = Characters.of(letters);
+        Characters NONLETTERS = Characters.allBut(letters);
+
+        assertTrue(LETTERS.contains('z'));
+        assertFalse(LETTERS.contains('0'));
+
+        assertTrue(NONLETTERS.contains('1'));
+        assertFalse(NONLETTERS.contains('a'));
+
+        for (char c : letters.toCharArray()) {
+            assertTrue(LETTERS.contains(c));
+            assertFalse(NONLETTERS.contains(c));
+        }
+    }
+
+    @Test   // wilbur: added
+    public void testContainsTiming() {
+        String letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        Characters LETTERS = Characters.of(letters);
+        long startTime = System.nanoTime();
+        int cnt = 0;
+        for (int i = 0; i < 1000000; i++) {
+            if (LETTERS.contains((char) i)) {
+                cnt++;
+            }
+        }
+        long elapsedTime = System.nanoTime() - startTime;
+        System.out.println("Elapsed time: " + (elapsedTime / 1000L) + "ms");
+        System.out.println(cnt);
     }
 
 }
