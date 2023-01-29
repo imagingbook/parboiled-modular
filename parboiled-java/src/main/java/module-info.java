@@ -15,4 +15,5 @@ module imagingbook.parboiled.java {
     exports imagingbook.parboiled.annotations;
     exports imagingbook.parboiled.testing;
     exports imagingbook.parboiled.parser;
+    exports imagingbook.parboiled.transform;
 }
