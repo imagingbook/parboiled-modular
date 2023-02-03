@@ -1,7 +1,7 @@
-module:imagingbook.parboiled.examples.java
-imagingbook.parboiled.examples.abc
-imagingbook.parboiled.examples.calculators
-imagingbook.parboiled.examples.indenting
-imagingbook.parboiled.examples.java
-imagingbook.parboiled.examples.sparql
-imagingbook.parboiled.examples.time
+module:org.parboiled.examples.java
+org.parboiled.examples.abc
+org.parboiled.examples.calculators
+org.parboiled.examples.indenting
+org.parboiled.examples.java
+org.parboiled.examples.sparql
+org.parboiled.examples.time
