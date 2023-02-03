@@ -39,7 +39,7 @@ project's `pom.xml`file:
 <dependency>
   <groupId>com.imagingbook</groupId>
   <artifactId>parboiled-core</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 Replace the number in `<version>...</version>` by the most current release version found on 
