@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"imagingbook.parboiled.core"}];updateSearchResults();
+moduleSearchIndex = [{"l":"org.parboiled.core"}];updateSearchResults();

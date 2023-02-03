@@ -1,4 +1,5 @@
-module:imagingbook.parboiled.java
-imagingbook.parboiled.annotations
-imagingbook.parboiled.parser
-imagingbook.parboiled.testing
+module:org.parboiled.java
+org.parboiled.annotations
+org.parboiled.parser
+org.parboiled.testing
+org.parboiled.transform
