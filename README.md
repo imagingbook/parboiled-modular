@@ -61,10 +61,10 @@ Here is an excerpt from class ``CalculatorParser0`` (note the modified imports f
 ```
 package imagingbook.parboiled.examples.calculators;
 
-import imagingbook.parboiled.parser.BaseParser;
-//     ^^^^^^^^^^^           ^^^^^^                      NOTE package names!
-import imagingbook.parboiled.Rule;
-import imagingbook.parboiled.annotations.BuildParseTree;
+import org.parboiled.parser.BaseParser;
+//                   ^^^^^^                      NOTE package name!
+import org.parboiled.Rule;
+import org.parboiled.annotations.BuildParseTree;
 
 /**
  * A basic calculator parser without any actions.
