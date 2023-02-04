@@ -1,4 +1,4 @@
-# parboiled-modular (a lighweight & elegant PEG parser)
+# parboiled-modular (lighweight & elegant PEG parser)
 
 This is a modularized version of the brilliant _parboiled_ Java/Scala PEG parser implementation
 developed by Mathias Doenitz, refactored from https://github.com/sirthias/parboiled (Version 1.4.1, Jan. 2023).
@@ -11,18 +11,17 @@ The features of _this_ implementation are:
 * Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
 * Supports the *Java 9 module system* by defining named modules with controlled imports and exports. 
   Note that the original library could not be imported into a modularized Java project due to package overlaps
-  in modules `parboiled-core` and ``parboiled-java``. To separate package `parboiled` the associated classes
-  in ``org.parboiled-java`` were relocated to a _new package_ named `imagingbook.parboiled.parser`.
-* Module ``parboiled-core`` is 1:1 compatible with the original library (just replace `org.` with `imagingbook.`).
-* In module ``parboiled-java``, the following classes moved from `org.parboiled` to the new package `imagingbook.parboiled.parser`:
+  in modules `org.parboiled.core` and ``org.parboiled.java``. To separate package `parboiled`, the contained classes
+  in module `org.parboiled.java`` were relocated to a _new package_ named `parboiled.parser`.
+* Module ``org.parboiled.core`` is 1:1 compatible with the original library.
+* In module ``org.parboiled.java``, the following classes moved from package `parboiled` to the new package `parboiled.parser`:
   * `BaseActions`,
   * `BaseParser`,
   * `Parboiled`.
 * All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
-* The build process is based on Maven and all Java modules are available as Maven artifacts on Central.
+* The build process is based on Maven and all Java modules are available as Maven artifacts.
 * The original *Scala* implementation (library and examples) has been refactored and is included here as well. (It is not
-  published as a Maven artifact). Note that the Scala part
-  may be dropped in a future release.
+  published as a Maven artifact.) Note that the Scala part may be dropped in a future release.
 
 ## Use With Maven
 
@@ -30,10 +29,13 @@ Each of the Java modules is available as a
 [Maven artifact on Maven Central](https://search.maven.org/search?q=g:com.imagingbook), that is,
 
 * [**parboiled-core**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-core)
+  (Java module `org.parboiled.core`)
 * [**parboiled-java**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java)
+  (Java module `org.parboiled.java`)
 * [**parboiled-java-examples**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java-examples)
+   (Java module `org.parboiled.examples.java`)
 
-For example, to use the `parboiled-core` module, include the following in your
+For example, to use the `org.parboiled.core` module, include the following in your
 project's `pom.xml`file:
 ```
 <dependency>
@@ -56,13 +58,15 @@ Replace the number in `<version>...</version>` by the most current release versi
 
 ## Examples
 
-The examples in ``parboiled-java-examples`` are an excellent place to get started. 
+The examples in ``parboiled-java-examples`` 
+(from [https://github.com/sirthias/parboiled](https://github.com/sirthias/parboiled))
+are an excellent place to get started. 
 Here is an excerpt from class ``CalculatorParser0`` (note the modified imports from `imagingbook.parboiled`!):
 ```
 package imagingbook.parboiled.examples.calculators;
 
 import org.parboiled.parser.BaseParser;
-//                   ^^^^^^                      NOTE package name!
+//                   ^^^^^^                      NOTE change in package name!
 import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
 
