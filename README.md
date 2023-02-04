@@ -33,7 +33,7 @@ Each of the Java modules is available as a
 * [**parboiled-java**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java)
   (Java module `org.parboiled.java`)
 * [**parboiled-java-examples**](https://mvnrepository.com/artifact/com.imagingbook/parboiled-java-examples)
-   (Java module `org.parboiled.examples.java`)
+   (Java module `org.parboiled.examples`)
 
 For example, to use the `org.parboiled.core` module, include the following in your
 project's `pom.xml`file:
