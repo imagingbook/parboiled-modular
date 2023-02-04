@@ -5,7 +5,7 @@
  * (<a href= https://github.com/sirthias/parboiled/tree/6c9cded0ea240e572903234384d759562669877c>Version 1.4.1</a>,
  * Jan. 2023).
  */
-module org.parboiled.examples.java {
+module org.parboiled.examples {
     requires org.parboiled.core;
     requires org.parboiled.java;
 
