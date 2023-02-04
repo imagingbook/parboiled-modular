@@ -67,7 +67,7 @@
         <junit.version>4.13.2</junit.version>
 
         <!--   *************** JavDoc related items ****************** -->
-        <maven.javadoc.skip>false</maven.javadoc.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
         <imagingbook.header>
             <![CDATA[<br><font face="verdana"><B>]]>${project.name} ${project.version}<![CDATA[</B></font>]]>
         </imagingbook.header>
