@@ -35,5 +35,11 @@
 *.iml
 *.ipr
 
+# Eclipse-specific
+.settings
+.project
+.classpath
+
 target
 DEPLOY
+
