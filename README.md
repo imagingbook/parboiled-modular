@@ -12,13 +12,13 @@ The features of _this_ implementation are:
 * Supports the *Java 9 module system* by defining named modules with controlled imports and exports. 
   Note that the original library could not be imported into a modularized Java project due to package overlaps
   in modules `org.parboiled.core` and ``org.parboiled.java``. To separate package `parboiled`, the contained classes
-  in module `org.parboiled.java`` were relocated to a _new package_ named `parboiled.parser`.
-* Module ``org.parboiled.core`` is 1:1 compatible with the original library.
-* In module ``org.parboiled.java``, the following classes moved from package `parboiled` to the new package `parboiled.parser`:
+  in module `org.parboiled.java` were relocated to a _new package_ named `parboiled.parser`.
+* Module `org.parboiled.core` is 1:1 compatible with the original library.
+* In module `org.parboiled.java`, the following classes moved from package `parboiled` to the new package `parboiled.parser`:
   * `BaseActions`,
   * `BaseParser`,
   * `Parboiled`.
-* All Java testing is based on ``JUnit4``. All required Java packages have been updated to current versions if possible.
+* All Java testing is based on vanilla `JUnit4`. All required Java packages have been updated to current versions if possible.
 * The build process is based on Maven and all Java modules are available as Maven artifacts.
 * The original *Scala* implementation (library and examples) has been refactored and is included here as well. (It is not
   published as a Maven artifact.) Note that the Scala part may be dropped in a future release.
