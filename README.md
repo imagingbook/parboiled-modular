@@ -6,6 +6,8 @@ The original *parboiled* library provides *"for lightweight and easy-to-use, yet
 arbitrary input text based on Parsing expression grammars (PEGs)"*. See <https://github.com/sirthias/parboiled/wiki>
 for additional details.
 
+## Features
+
 The features of _this_ implementation are:
 
 * Builds on the original *parboiled* project and provides the same basic functionality (see exceptions below).
