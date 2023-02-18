@@ -66,12 +66,12 @@ The examples in ``parboiled-java-examples``
 are an excellent place to get started. 
 Here is an excerpt from class ``CalculatorParser0`` (note the modified imports from `imagingbook.parboiled`!):
 ```
-package imagingbook.parboiled.examples.calculators;
+package org.parboiled.examples.calculators;
 
-import org.parboiled.parser.BaseParser;
-//                   ^^^^^^                      NOTE change in package name!
 import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
+import org.parboiled.parser.BaseParser;
+//                   ^^^^^^                      NOTE the modified package name!
 
 /**
  * A basic calculator parser without any actions.
