@@ -15,7 +15,7 @@ The features of _this_ implementation are:
   Note that the original library could not be imported into a modularized Java project due to package overlaps
   in modules `org.parboiled.core` and ``org.parboiled.java``. To separate package `parboiled`, the contained classes
   in module `org.parboiled.java` were relocated to a _new package_ named `parboiled.parser`.
-* Module `org.parboiled.core` is 1:1 compatible with the original library.
+* Module `org.parboiled.core` is 1:1 drop-in compatible with the original library.
 * In module `org.parboiled.java`, the following classes moved from package `parboiled` to the new package `parboiled.parser`:
   * `BaseActions`,
   * `BaseParser`,
