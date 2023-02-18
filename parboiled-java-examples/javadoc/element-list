@@ -1,4 +1,4 @@
-module:org.parboiled.examples.java
+module:org.parboiled.examples
 org.parboiled.examples.abc
 org.parboiled.examples.calculators
 org.parboiled.examples.indenting

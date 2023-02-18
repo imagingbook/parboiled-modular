@@ -1,1 +1,1 @@
-moduleSearchIndex = [{"l":"org.parboiled.examples.java"}];updateSearchResults();
+moduleSearchIndex = [{"l":"org.parboiled.examples"}];updateSearchResults();
