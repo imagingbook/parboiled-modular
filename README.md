@@ -64,7 +64,7 @@ Replace the number in `<version>...</version>` by the most current release versi
 The examples in ``parboiled-java-examples`` 
 (from [https://github.com/sirthias/parboiled](https://github.com/sirthias/parboiled))
 are an excellent place to get started. 
-Here is an excerpt from class ``CalculatorParser0`` (note the modified imports from `imagingbook.parboiled`!):
+Here is an excerpt from class ``CalculatorParser0`` (note the modified import for `BaseParser`!):
 ```
 package org.parboiled.examples.calculators;
 
